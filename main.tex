@@ -1,0 +1,65 @@
+%file main.tex
+\documentclass[a4paper]{article}
+
+% Packages
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage[style=ieee]{biblatex}
+\usepackage{pgf-umlsd}
+\usepackage{pgf-umlcd}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+\addbibresource{ref.bib}
+
+% Paragraph styling. Removes indent and adds newline between paras
+\setlength\parindent{0pt}
+\setlength{\parskip}{\baselineskip}
+
+% UWE document standard styling:
+%	1.5 spaces
+\onehalfspacing
+
+% Page header, adds draft message and current section num & name
+\fancyhf{}
+\lhead{DRAFT}
+\rhead{\leftmark}
+
+\begin{document}
+% Title
+\title{I Can't Think of a Good Title}
+\author{Jake Baker}
+
+\maketitle
+\pagenumbering{roman}
+\thispagestyle{empty}
+\input{abstract.tex}
+\input{acknowledgements.tex}
+\input{abbrev.tex}
+
+\pagestyle{fancy}
+\cfoot{\thepage}
+\tableofcontents
+\clearpage
+% Switch page numbering
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{intro/intro.tex}
+\input{research/research.tex}
+\input{requirements/requirements.tex}
+\input{design/design.tex}
+\input{implementation/impl.tex}
+\input{conclusion/conclusion.tex}
+\input{appendix/appendix.tex}
+% This will be replaced by BiBTeX when I can make it work...
+\section{REFERENCES}
+
+\clearpage
+\printbibliography
+% \cfoot{\thepage\ of \pageref{LastPage}}
+\end{document}

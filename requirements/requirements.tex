@@ -1,0 +1,84 @@
+\section{REQUIREMENTS SPECIFICATION}
+This requirement specification uses keywords to indicate requirement levels as defined in RFC 2119 (appendix X[1]). Consideration has been taken to follow principles outlined in the IEEE Recommended Practice for Software Requirements Specification [2] whilst being mindful that they are included as part of a larger document.
+
+The requirements are split into separate sections that define the hardware and software that are required to interact with the application, the user interface 
+
+\subsection{Scope}
+The requirements put forth are for the Honeypot application that will be used to create spoofed access points based on probe request frames broadcast from passing mobile wireless devices. The fake AP will have its traffic bridged to a real AP on the host device to allow HTTP traffic to be captured and analysed. The goal of this application is to examine the HTTP traffic and analyse unencrypted packets from advertising frameworks to gain information about the user.
+
+\subsection{Overall Requirements}
+\subsubsection{User Interfaces}
+Due to the application needing to be run in a high traffic area to make it as effective as possible it will need to be run on a laptop with the Operating System either installed as the primary, or run in a Virtual Machine.
+
+The application will have no graphical user interface (GUI) and will provide relevant, contextual, information to the user through a simple console interface. Relevant information is defined below as part of the functional requirements. Usage of the application will require some prior knowledge of the 802.11 standard and its naming conventions.
+
+Messages displayed to the user must be configurable in terms of debug, information, warning and error. Notification of the desired level should be configurable while starting the application, but not during application execution.
+
+\subsubsection{Hardware Interfaces}
+The honeypot application requires a wireless adaptor that conforms to the standards determined in the research portion of this article. They are as follows: ability to be put into monitor mode to capture traffic on the network, support for packet injection into the network and support from the chipset manufacturer toward the open source community, as this will give us greater confidence in the drivers for Linux supporting the capabilities required, and working out-of-the-box. Considering these points the Alfa AWUS036H has been selected as the wireless adaptor to use.
+
+A laptop will be required to run the application, and it will need at least one spare USB port for the wireless adaptor to be plugged in to and a spare ethernet port to connect to a wireless router.
+
+The wireless network must have its SSID hidden, must have no encryption and must be connected to the laptop via ethernet cable. This is required so that the spoofed AP may bridge its traffic and the users of the spoofed AP will be able to access the internet.
+
+\subsubsection{Software Interfaces}
+The application must run on Backtrack 5 Revision 3 (B5R3) which is available from the Backtrack website[1]. The application may run on Kali Linux which is a derivative of Backtrack developed by the same team, but with a Red Hat foundation instead of Debian.
+
+The Operating System must be either installed as the primary, or installed on a Virtual Machine. If the Operating System is installed on a Virtual Machine then the virtualisation software used must be VirtualBox V4.3.0 [2]. The network adapter in VirtualBox must be set to bridged and utilize the ethernet adapter of the host laptop.
+
+Air-ng may be utilized to create the spoof access point once the requirements of the AP have been determined. This software suite comes pre-installed on the required Operating System. 
+
+\subsubsection{Communications Interface}
+As this application is designed to exploit vulnerabilities in the 802.11 standard, 802.11 will be required as a protocol. At the higher level HTTP traffic data will be analysed for information.
+
+\subsubsection{Operations}
+Once the application has been started by the user it must be entirely autonomous, acting upon user defined parameters at execution. The only user interaction should be exiting the application, which on signal it shall gracefully exit.
+
+\subsubsection{Site Adaptation Requirements}
+This application must only be run only in controlled wireless lab conditions due to the inability to get informed consent of the participants when running publicly. Under no circumstances should the application be executed in a public location, without a predefined SSID filter.
+
+The application will require the host machine to be connected to an internet source via ethernet in order for it to successfully bridge traffic.
+
+\subsubsection{Functional Requirements}
+\subsubsection*{Honeypot Application}
+The application must:-
+\begin{itemize}
+	\item Capture beacon packets from nearby WiFi devices.
+	\item Display packet details
+		\begin{itemize}
+			\item Source MAC address
+			\item SSID Name
+		\end{itemize}
+	\item Respond with authorisation packet
+	\item Handshake with WiFi device
+	\item Bridge traffic from soft AP to real AP
+\end{itemize}
+
+The application may:-
+\begin{itemize}
+\item Filter beacon packets by source MAC address
+\item Filter beacon packets by SSID
+\end{itemize}
+
+\subsubsection{Constraints}
+The application will not be able to perform the honeypot attack on mobile devices that broadcast probe requests from WPA/WPA2 encrypted networks. It will also be limited to the Operating System in which it has been developed to run on, in this instance that is Backtrack 5 Revision 3.
+
+\subsubsection{Assumptions}
+It is assumed that the Operating System running on the Virtual Machine will have access to the network that the host machine is connected to through a bridge.
+
+\subsection{Specific Requirements}
+Take user defined parameters
+
+The application shall accept a MAC address to filter the the received packets to ensure that data capturing is limited to devices owned by the user testing the application. It should also accept an SSID to filter the probe request frames to ease testing from multiple devices.
+ 
+Filter packets based on source MAC
+
+FLOW OF EXECUTION DRAWING
+
+
+Filter packets based on SSID
+
+Capture and parse probe request frames
+
+Create spoof AP
+\clearpage

@@ -1,4 +1,4 @@
 ProjectReport
 =============
 
-UWE project report.
+LaTeX for the UWE project report.
