@@ -4,21 +4,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1}Background}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.1}802.11 Standard and Task Groups}{2}
+\contentsline {subsection}{\numberline {1.2}Recent Media}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2}802.11 Key Terms}{3}
+\contentsline {subsubsection}{\numberline {1.2.1}802.11 Standard and Task Groups}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.3}802.11 Security}{6}
+\contentsline {subsubsection}{\numberline {1.2.2}802.11 Key Terms}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.4}Leaky Applications}{6}
+\contentsline {subsubsection}{\numberline {1.2.3}802.11 Security}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.5}Profiling Users}{7}
+\contentsline {subsubsection}{\numberline {1.2.4}Leaky Applications}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.6}Culmination}{8}
+\contentsline {subsubsection}{\numberline {1.2.5}Profiling Users}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Objectives}{8}
+\contentsline {subsubsection}{\numberline {1.2.6}Culmination}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Content}{8}
+\contentsline {subsection}{\numberline {1.3}Objectives}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4}Content}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Research}{9}
 \defcounter {refsection}{0}\relax 
@@ -26,17 +28,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.1}Frame Types}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2}General Frame Structure}{9}
+\contentsline {subsubsection}{\numberline {2.1.2}General Frame Structure}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Attack Vectors}{15}
+\contentsline {subsection}{\numberline {2.2}Attack Vectors}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.1}Spoof Access Point}{15}
+\contentsline {subsubsection}{\numberline {2.2.1}Spoof Access Point}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2}Man in the Middle (MITM)}{16}
+\contentsline {subsubsection}{\numberline {2.2.2}Man in the Middle (MITM)}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.3}Deauthentication Denial of Service}{17}
+\contentsline {subsubsection}{\numberline {2.2.3}Deauthentication Denial of Service}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.4}Evil Twin/Honeypot Attack}{20}
+\contentsline {subsubsection}{\numberline {2.2.4}Evil Twin/Honeypot Attack}{21}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Low-Level Libraries}{23}
 \defcounter {refsection}{0}\relax 
@@ -104,7 +106,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.2.1}Android Game}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Android Location Provider}{35}
+\contentsline {subsection}{\numberline {4.3}Android Location Provider}{36}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Implementation}{37}
 \defcounter {refsection}{0}\relax 
@@ -116,28 +118,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2}Leaky Game}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.1}Project Structure}{38}
+\contentsline {subsubsection}{\numberline {5.2.1}Project Structure}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2}Creating Interfaces}{38}
+\contentsline {subsubsection}{\numberline {5.2.2}Creating Interfaces}{41}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.2.3}Getting the GPS Co-ordinates}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{42}
+\contentsline {section}{\numberline {6}Conclusion}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Defending Against Attacks}{42}
+\contentsline {subsection}{\numberline {6.1}Defending Against Attacks}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Application Level}{42}
+\contentsline {subsubsection}{\numberline {6.1.1}Application Level}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Monitoring Probe Requests for Good}{43}
+\contentsline {subsection}{\numberline {6.2}Monitoring Probe Requests for Good}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Securing the Internet}{43}
+\contentsline {subsection}{\numberline {6.3}Securing the Internet}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Project Extensions}{43}
+\contentsline {subsection}{\numberline {6.4}Project Extensions}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.4.1}Quadcopters}{43}
+\contentsline {subsubsection}{\numberline {6.4.1}Quadcopters}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.4.2}Explorations in to Embedded Systems}{44}
+\contentsline {subsubsection}{\numberline {6.4.2}Explorations in to Embedded Systems}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}APPENDIX}{45}
+\contentsline {section}{\numberline {7}APPENDIX}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Spoof Access Point and AirPwn}{45}
+\contentsline {subsection}{\numberline {7.1}Spoof Access Point and AirPwn}{46}

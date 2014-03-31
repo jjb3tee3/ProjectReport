@@ -4,7 +4,7 @@ The deauthentication denial of service (DOS) [7] attack takes advantage of the u
 When a client wishes to gracefully disconnect from a 802.11 network it sends a disassociation frame [6] to the access point, likewise when an AP needs to disconnect from a client it sends a deauthentication [5] frame. If the AP needs to disconnect all clients, e.g. in the event of a reboot, it broadcasts the disassociation frame. 
 
 The unencrypted and unauthorized nature of these frames leaves them open to MAC spoofing of either the client or AP, meaning an attacker can easily forge frames. It has been noted that deauthentication frames are preferable to spoof due to the access point and client having to perform the entire authentication cycle again in order to carry on using the network [1].
-\clearpage
+
 \begin{figure}[htbp!]
 \centering\includegraphics{research/attackvectors/figures/ddos.png}
 \caption{Deauthentication DOS sequence.}

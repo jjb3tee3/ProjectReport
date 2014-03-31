@@ -212,6 +212,23 @@
 \entry{intro:ieee_decrypted}{article}{}
 \endentry
 
+\entry{intro:apple_ibook}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{title}{iBook}
+  \verb{url}
+  \verb http://en.wikipedia.org/wiki/IBook
+  \endverb
+  \field{year}{2014}
+\endentry
+
 \entry{intro:80211_lecture}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -295,6 +312,25 @@
   \endverb
 \endentry
 
+\entry{intro:angry_leak}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ball}{B.}%
+     {James}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BJ1}
+  \strng{fullhash}{BJ1}
+  \field{title}{Angry Birds and 'leaky' phone apps targeted by NSA and GCHQ for
+  user data}
+  \verb{url}
+  \verb http://www.theguardian.com/world/2014/jan/27/nsa-gchq-smartphone-app-an
+  \verb gry-birds-personal-data
+  \endverb
+  \field{year}{2014}
+\endentry
+
 \entry{intro:evercookie}{misc}{}
   \verb{url}
   \verb http://samy.pl/evercookie/
@@ -334,6 +370,106 @@
   \field{year}{2014}
 \endentry
 
+\entry{intro:foursquare_site}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Foursquare}{F.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{F1}
+  \strng{fullhash}{F1}
+  \verb{url}
+  \verb https://foursquare.com/
+  \endverb
+\endentry
+
+\entry{intro:twitter_location_howto}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Twitter}{T.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{T1}
+  \strng{fullhash}{T1}
+  \field{title}{Adding your location to a Tweet}
+  \verb{url}
+  \verb https://support.twitter.com/articles/122236#
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{intro:not_personal}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Michal~Kosinski}{M.~K.}%
+     {et~al}{e.~a.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MKea1}
+  \strng{fullhash}{MKea1}
+  \field{title}{Private traits and attributes are predictable from digital
+  records of human behavior}
+  \verb{url}
+  \verb http://www.pnas.org/content/early/2013/03/06/1218772110.full.pdf+html
+  \endverb
+  \field{year}{2013}
+\endentry
+
+\entry{intro:exif_wiki}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{title}{Exchangeable Image File Format}
+  \verb{url}
+  \verb http://en.wikipedia.org/wiki/Exchangeable_image_file_format
+  \endverb
+\endentry
+
+\entry{intro:wiki_geotag}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{title}{Geotagging}
+  \verb{url}
+  \verb http://en.wikipedia.org/wiki/Geotagging#JPEG_photos
+  \endverb
+\endentry
+
+\entry{intro:twitter_exif}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Twitter}{T.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{T1}
+  \strng{fullhash}{T1}
+  \field{title}{Posting photos on Twitter}
+  \verb{url}
+  \verb https://support.twitter.com/articles/20156423-posting-photos-on-twitter
+  \verb #
+  \endverb
+  \field{year}{2014}
+\endentry
+
 \entry{intro:room_641a}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -349,6 +485,21 @@
   \verb http://en.wikipedia.org/wiki/Room_641A
   \endverb
   \field{year}{2014}
+\endentry
+
+\entry{research:80211_standard}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {IEEE}{I.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{I1}
+  \strng{fullhash}{I1}
+  \field{title}{Part 11: Wireless LAN Medium Access Control(MAC) and Physical
+  Layer (PHY) Specifications}
+  \field{year}{2012}
 \endentry
 
 \entry{research:crc_wiki}{article}{}
@@ -383,6 +534,75 @@
   \verb http://en.wikipedia.org/wiki/Wired_Equivalent_Privacy
   \endverb
   \field{year}{2014}
+\endentry
+
+\entry{research:ssl_strip}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Crime}{C.}%
+     {Thought}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CT1}
+  \strng{fullhash}{CT1}
+  \field{title}{sslstrip}
+  \verb{url}
+  \verb http://www.thoughtcrime.org/software/sslstrip/
+  \endverb
+  \field{year}{2013}
+\endentry
+
+\entry{research:bitb}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Imperva}{I.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{I2}
+  \strng{fullhash}{I2}
+  \field{title}{Boy in the Browser}
+  \verb{url}
+  \verb http://www.imperva.com/resources/adc/adc_advisories_Boy_in_the_Browser.
+  \verb html
+  \endverb
+  \field{year}{2010}
+\endentry
+
+\entry{research:cache_poisoning}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {OWASP}{O.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{O1}
+  \strng{fullhash}{O1}
+  \field{title}{Cache Poisoning}
+  \verb{url}
+  \verb https://www.owasp.org/index.php/Cache_Poisoning
+  \endverb
+  \field{year}{2009}
+\endentry
+
+\entry{research:response_splitting}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {OWASP}{O.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{O1}
+  \strng{fullhash}{O1}
+  \field{title}{HTTP Response Splitting}
+  \verb{url}
+  \verb https://www.owasp.org/index.php/HTTP_Response_Splitting
+  \endverb
+  \field{year}{2013}
 \endentry
 
 \lossort

@@ -34,19 +34,19 @@ When an open network has been discovered, the application forks and creates a vi
 This application has been developed for Android and mimics the recently popular Flappy Bird style because of its simple nature, and possibility for exploiting the viral hype still surrounding it. It has been developed using Android Java and libgdx to handle the game functions and named Leaky Bird to reflect its actual purpose.
 
 It was developed using the Eclipse IDE due to the support project creation support offered by libgdx tools, the process of which is detailed in a further section. The game was tested in a desktop environment to start with, before being deployed on a Nexus 7 for testing Android specific functionality.
-
+\clearpage
 \subsubsection{Project Structure}
 Using the libgdx project setup tool removes the need for manually creating the projects and writing the boilerplate code required for the creation of cross-platform games. 
 
 \begin{figure}[h!]
-\centering\includegraphics{implementation/figures/gdx-setup-1.png}
+\centering\includegraphics[width=\linewidth]{implementation/figures/gdx-setup-1.png}
 \caption{libgdx setup tool.}
 \end{figure}
 
 It creates multiple Eclipse projects that link to one main project that holds the game code, thus effectively decoupling any platform specific code from the implementation. The projects created allow you to deploy on Android, desktop, web and iOS using robovm.
-
+\clearpage
 \begin{figure}[h!]
-\centering\includegraphics{implementation/figures/gdx-setup-2.png}
+\centering\includegraphics[width=\linewidth]{implementation/figures/gdx-setup-2.png}
 \caption{Configuration screen.}
 \end{figure}
 
@@ -56,7 +56,7 @@ Which when imported to Eclipse sets the workspace up automatically.
 \centering\includegraphics{implementation/figures/gdx-setup-3.png}
 \caption{Eclipse project structure.}
 \end{figure}
-
+\clearpage
 Whilst developing the game it was tested under the desktop deployment, and then when Android specific functions were required it was moved to testing on an actual device.
 
 \subsubsection{Creating Interfaces}

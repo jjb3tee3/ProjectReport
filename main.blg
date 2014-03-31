@@ -2,4 +2,11 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: biblatex.bst
 Database file #1: main-blx.bib
 Database file #2: references.bib
+Warning--entry type for "intro:exif_wiki" isn't style-file defined
+--line 145 of file references.bib
+Warning--entry type for "intro:wiki_geotag" isn't style-file defined
+--line 151 of file references.bib
+Warning--entry type for "intro:foursquare_site" isn't style-file defined
+--line 157 of file references.bib
 Biblatex version: 2.8
+(There were 3 warnings)

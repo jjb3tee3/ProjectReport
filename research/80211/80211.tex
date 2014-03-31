@@ -1,6 +1,6 @@
 \subsection{802.11 Overview}
 \subsubsection{Frame Types}
-There are three frame categories defined in the 802.11 standard: management, control and data. These types are further split into subtypes which determines which frame is being sent/received. For the purpose of performing an association sequence, we are interested in frames from the management category. The table below details these frames, along with their type, subtype and originating source, in order for us to successfully filter packets in wireshark to capture the sequence.
+There are three frame categories defined in the 802.11 standard \cite{research:80211_standard}: management, control and data. These types are further split into subtypes which determines which frame is being sent/received. For the purpose of performing an association sequence, we are interested in frames from the management category. The table below details these frames, along with their type, subtype and originating source, in order for us to successfully filter packets in wireshark to capture the sequence.
 
 \begin{table}[h!]
 \begin{center}
@@ -31,13 +31,14 @@ There are three frame categories defined in the 802.11 standard: management, con
 
 One of the key issues with the 802.11 standard is that management frames are not encrypted. This is what a large majority of attacks take advantage of by way of a gateway to further attacks, as detailed in a later section.
 
-This table will be further expanded in the next sections to include the various flags that need to be set in order for the frames to be valid.
-
+\clearpage
 \subsubsection{General Frame Structure}
+Figure \ref{fig:framestructure} below details the contents and size of each field in the general frame structure for an 802.11 packet. A description of the contents are detailed table \ref{table:framefields}, with the frame control segment's fields being detailed in table \ref{table:framecontrol}.
 
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \centering\includegraphics[width=\linewidth]{research/80211/figures/framestructure.png}
 \caption{General frame structure.}
+\label{fig:framestructure}
 \end{figure}
 
 	\begin{table}[!h]
@@ -85,7 +86,7 @@ To watch the association sequence happen in real-time I needed to set up a simpl
 
 The first step in the process is setting up Backtrack with the Alfa wireless adaptor plugged in, and creating a monitor interface on wlan0 using airmon-ng:
 
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt1.png}
 \caption{Start monitor interface.}
 \label{research:80211:bt1}
@@ -93,29 +94,29 @@ The first step in the process is setting up Backtrack with the Alfa wireless ada
 
 This would allow me to capture traffic as it passes by in wireshark by sniffing on mon0, and filter it down to the frames that I am interested in. To get a first hand look at the sequence I setup the wireless router, gave it a unique SSID, left encryption set to open, noted down it’s mac address, and setup a filter on wireshark that would only report packets with a source address of my iPhone and broadcast as the destination. With this filter in place I could look at the probe request frames sent from my phone as it searched for the access point. This is the start of the association sequence we’re after. It’s from these requests we’ll forge frames to convince the device we are the real AP.
 
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt2.png}
 \caption{Wireshark filter.}
 \label{research:80211:bt2}
 \end{figure}
 
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt3.png}
 \caption{Wireshark captured probe request.}
 \label{research:80211:bt3}
 \end{figure}
 
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt4.png}
 \caption{Probe request contents.}
 \label{research:80211:bt4}
 \end{figure}
-
+\newpage
 This revealed the probe request subtype that the application would need to search for incoming packet headers for to determine whether it would need to kick off the sequence to create a fake access point.
 
 The next step was to filter for probe response frames so I could understand how an access point reacts to receiving a probe request, primarily determining which information element fields to set in the management frame.
 
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt5.png}
 \caption{Wireshark destination MAC address filter.}
 \label{research:80211:bt5}
@@ -123,28 +124,29 @@ The next step was to filter for probe response frames so I could understand how 
 
 This revealed the response the Netgear router has sent my phone.
 
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt6.png}
 \caption{Probe response frame}
 \label{research:80211:bt6}
 \end{figure}
-
+\newpage
 The probe response frame shows which IE fields are required in the management header, namely the SSID (which will be a mirror of the one in the probe request), the supported rates, channel information and ERP information. 
 
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt65.png}
 \caption{Probe response contents.}
 \label{research:80211:bt65}
 \end{figure}
 
+The next step in the sequence that we are interested in is the association. This frame gives us information related to the encryption standard that the network the station is trying to connect to uses. Figure \ref{research:80211:bt7} shows the request send from my phone to the Netgear router, and figure \ref{research:80211:bt8} shows the contents.
 
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt7.png}
 \caption{Association request.}
 \label{research:80211:bt7}
 \end{figure}
 
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt8.png}
 \caption{Association request frame contents.}
 \label{research:80211:bt8}
