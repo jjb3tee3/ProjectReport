@@ -1,0 +1,143 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}INTRODUCTION}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Background}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.1}802.11 Standard and Task Groups}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.2}802.11 Key Terms}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.3}802.11 Security}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.4}Leaky Applications}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.5}Profiling Users}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.6}Culmination}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Objectives}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Content}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Research}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}802.11 Overview}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}Frame Types}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2}General Frame Structure}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Attack Vectors}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1}Spoof Access Point}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2}Man in the Middle (MITM)}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.3}Deauthentication Denial of Service}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.4}Evil Twin/Honeypot Attack}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Low-Level Libraries}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}libpcap}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2}LORCON}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Hardware}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}Wireless Adaptor}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.2}Wireless Chipsets}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Operating Systems}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.1}Backtrack 5 R3}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.2}Kali}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.3}Ubuntu}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.4}Fedora}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.5}Android Game Programming}{26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.6}Innocuous Information}{27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.7}Legal Issues}{28}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}REQUIREMENTS SPECIFICATION}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Scope}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Overall Requirements}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}User Interfaces}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2}Hardware Interfaces}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.3}Software Interfaces}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.4}Communications Interface}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.5}Operations}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.6}Site Adaptation Requirements}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.7}Functional Requirements}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.8}Constraints}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.9}Assumptions}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Specific Requirements}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}Honey Pot Application}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2}Android Application}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Design}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Overall System Architecture}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Class Diagrams}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1}Android Game}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Android Location Provider}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Implementation}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Honeypot Application}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1}Station Association Sequence}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.2}Monitoring Data Packets}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Leaky Game}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.1}Project Structure}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2}Creating Interfaces}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.3}Getting the GPS Co-ordinates}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Conclusion}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Defending Against Attacks}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.1}Application Level}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Monitoring Probe Requests for Good}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3}Securing the Internet}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4}Project Extensions}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.1}Quadcopters}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.2}Explorations in to Embedded Systems}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}APPENDIX}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Spoof Access Point and AirPwn}{45}

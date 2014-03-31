@@ -13,13 +13,14 @@
 \usepackage{listings}
 \usepackage{fancyhdr}
 \usepackage{setspace}
+\usepackage[parfill]{parskip}
 
 %\addbibresource{ref.bib}
 %\bibliographystyle{ieee}
 \bibliography{references.bib}
 % Paragraph styling. Removes indent and adds newline between paras
 \setlength\parindent{0pt}
-\setlength{\parskip}{\baselineskip}
+%\setlength{\parskip}{\baselineskip}
 
 % UWE document standard styling:
 %	1.5 spaces
@@ -57,10 +58,7 @@
 \input{implementation/impl.tex}
 \input{conclusion/conclusion.tex}
 \input{appendix/appendix.tex}
-% This will be replaced by BiBTeX when I can make it work...
-\section{REFERENCES}
-
-\clearpage
+% Bibtex dump
 \printbibliography
 % \cfoot{\thepage\ of \pageref{LastPage}}
 \end{document}

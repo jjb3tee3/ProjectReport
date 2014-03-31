@@ -1,0 +1,391 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{intro:guardian_snowden}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Guardian}{G.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{G2}
+  \strng{fullhash}{G2}
+  \field{title}{Edward Snowden}
+  \verb{url}
+  \verb http://www.theguardian.com/world/edward-snowden
+  \endverb
+\endentry
+
+\entry{intro:gchq_home}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {GCHQ}{G.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{G1}
+  \strng{fullhash}{G1}
+  \verb{url}
+  \verb http://www.gchq.gov.uk/
+  \endverb
+\endentry
+
+\entry{intro:nsa_home}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {NSA}{N.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{N2}
+  \strng{fullhash}{N2}
+  \verb{url}
+  \verb http://www.nsa.gov/
+  \endverb
+\endentry
+
+\entry{intro:schneier_nsa_1}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Schneier}{S.}%
+     {Bruce}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SB1}
+  \strng{fullhash}{SB1}
+  \field{title}{PICASSO: NSA Exploit of the Day}
+  \verb{url}
+  \verb https://www.schneier.com/blog/archives/2014/02/picasso_nsa_exp.html
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{intro:schneier_nsa_3}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Schneier}{S.}%
+     {Bruce}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SB1}
+  \strng{fullhash}{SB1}
+  \field{title}{DROPOUTJEEP: NSA Exploit of the Day}
+  \verb{url}
+  \verb https://www.schneier.com/blog/archives/2014/02/dropoutjeep_nsa.html
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{intro:schneier_nsa_4}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Schneier}{S.}%
+     {Bruce}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SB1}
+  \strng{fullhash}{SB1}
+  \field{title}{SOMBERKNAVE: NSA Exploit of the Day}
+  \verb{url}
+  \verb https://www.schneier.com/blog/archives/2014/02/somberknave_nsa.html
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{intro:nsa_invoice}{misc}{}
+  \field{title}{Vupen Contracts with NSA}
+  \verb{url}
+  \verb https://www.muckrock.com/foi/united-states-of-america-10/vupen-contract
+  \verb s-with-nsa-6593/#787525-responsive-documents
+  \endverb
+  \field{year}{2013}
+\endentry
+
+\entry{intro:schneier_nsa_2}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Schneier}{S.}%
+     {Bruce}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SB1}
+  \strng{fullhash}{SB1}
+  \field{title}{WISTFULTOLL: NSA Exploit of the Day}
+  \verb{url}
+  \verb https://www.schneier.com/blog/archives/2014/02/wistfultoll_nsa.html
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{intro:guardian_ms_nsa}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Guardian}{G.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{G2}
+  \strng{fullhash}{G2}
+  \field{title}{Microsoft handed the NSA access to encrypted messages}
+  \verb{url}
+  \verb http://www.theguardian.com/world/2013/jul/11/microsoft-nsa-collaboratio
+  \verb n-user-data
+  \endverb
+  \field{year}{2013}
+\endentry
+
+\entry{intro:ibm_open_letter}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Weber}{W.}%
+     {Robert~C.}{R.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WRC1}
+  \strng{fullhash}{WRC1}
+  \field{title}{Microsoft handed the NSA access to encrypted messages}
+  \verb{url}
+  \verb http://asmarterplanet.com/blog/2014/03/open-letter-data.html
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{intro:open_open_letter}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Schneier}{S.}%
+     {Bruce}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SB1}
+  \strng{fullhash}{SB1}
+  \field{title}{An Open Letter to IBM's Open Letter}
+  \verb{url}
+  \verb https://www.schneier.com/blog/archives/2014/03/an_open_letter_.html
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{intro:bristol_open_letter}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Prof. Kenneth~Paterson}{P.~K.~P.}%
+     {et~al}{e.~a.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PKPea1}
+  \strng{fullhash}{PKPea1}
+  \field{title}{Open Letter From UK Security Researchers}
+  \verb{url}
+  \verb http://bristolcrypto.blogspot.co.uk/2013/09/open-letter-from-uk-securit
+  \verb y-researchers.html
+  \endverb
+  \field{year}{2013}
+\endentry
+
+\entry{intro:ieee_decrypted}{article}{}
+\endentry
+
+\entry{intro:80211_lecture}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Chandra}{C.}%
+     {Surendar}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CS1}
+  \strng{fullhash}{CS1}
+  \field{title}{802.11 Lecture}
+  \verb{url}
+  \verb http://surendar.chandrabrown.org/teach/spr03/cse598N/Lectures/Lecture16
+  \verb .pdf
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{intro:ieee_tutorial}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ergen}{E.}%
+     {Mustafa}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EM1}
+  \strng{fullhash}{EM1}
+  \field{title}{IEEE 802.11 Tutorial}
+  \field{year}{2002}
+\endentry
+
+\entry{intro:netgear_wep}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Netgear}{N.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{N1}
+  \strng{fullhash}{N1}
+  \field{title}{WEP Shared Key Authentication}
+  \verb{url}
+  \verb http://documentation.netgear.com/reference/sve/wireless/WirelessNetwork
+  \verb ingBasics-3-09.html
+  \endverb
+  \field{year}{2001}
+\endentry
+
+\entry{intro:wiki_wpa}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{title}{Wi-Fi Protected Access}
+  \verb{url}
+  \verb http://en.wikipedia.org/wiki/Wi-Fi_Protected_Access
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{intro:bbc_flashlight_app}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {News}{N.}%
+     {BBC}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{NB1}
+  \strng{fullhash}{NB1}
+  \field{title}{Data haul by Android Flashlight app 'deceives' millions}
+  \verb{url}
+  \verb http://www.bbc.co.uk/news/technology-25258621
+  \endverb
+\endentry
+
+\entry{intro:evercookie}{misc}{}
+  \verb{url}
+  \verb http://samy.pl/evercookie/
+  \endverb
+\endentry
+
+\entry{intro:unique_browser}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Eckersley}{E.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EP1}
+  \strng{fullhash}{EP1}
+  \field{title}{Data haul by Android Flashlight app 'deceives' millions}
+  \verb{url}
+  \verb https://panopticlick.eff.org/browser-uniqueness.pdf
+  \endverb
+\endentry
+
+\entry{intro:twitter_home_location}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {JALAL~MAHMUD}{J.~M.}%
+     {et~al}{e.~a.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JMea1}
+  \strng{fullhash}{JMea1}
+  \field{title}{Home Location Identification of Twitter Users}
+  \verb{url}
+  \verb http://arxiv.org/ftp/arxiv/papers/1403/1403.2345.pdf
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{intro:room_641a}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{title}{Room 641A}
+  \verb{url}
+  \verb http://en.wikipedia.org/wiki/Room_641A
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{research:crc_wiki}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{title}{Cyclic Redundancy Check}
+  \verb{url}
+  \verb en.wikipedia.org/wiki/Cyclic_redundancy_check
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{research:wep}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{title}{Wired Equivalent Privacy}
+  \verb{url}
+  \verb http://en.wikipedia.org/wiki/Wired_Equivalent_Privacy
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
