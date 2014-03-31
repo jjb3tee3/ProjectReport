@@ -1,3 +1,41 @@
-\section{CONCLUSION}
+\section{Conclusion}
+\subsection{Defending Against Attacks}
+Probe request frames are broadcast depending on what is in the preferred network list. This is what opens up smartphones to attack from such methods as undertaken in this project. Different mobile operating systems handle this list in different ways. For example, Android allows the user access to this list, and the ability to remove networks from it. Once removed from the list, the phone no longer broadcasts probe request frames for that SSID. iOS; however, does not allow access to this list and will broadcast frames for any previously connected SSID, unless the user disconnected from the network using the Forget This Network button available in the WiFi settings screen.
+
+Proper management of this list would help the user to prevent this attack, or at the very least allow the user to make an informed decision about what network their phone is attempting to connect to. There a number of ways that you could implement this, at both application and root level, and below I have detailed a few.
+
+\subsubsection{Application Level}
+Being able to offer protection, or at the least information, at application level allows users with little knowledge to better protect themselves against malicious users. Ultimately, there is only so much you can do at this level, and all of the solutions require user interpretation.
+
+\subsubsection*{Verification On Connection}
+One method would be to develop an application that ran as a service, storing information about each access point as the device connects to a network. The stored information would include the mac address of the access point that it has connected to, verified by the user, which would then allow the application to flag up any instances whereby the  device attempts to connect to a network with the same SSID where the mac address had changed.
+
+This would work well on uniquely named IBSSs in a home setting, although it would become an issue if the device were to connect to a large ESS and were to roam between each AP. On each connection the user would have to verify the different mac address. The biggest issue this  is the simplicity in which a mac address can be spoofed. If the attacker were to be near the actual AP it would be trivial to find the real mac address and subsequently ensure any frames sent were from that address.
+
+\subsubsection*{Geotagging of Access Points}
+An extension on the previously detailed application would be to add geotagging to the stored access point information as it would allow the user to be notified when they are trying to connect to a network, for example, in Bristol that they usually do in Aberystwyth.
+
+\subsubsection*{The Best Method}
+Overall the best course of action to take would be educating users on the importance of protecting their data, even that which they do not consider to be particularly sensitive can allow a foreign entity to profile and uniquely identify them. As we move towards advertisements as a means of sustaining internet businesses, and the consumer as the product business model (a la Facebook), it is imperative that we provide the necessary information to allow users to retain their privacy. 
+
+\subsection{Monitoring Probe Requests for Good}
+There are applications of this technique that can be used for non-malicious purposes, particularly in data analysis.
+
+\subsection{Securing the Internet}
+\begin{verbatim}
+"We have built an insecure internet for everyone. We have enabled the Panopticon.”
+- Bruce Schneier
+\end{verbatim}
+It is widely acknowledged that cryptography can allow us to undo the damage that has been brought to light through the leaked documents because of the headache it causes surveillance agencies. Through-out this report I have mentioned new protocols and standards that are being developed in response to the expanding usage of WiFi.
+
+That is, of course, until the race between quantum computing memory size and encryption.
+
+\subsection{Project Extensions}
+\subsubsection{Quadcopters}
+Toward the end of writing this report a security research company unveiled their honeypot quadcopter device. This has the ability of being flown over a location, capturing devices, and bridging traffic back to a central server so that all traffic may be monitored by one application. This project is very well suited to fulfilling both the examples given that use this for good, but equally for bad. It should be noted; however, that the presence of a quadcopter is somewhat less inconspicuos than small devices planted around an area. 
+
+\subsubsection{Explorations in to Embedded Systems}
+During this project I briefly touched upon porting this application to the Raspberry Pi due to not only its low price point, but Kali's support for ARM meant that doing so would be trivial. Further investigation in to solving the netlink library issue, either by fixing the outdated Lorcon configurator that checks for dependancies, or replacing with a native libpcap implementation.
+
 
 \clearpage

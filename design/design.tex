@@ -1,36 +1,26 @@
-\section{DESIGN}
-\subsection{UML}
-\begin{sequencediagram}
-\newthread{t}{:Thread}
-\newinst[1]{i}{:Instance}
-\begin{call}{t}{function()}{i}{return value}
-\end{call}
-\end{sequencediagram}
+\section{Design}
+\subsection{Overall System Architecture}
+\begin{figure}[h!]
+\centering\includegraphics{design/figures/overall.png}
+\caption{Overall system architecture.}
+\end{figure}
+A soft access point is created on the detection of a valid, open encryption, probe request, and the network traffic is bridged to an actual network to ensure that the user is still able to access the internet, and the attacker can monitor passing traffic.
 
-\begin{center}
-\begin{tikzpicture}[scale=0.2]
-\tikzstyle{every node}+=[inner sep=0pt]
-\draw [black] (13.6,-37.6) circle (7);
-\draw (13.6,-37.6) node {$Monior\mbox{ }Packets$};
-\draw [black] (30.8,-24) circle (3);
-\draw [black] (15.95,-35.74) -- (28.45,-25.86);
-\fill [black] (28.45,-25.86) -- (27.51,-25.96) -- (28.13,-26.75);
-\end{tikzpicture}
-\end{center}
+\subsection{Class Diagrams}
+\subsubsection{Android Game}
+The Android game design is relatively simple. It consists of two classes that inherit from the libgdx screen class, with the GameScreen class holding the GameRenderer and GameWorld which renders and holds the game state respectively doing the majority of the work.
+\clearpage
+\begin{figure}[h!]
+\centering\includegraphics{design/figures/ag-cd.png}
+\caption{Android game class diagram.}
+\end{figure}
 
+\subsection{Android Location Provider}
+To successfully use platform specific functionality within the libgdx game environment an interface needs to be created to allow use of the functions. More detail on this can be found in the implementation section; however, below details the classes required to provide the game with the ability to get location information from the Android device.
 
+\begin{figure}[h!]
+\centering\includegraphics{design/figures/ag-lp-cd.png}
+\caption{Android game libgdx location interface.}
+\end{figure}
 
-
-\begin{center}
-\begin{tikzpicture}[scale=0.2]
-\tikzstyle{every node}+=[inner sep=0pt]
-\draw [black] (16.6,-23.4) circle (3);
-\draw [black] (30.1,-18.3) circle (3);
-\draw [black] (19.41,-22.34) -- (27.29,-19.36);
-\fill [black] (27.29,-19.36) -- (26.37,-19.18) -- (26.72,-20.11);
-\end{tikzpicture}
-\end{center}
-
-\includegraphics[width=\linewidth]{design/figures/flowchart-1.png}
-\includegraphics[width=\linewidth]{design/figures/monitorloop-umlsm.png}
 \clearpage

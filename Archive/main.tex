@@ -5,7 +5,7 @@
 \usepackage{lastpage}
 \usepackage{titlesec}
 \usepackage{lipsum}
-\usepackage[style=ieee,backend=bibtex]{biblatex}
+\usepackage[style=ieee]{biblatex}
 \usepackage{pgf-umlsd}
 \usepackage{pgf-umlcd}
 \usepackage{tikz}
@@ -14,16 +14,15 @@
 \usepackage{fancyhdr}
 \usepackage{setspace}
 
-%\addbibresource{ref.bib}
-%\bibliographystyle{ieee}
-\bibliography{references.bib}
+\addbibresource{ref.bib}
+
 % Paragraph styling. Removes indent and adds newline between paras
 \setlength\parindent{0pt}
 \setlength{\parskip}{\baselineskip}
 
 % UWE document standard styling:
 %	1.5 spaces
-%\onehalfspacing
+\onehalfspacing
 
 % Page header, adds draft message and current section num & name
 \fancyhf{}

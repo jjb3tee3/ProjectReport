@@ -3,7 +3,6 @@ This requirement specification uses keywords to indicate requirement levels as d
 
 The requirements are split into separate sections that define the hardware and software that are required to interact with the application, the user interface 
 
-
 \subsection{Scope}
 The requirements put forth are for the Honeypot application that will be used to create spoofed access points based on probe request frames broadcast from passing mobile wireless devices. The fake AP will have its traffic bridged to a real AP on the host device to allow HTTP traffic to be captured and analysed. The goal of this application is to examine the HTTP traffic and analyse unencrypted packets from advertising frameworks to gain information about the user.
 
@@ -20,7 +19,7 @@ The honeypot application requires a wireless adaptor that conforms to the standa
 
 A laptop will be required to run the application, and it will need at least one spare USB port for the wireless adaptor to be plugged in to and a spare ethernet port to connect to a wireless router.
 
-The wireless network must have its SSID hidden, must have no encryption and must be connected to the laptop via ethernet cable. This is required so that the spoofed AP may bridge its traffic and the users of the spoofed AP will be able to access the internet
+The wireless network must have its SSID hidden, must have no encryption and must be connected to the laptop via ethernet cable. This is required so that the spoofed AP may bridge its traffic and the users of the spoofed AP will be able to access the internet.
 
 \subsubsection{Software Interfaces}
 The application must run on Backtrack 5 Revision 3 (B5R3) which is available from the Backtrack website[1]. The application may run on Kali Linux which is a derivative of Backtrack developed by the same team, but with a Red Hat foundation instead of Debian.
@@ -40,22 +39,25 @@ This application must only be run only in controlled wireless lab conditions due
 
 The application will require the host machine to be connected to an internet source via ethernet in order for it to successfully bridge traffic.
 
-
 \subsubsection{Functional Requirements}
 \subsubsection*{Honeypot Application}
 The application must:-
 \begin{itemize}
-	\item Take user defined parameters:
+	\item Capture beacon packets from nearby WiFi devices.
+	\item Display packet details
 		\begin{itemize}
 			\item Source MAC address
 			\item SSID Name
 		\end{itemize}
-	\item Filter packets based on source MAC
-	\item Filter relevant packets based on SSID
-	\item Capture probe request frames from nearby WiFi devices
-	\item Respond with probe response packet
+	\item Respond with authorisation packet
 	\item Handshake with WiFi device
 	\item Bridge traffic from soft AP to real AP
+\end{itemize}
+
+The application may:-
+\begin{itemize}
+\item Filter beacon packets by source MAC address
+\item Filter beacon packets by SSID
 \end{itemize}
 
 \subsubsection{Constraints}
@@ -65,39 +67,18 @@ The application will not be able to perform the honeypot attack on mobile device
 It is assumed that the Operating System running on the Virtual Machine will have access to the network that the host machine is connected to through a bridge.
 
 \subsection{Specific Requirements}
-\subsubsection{Honey Pot Application}
-\subsubsection*{Take user defined parameters}
+Take user defined parameters
 
 The application shall accept a MAC address to filter the the received packets to ensure that data capturing is limited to devices owned by the user testing the application. It should also accept an SSID to filter the probe request frames to ease testing from multiple devices.
  
-\subsubsection*{Filter packets based on source MAC}
-Explain.
+Filter packets based on source MAC
 
-\subsubsection*{Filter packets based on SSID}
-Explain.
+FLOW OF EXECUTION DRAWING
 
-\subsubsection*{Capture and parse probe request frames}
-Explain.
 
-\subsubsection*{Allow device to connect to spoof access point}
-Explain.
+Filter packets based on SSID
 
-\subsubsection*{Bridge traffic from the mobile device}
-Explain.
+Capture and parse probe request frames
 
-\subsubsection*{Parse HTTP traffic from the Android application}
-Explain.
-
-\subsubsection*{Make information available to the support application through TCP}
-Explain.
-
-\subsubsection{Android Application}
-\subsubsection*{Must emulate a popular mobile game}
-Explain.
-\subsubsection*{Must capture and send personal information}
-Explain.
-\subsubsection*{Must capture and send location information}
-Explain.
-\subsubsection*{Must send data unencrypted across the netwok}
-Explain.
+Create spoof AP
 \clearpage
