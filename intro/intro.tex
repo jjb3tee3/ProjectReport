@@ -7,7 +7,6 @@ Not only are these public entities monitoring communications themselves \cite{in
 
 Mobile wireless devices, by design, monitor and transmit specific frames in order to discover WiFi networks to transfer data over in an attempt to lower that sent over the cellular network. Devices will probe for previously used wireless access points by periodically emitting probe request frames to determine whether the access point is in range. Access points will attempt to make this process simpler by periodically emitting beacon frames to announce their presence and capabilities.
 
-\clearpage
 \subsubsection{802.11 Standard and Task Groups}
 802 was devised by the IEEE (Institute of Electrical and Electronic Engineers) LMSC (LAN/MAN Standards Commitee) in February, 1980 \cite{intro:ieee_decrypted}, as a project containing working groups that define standard practices and specifications. The 802.11 specification is for implementing WLAN (Wireless Area Network) communication at the MAC (Media Access Control) level. 
 
@@ -31,19 +30,13 @@ Mobile wireless devices, by design, monitor and transmit specific frames in orde
 	\end{tabular}
 \end{center}
 \end{table}
-
+\clearpage
 \subsubsection{802.11 Key Terms}
 
 The 802.11 specification defines a number of components that make up various network architectures \cite{intro:80211_lecture}, which shall be referenced through the document.
 
 \subsubsection*{Station}
-A device that has the ability to connect to the wireless access point using the 802.11 protocol. For example, a desktop PC, laptop, smart phone, etc. The specification formally defines a station as:
-
-\begin{center}
-\quote Any device that contains an IEEE 802.11-conformant medium access control (MAC) and physical layer (PHY) interface to the wireless medium (WM).
-\end{center}
-
-Station is often interchangeably referred to as a node or client and can be either fixed, or mobile.
+A device that has the ability to connect to the wireless access point using the 802.11 protocol. For example, a desktop PC, laptop, smart phone, etc. Station is often interchangeably referred to as a node or client and can be either fixed, or mobile.
 
 \subsubsection*{Access Point}
 Access points are, more often than not, dedicated hardware devices that act as the central receiver and transmitter of a wireless network. Some wireless adapters have the ability to act as soft access points, which is how, for example, smartphones are able to become hotspots for devices without an internet connection.
@@ -57,13 +50,13 @@ A BSS is a group of stations that are connected to an access point which is conn
 \caption{An example BSS.}
 
 \end{figure}
-\newpage
+
 \subsubsection*{Base Service Set Identification (BSSID)}
 The unique identifier given to a BSS, in an infrastructure BSS this is the MAC address of the access point. In an ad hoc network (IBSS), with no governing access point, it is random and administered by the starting station \cite{intro:ieee_tutorial}.
 
 \subsubsection*{Service Set Identification (SSID)}
 The human readable  string given to a BSS, chosen by the access point, that is broadcasted in beacon and probe frames.
-\newpage 
+
 \begin{figure}[htb!]
 \centering\includegraphics{intro/diagrams/ssid.png}
 \caption{An SSID as displayed in Windows network manager.}
@@ -80,7 +73,7 @@ An ESS is a group of two or more infrastructure BSS that share the same SSID and
 
 \subsubsection{802.11 Security}
 
-The 802.11 is an inherently insecure \cite{intro:80211_lecture} base on which a large majority of enterprise applications are founded upon. Attempts have been made to secure networks by using various types of encryption, for example Wired Equivalent Policy (WEP) \cite{intro:netgear_wep} and WiFi Protected Access (WPA) \cite{intro:wiki_wpa}, however these standards only encrypt the data portion of the exchange. Management frames are left open and unencrypted which offers opportunity for exploitation in a number of ways- in which I go in to more detail in section \ref{sec:attacks}- from getting unsuspecting users to connect to a faked access point (page \pageref{sec:spoofap}) to collecting data based on access points a mobile device has connected to through the period beacon frames (page \pageref{sec:honeypot}).
+The majority of 802.11 amendments are an inherently insecure \cite{intro:80211_lecture} base, on which a large majority of enterprise applications are founded upon. Attempts have been made to secure networks by using various types of encryption, for example Wired Equivalent Policy (WEP) \cite{intro:netgear_wep} and WiFi Protected Access (WPA) \cite{intro:wiki_wpa}, however these standards only encrypt the data portion of the exchange. Management frames are left open and unencrypted which offers opportunity for exploitation in a number of ways- in which I go in to more detail in section \ref{sec:attacks}- from getting unsuspecting users to connect to a faked access point (page \pageref{sec:spoofap}) to collecting data based on access points a mobile device has connected to through the period beacon frames (page \pageref{sec:honeypot}).
  
 \subsubsection{Leaky Applications}
 
@@ -100,16 +93,16 @@ Social media websites, such as Facebook and Twitter, strip any Exif data \cite{i
 
 Wiretapping in this instance can refer to either a higher body monitoring traffic, or a malicious user performing a man in the middle attack on the wireless network. If, for example, the photo is sanitized on the client side, this means that Exif data is not transmitted and is not susceptible to wiretapping; however, if this action is performed server side, for example by using PHP to create a new image from the old one, then the Exif data is transmitted and is open to monitoring. There is an argument brewing in creative industries that stripping the Exif data destroys any copyright information the picture may be able to carry as they often manage this data to allow them to detect when their image is being used without their permission.
 
-There has been a recent shift to move to forcing HTTPS by default on websites as a way of deterring Joe Bloggs from attempting attacks on open encrypted networks. It encrypts any traffic to and from the client using SSL, and prevents MITM attacks, although if HTTPS is only used during the login stage of a website to gain access, and then reverts back to HTTP and sends session data, the session can still be hijacked.
+There has been a recent shift to move to forcing HTTPS by default on websites as a way of deterring Joe Bloggs from attempting attacks on open encrypted networks. It encrypts any traffic to and from the client using SSL, thus detering MITM attacks. Although if HTTPS is only used during the login stage of a website to gain access, and then reverts back to HTTP and sends session data, the session can still be hijacked.
 
 Angry Birds hit the headlines when it was named in one of the NSA/GCHQ releases as an application they can exploit to gain user data. Being an incredibly popular game, it demonstrates the ease in which users can be coerced into allowing applications access to their data.
-
+\newpage
 \subsubsection{Culmination}
 
 This project takes inspiration from the information detailed above. It sets out to develop an application that analyses probe request frames and sends spoofed probe response frames in order to establish itself as an access point for any devices that have previously connected to unencrypted networks. Alongside this an Android game will be developed that intentionally leaks personal and location data unencrypted across the network. This will then be combined with the first application to demonstrate how apps can broadcast your personal data, unknowing to you, to an attacker as you pass by.
 
 \subsection{Objectives}
-This aim of this project to expose the inherent security vulnerability that unencrypted networks leave behind on a mobile wireless device's preferred network list whilst they pass by in the pocket of the owner. This will be achieved by developing software capable of responding to 802.11 probe request frames emitted by roaming smartphones in an attempt to masquerade as the requested access point. To solidify the point, a leaky Android application will send personal data and location data to a server unencrypted, which can then be monitored by the application or wireshark.
+The aim of this project to expose the inherent security vulnerability that unencrypted networks leave behind on a mobile wireless device's preferred network list whilst they pass by in the pocket of the owner. This will be achieved by developing software capable of responding to 802.11 probe request frames emitted by roaming smartphones in an attempt to masquerade as the requested access point. To solidify the point, a leaky Android application will send personal data and location data to a server unencrypted, which can then be monitored by the application or wireshark.
 
 Once a connection with a device has been established the laptop running the software will create a bridge between the soft access point and the hardware to allow for traffic to pass normally, and HTTP traffic to be analysed. The security vulnerabilities will be demonstrated by an Android game, similar to one in the top charts currently, that has been written with the sole intention of leaking data. 
 

@@ -1,7 +1,36 @@
 \subsection{Low-Level Libraries}
 \subsubsection{libpcap}
+libpcap was developed by the Network Research Group at Lawrence Berkeley Laboratory, it is the low-level packet capturing code from tcpdump taken and put in to a library.  
 \subsubsection{LORCON}
-LORCON is an open source networking tool used for monitoring and injecting IEEE 802.11 frames [1] that emerged as a result of a talk in 2002 that put forward and discussed the issues current tools had with code duplication due to implementing their own methods of packet capture and injection, and lack of support for drivers that weren’t included in the tool [2]. It has bindings available in Ruby (ruby-lorcon) and Python (PyLorcon2) that are useful for rapid prototyping and testing wireless chipsets to determine whether they are compatible.
+LORCON is an open source 802.11 frame monitoring and injection library that sets out to abstract the driver specific functionality required to allow the developer to easily develop network penetration applications. It came into being after it was identified that when writing tools it required a rewrite each time raw transmission was figured out for a new driver.
+
+It completely abstracts any driver level interaction by allowing the developer to call functions such as:
+
+\begin{verbatim}
+driver = lorcon_auto_driver(interface);
+context = lorcon_create(interface, driver);
+lorcon_open_inject(context);
+\end{verbatim}
+
+Which is all that is required to set a driver in to injection/monitor mode- assuming it is supported.
+
+Similar to libpcap- due to LORCON using libpcap- you can then pass a callback to the lorcon loop which will be called each time a packet is received.
+
+\begin{verbatim}
+lorcon_loop(context, count, callback, NULL);
+\end{verbatim}
+
+Packets are parsed once received and all data is easily accessable through defined structures. It also includes extra information for 802.11 frames that it captures, which makes it ideal for the the capture and injecting part of the honeypot application. For example, to determine whether the packet we've captured is of a certain type we're interested on we can simply switch on:
+\begin{verbatim}
+ *extra = packet->extra_info;
+
+ switch(extra->type) {
+ 	case 80211_MNGMNT:
+ 		 switch(extra->subtype) {
+ 		 	case 80211_PROBE_REQ:
+ ...snip...
+\end{verbatim}
+Lorcon is able to run on BackTrack and Kali, meaning that it can be used on Kali's ARM distribution with a little modification of the build process. This is out of the scope of the main project; however, will be considered in the conclusion. It also has bindings available in Ruby (ruby-lorcon) and Python (PyLorcon2) that are useful for rapid prototyping and testing wireless chipsets to determine whether they are compatible.
 
 %\begin{verbatim}
 %[1] http://en.wikipedia.org/wiki/Lorcon

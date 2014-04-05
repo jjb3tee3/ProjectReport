@@ -5,11 +5,11 @@ The requirements are split into separate sections that define the hardware and s
 
 
 \subsection{Scope}
-The requirements put forth are for the Honeypot application that will be used to create spoofed access points based on probe request frames broadcast from passing mobile wireless devices. The fake AP will have its traffic bridged to a real AP on the host device to allow HTTP traffic to be captured and analysed. The goal of this application is to examine the HTTP traffic and analyse unencrypted packets from advertising frameworks to gain information about the user.
+The requirements put forth are for the Honeypot application that will be used to create spoofed access points based on probe request frames broadcast from passing mobile wireless devices, and the Android application that leaks personal data. The fake AP will have its traffic bridged to a real AP on the host device to allow HTTP traffic to be captured and analysed. The goal of this application is to examine the HTTP traffic and analyse unencrypted packets from advertising frameworks to gain information about the user.
 
 \subsection{Overall Requirements}
 \subsubsection{User Interfaces}
-Due to the application needing to be run in a high traffic area to make it as effective as possible it will need to be run on a laptop with the Operating System either installed as the primary, or run in a Virtual Machine.
+Due to the application needing to be run in a high traffic area to make it as effective as possible it will need to be run on a laptop. The Operating System may either installed as the primary, or, run in a Virtual Machine.
 
 The application will have no graphical user interface (GUI) and will provide relevant, contextual, information to the user through a simple console interface. Relevant information is defined below as part of the functional requirements. Usage of the application will require some prior knowledge of the 802.11 standard and its naming conventions.
 
@@ -23,7 +23,7 @@ A laptop will be required to run the application, and it will need at least one 
 The wireless network must have its SSID hidden, must have no encryption and must be connected to the laptop via ethernet cable. This is required so that the spoofed AP may bridge its traffic and the users of the spoofed AP will be able to access the internet
 
 \subsubsection{Software Interfaces}
-The application must run on Backtrack 5 Revision 3 (B5R3) which is available from the Backtrack website[1]. The application may run on Kali Linux which is a derivative of Backtrack developed by the same team, but with a Red Hat foundation instead of Debian.
+The application must run on Backtrack 5 Revision 3 (B5R3) which is available from the Backtrack website[1]. The application may run on Kali Linux which is a derivative of Backtrack developed by the same team, but with a Debian foundation instead of Red Hat.
 
 The Operating System must be either installed as the primary, or installed on a Virtual Machine. If the Operating System is installed on a Virtual Machine then the virtualisation software used must be VirtualBox V4.3.0 [2]. The network adapter in VirtualBox must be set to bridged and utilize the ethernet adapter of the host laptop.
 

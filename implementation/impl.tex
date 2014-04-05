@@ -1,5 +1,24 @@
 \section{Implementation}
 This section details the process taken to develop the various discrete components. The final implementation has been developed and tested in a controlled environment using a dedicated wireless network in order to meet the the required ethical standards.
+\subsection{Setting up the Workstation}
+The attackers laptop needs to be correctly wired to the network and setup in order to run the applications and perform the attack. 
+
+\subsubsection{Operating System}
+The laptop is running BackTrack 5 Revision 3 in a virtual machine on VirtualBox, on Windows 7.
+
+\subsubsection{Ethernet Connection}
+In order to bridge traffic and allow the compromised device to connect to the internet, the laptop must be attached via ethernet. In this case the laptop is connected to the wireless access point via an ethernet cable, and has it’s network adaptor set to bridged in the VirtualBox network settings.
+
+\subsubsection{IP Forwarding}
+The most important step in this is to ensure that IP forwarding is turned on by doing:
+\begin{verbatim}
+echo 1 > /proc/sys/net/ipv4/ip_forward
+\end{verbatim}
+Otherwise traffic will get lost:
+
+\subsubsection{Interface}
+In order to monitor traffic a monitor interface needs to be created using:
+airmon-ng start wlan0
 
 \subsection{Honeypot Application}
 \subsubsection{Station Association Sequence}
@@ -118,5 +137,41 @@ game.resolver.showToast(gpsResolver.getGPSLatitude());
 \end{verbatim}
 This is displayed using an Android Toast resolver that has been implemented in the same manner.
 
+GPS co-ordinates can be changed in the Emulator, if not running on a device,  through the Dalvik Debug Monitor Service (DDMS) in Eclipse:
+\begin{verbatim}
+telnet localhost 5544 # Emulator port
+geo fix  01.10 10.01
+\end{verbatim}
 
+\subsubsection{Android TCP Client}
+This uses a similar process described above to access Android’s GPS functionality. Any network activity performed in an Android application must be done inside an AsyncTask rather than the UI thread, otherwise delayed activity may result in the application freezing. With this in mind another interface needed to be created to allow the wrapping of a class that extends AsyncTask, as this is in the Android library and inaccessible from libgdx.
+
+The interface this time defines one function that must be implemented:
+\begin{verbatim}
+public boolean send(String msg);
+\end{verbatim}
+
+As the application is, by design, insecure and leaks data the function simply takes a string and sends it, using TCP, to the Bucket server. The message format for data packets is, as described in section \ref{design:tcp-structure}:
+\begin{verbatim}
+MESSAGE_ID:UNIQUE_ID:PAYLOAD
+\end{verbatim}
+
+The android implementation of this, AndroidTcpClient, consists of connection information class level variables and a private inner AsyncTask class that takes a string as a parameter for it’s DoInBackground function, and gives a boolean result, that takes care of the connecting and disconnecting to the server:
+
+\begin{verbatim}
+private class SenderTask extends AsyncTask<String, Void, String>
+\end{verbatim}
+
+Each time a message needs to be sent the AsyncTask connects to the TCP server and then, if successful, sends the message. This way should the server go down during testing, the application need not be restarted each time.
+ 
+An interesting point to note is that for a period of time I could not get any output at the server end. The client application was connecting perfectly well and the server was displaying it’s connection information, but would not receive any data. This turned out to be because the send implementation was using a BufferedWriter and I had forgotten to add in:
+
+\begin{verbatim}
+out.flush();
+out.close();
+\end{verbatim}
+
+after the write, which tells the BufferedWriter to send the data now rather than wait for it to be full.
+
+Again the LeakyBirdGame constructor needs to be updated with the new parameter before it can be used in the game to send data.
 \clearpage
