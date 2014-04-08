@@ -88,11 +88,28 @@ Interestingly, a paper \cite{intro:twitter_home_location} came out recently that
 
 One of the golden nuggets, according to the NSA \cite{intro:angry_leak}, of unencrypted data is a photo upload, ideally to social media, but any endpoint will do. The reason for this is the Exif \cite{intro:exif_wiki} tag data that accompanies the photograph. This can detail various pieces of information on modern smartphones, but most importantly it contains the make and model, datetime stamp and GPS location \cite{intro:wiki_geotag} of the device. These fields are often added by default. 
 
-Social media websites, such as Facebook and Twitter, strip any Exif data \cite{intro:twitter_exif} from uploaded photos in an attempt to preserve the privacy of their users. This can be effective at stopping their users from taking data from photos; however, depending on when during the upload process this takes place it is still susceptible to wiretapping if the user is not transmitting over HTTPS. 
+\begin{figure}[htb!]
+\centering\includegraphics{intro/diagrams/exif-data.png}
+\caption{An application displaying the photo's Exif data.}
+\label{angus}
+\end{figure}
+\clearpage
+
+Figure \ref{angus} shows the information that can be gained, should anyone intercept an image. Pictured is the GPS portion of the data, which includes amongst others, the longitude, latitude, altitude, and even the direction relative to true North. To test the accuracy of the result I put the longitude and latitude in to Google Maps to see where it would plot the point. Figure \ref{gmaps} shows the result. It is the exact location that the photo was taken; the data added without my knowledge.
+
+\begin{figure}[htb!]
+\centering\includegraphics{intro/diagrams/g-maps-location.png}
+\caption{An exact match.}
+\label{gmaps}
+\end{figure}
+
+It is within this self-evident ignorance that the problem with privacy lies. Social media websites, such as Facebook and Twitter, strip any Exif data \cite{intro:twitter_exif} from uploaded photos in an attempt to preserve the privacy of their users. This can be effective at stopping their users from taking data from other peoples photos; however, depending on when during the upload process this takes place it is still susceptible to wiretapping if the user is not transmitting over HTTPS. 
 
 Wiretapping in this instance can refer to either a higher body monitoring traffic \cite{intro:room_641a}, or a malicious user performing a man in the middle attack on the wireless network. If, for example, the photo is sanitized on the client side, this means that Exif data is not transmitted and is not susceptible to wiretapping; however, if this action is performed server side, for example by using PHP to create a new image from the old one, then the Exif data is transmitted and is open to monitoring. There is an argument brewing in creative industries that stripping the Exif data destroys any copyright information the picture may be able to carry as they often manage this data to allow them to detect when their image is being used without their permission.
 
-There has been a recent shift to move to forcing HTTPS by default on websites as a way of deterring Joe Bloggs from attempting attacks on open encrypted networks. It encrypts any traffic to and from the client using SSL, thus detering MITM attacks. Although if HTTPS is only used during the login stage of a website to gain access, and then reverts back to HTTP and sends session data, the session can still be hijacked.
+There has been a recent shift by administrators toward configuring web servers to force HTTPS by default. HTTPS encrypts any traffic, creating a secure channel using the underlying SSL/TLS public key method, making MITM attacks difficult to perform. While the detailed implementation of SSL/TSL is out of the scope of this project, it is interesting to note that in the context of the NSA and GCHQ, the certificate authorities are one of the points of weakness in this method of encryption. 
+
+One of the major issues with HTTPS is using it only during the login stage of a browsing session. This will encrypt traffic that sends passwords, but, once that procedure is complete, the website switches back to the unencrypted HTTP. This still leaves the browser wide open to an attacks such as HTTP cache poisoning. HTTP Cache Poisoning is an attack where for example, a malicious user waits for a HTTP request for a JavaScript file, and then responds with the content and extra malicious code at the end, modifying the HTTP headers to account for the extra information and to ensure that the browser caches the new file. Most modern browsers will warn the user when a website is using mixed content (HTTP and HTTPS).
 
 Angry Birds hit the headlines when it was named in one of the NSA/GCHQ releases as an application they can exploit to gain user data. Being an incredibly popular game, it demonstrates the ease in which users can be coerced into allowing applications access to their data.
 \newpage

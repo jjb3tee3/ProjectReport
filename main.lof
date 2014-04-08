@@ -8,82 +8,86 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4}{\ignorespaces Two BSS making an ESS.}}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces General frame structure.}}{9}
+\contentsline {figure}{\numberline {5}{\ignorespaces An application displaying the photo's Exif data.}}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Start monitor interface.}}{11}
+\contentsline {figure}{\numberline {6}{\ignorespaces An exact match.}}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Wireshark filter.}}{12}
+\contentsline {figure}{\numberline {7}{\ignorespaces General frame structure.}}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Wireshark captured probe request.}}{12}
+\contentsline {figure}{\numberline {8}{\ignorespaces Start monitor interface.}}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Probe request contents.}}{12}
+\contentsline {figure}{\numberline {9}{\ignorespaces Wireshark filter.}}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Wireshark destination MAC address filter.}}{12}
+\contentsline {figure}{\numberline {10}{\ignorespaces Wireshark captured probe request.}}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces Probe response frame}}{12}
+\contentsline {figure}{\numberline {11}{\ignorespaces Probe request contents.}}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Probe response contents.}}{13}
+\contentsline {figure}{\numberline {12}{\ignorespaces Wireshark destination MAC address filter.}}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Association request.}}{13}
+\contentsline {figure}{\numberline {13}{\ignorespaces Probe response frame}}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Association request frame contents.}}{14}
+\contentsline {figure}{\numberline {14}{\ignorespaces Probe response contents.}}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Soft access point bridges traffic to real access point.}}{15}
+\contentsline {figure}{\numberline {15}{\ignorespaces Association request.}}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Soft access point created with the SSID “Biggles”.}}{16}
+\contentsline {figure}{\numberline {16}{\ignorespaces Association request frame contents.}}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces Malicious user monitors and injects data packets in to traffic.}}{16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Soft access point bridges traffic to real access point.}}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces Deauthentication DOS sequence.}}{17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Soft access point created with the SSID “Biggles”.}}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {19}{\ignorespaces List of AP SSIDs in range of the wireless antenna.}}{18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Malicious user monitors and injects data packets in to traffic.}}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {20}{\ignorespaces Changing the interface's channel.}}{18}
+\contentsline {figure}{\numberline {20}{\ignorespaces Deauthentication DOS sequence.}}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {21}{\ignorespaces Sending the deauthentication frame.}}{19}
+\contentsline {figure}{\numberline {21}{\ignorespaces List of AP SSIDs in range of the wireless antenna.}}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {22}{\ignorespaces Nexus 7 disassociating with the Netgear wireless router.}}{19}
+\contentsline {figure}{\numberline {22}{\ignorespaces Changing the interface's channel.}}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {23}{\ignorespaces Station associating with the fake access point.}}{19}
+\contentsline {figure}{\numberline {23}{\ignorespaces Sending the deauthentication frame.}}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {24}{\ignorespaces The smartphone sends a probe request frame which is picked up by the attacker.}}{20}
+\contentsline {figure}{\numberline {24}{\ignorespaces Nexus 7 disassociating with the Netgear wireless router.}}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {25}{\ignorespaces Edimax EW-7811UN wireless adaptor.}}{23}
+\contentsline {figure}{\numberline {25}{\ignorespaces Station associating with the fake access point.}}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {26}{\ignorespaces Alfa AWUS036H wireless adaptor.}}{24}
+\contentsline {figure}{\numberline {26}{\ignorespaces The smartphone sends a probe request frame which is picked up by the attacker.}}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {27}{\ignorespaces Overall system architecture.}}{34}
+\contentsline {figure}{\numberline {27}{\ignorespaces Edimax EW-7811UN wireless adaptor.}}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {28}{\ignorespaces Overall system flow.}}{35}
+\contentsline {figure}{\numberline {28}{\ignorespaces Alfa AWUS036H wireless adaptor.}}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {29}{\ignorespaces Probe request frame parser state machine.}}{36}
+\contentsline {figure}{\numberline {29}{\ignorespaces Overall system architecture.}}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {30}{\ignorespaces Discovering vulnerable device sequence.}}{37}
+\contentsline {figure}{\numberline {30}{\ignorespaces Overall system flow.}}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {31}{\ignorespaces TCP client/server interaction.}}{38}
+\contentsline {figure}{\numberline {31}{\ignorespaces Probe request frame parser state machine.}}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {32}{\ignorespaces Flappy Bird's simple instructions.}}{39}
+\contentsline {figure}{\numberline {32}{\ignorespaces Discovering vulnerable device sequence.}}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {33}{\ignorespaces Android game class diagram.}}{40}
+\contentsline {figure}{\numberline {33}{\ignorespaces TCP client/server interaction.}}{40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {34}{\ignorespaces Android Location Provider class.}}{41}
+\contentsline {figure}{\numberline {34}{\ignorespaces Flappy Bird's simple instructions.}}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {35}{\ignorespaces Android TCP client class diagram.}}{42}
+\contentsline {figure}{\numberline {35}{\ignorespaces Android game class diagram.}}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {36}{\ignorespaces Android TCP client sequence diagram.}}{43}
+\contentsline {figure}{\numberline {36}{\ignorespaces Android Location Provider class.}}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {37}{\ignorespaces Honeypot capturing probe requests.}}{46}
+\contentsline {figure}{\numberline {37}{\ignorespaces Android TCP client class diagram.}}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {38}{\ignorespaces Virtual Access Point created and the client connecting.}}{48}
+\contentsline {figure}{\numberline {38}{\ignorespaces Android TCP client sequence diagram.}}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {39}{\ignorespaces Captured TCP packets from the device to the server.}}{49}
+\contentsline {figure}{\numberline {39}{\ignorespaces Honeypot capturing probe requests.}}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {40}{\ignorespaces Packet contents.}}{49}
+\contentsline {figure}{\numberline {40}{\ignorespaces Virtual Access Point created and the client connecting.}}{50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {41}{\ignorespaces libgdx setup tool.}}{50}
+\contentsline {figure}{\numberline {41}{\ignorespaces Captured TCP packets from the device to the server.}}{51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {42}{\ignorespaces Configuration screen.}}{51}
+\contentsline {figure}{\numberline {42}{\ignorespaces Packet contents.}}{51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {43}{\ignorespaces Eclipse project structure.}}{51}
+\contentsline {figure}{\numberline {43}{\ignorespaces libgdx setup tool.}}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {44}{\ignorespaces Leaky Bird spritesheet.}}{58}
+\contentsline {figure}{\numberline {44}{\ignorespaces Configuration screen.}}{53}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {45}{\ignorespaces Eclipse project structure.}}{53}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {46}{\ignorespaces Leaky Bird spritesheet.}}{61}

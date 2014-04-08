@@ -18,174 +18,174 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.3.5}Profiling Users}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.6}Culmination}{7}
+\contentsline {subsubsection}{\numberline {1.3.6}Culmination}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4}Objectives}{7}
+\contentsline {subsection}{\numberline {1.4}Objectives}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5}Content}{7}
+\contentsline {subsection}{\numberline {1.5}Content}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Research}{8}
+\contentsline {section}{\numberline {2}Research}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}802.11 Overview}{8}
+\contentsline {subsection}{\numberline {2.1}802.11 Overview}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.1}Frame Types}{8}
+\contentsline {subsubsection}{\numberline {2.1.1}Frame Types}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2}General Frame Structure}{9}
+\contentsline {subsubsection}{\numberline {2.1.2}General Frame Structure}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.3}Determining 802.11 Open Association Sequence}{11}
+\contentsline {subsubsection}{\numberline {2.1.3}Determining 802.11 Open Association Sequence}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Attack Vectors}{15}
+\contentsline {subsection}{\numberline {2.2}Attack Vectors}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.1}Spoof Access Point}{15}
+\contentsline {subsubsection}{\numberline {2.2.1}Spoof Access Point}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2}Man in the Middle (MITM)}{16}
+\contentsline {subsubsection}{\numberline {2.2.2}Man in the Middle (MITM)}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.3}Deauthentication Denial of Service}{17}
+\contentsline {subsubsection}{\numberline {2.2.3}Deauthentication Denial of Service}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.4}Evil Twin/Honeypot Attack}{20}
+\contentsline {subsubsection}{\numberline {2.2.4}Evil Twin/Honeypot Attack}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Low-Level Libraries}{22}
+\contentsline {subsection}{\numberline {2.3}Low-Level Libraries}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.1}libpcap}{22}
+\contentsline {subsubsection}{\numberline {2.3.1}libpcap}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2}LORCON}{22}
+\contentsline {subsubsection}{\numberline {2.3.2}LORCON}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Hardware}{23}
+\contentsline {subsection}{\numberline {2.4}Hardware}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1}Wireless Adaptor}{23}
+\contentsline {subsubsection}{\numberline {2.4.1}Wireless Adaptor}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2}Wireless Chipsets}{23}
+\contentsline {subsubsection}{\numberline {2.4.2}Wireless Chipsets}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Operating Systems}{25}
+\contentsline {subsection}{\numberline {2.5}Operating Systems}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.5.1}Backtrack 5 R3}{25}
+\contentsline {subsubsection}{\numberline {2.5.1}Backtrack 5 R3}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.5.2}Kali}{25}
+\contentsline {subsubsection}{\numberline {2.5.2}Kali}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6}Android Game Programming}{26}
+\contentsline {subsection}{\numberline {2.6}Android Game Programming}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.1}libgdx}{26}
+\contentsline {subsubsection}{\numberline {2.6.1}libgdx}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7}Innocuous Information}{27}
+\contentsline {subsection}{\numberline {2.7}Innocuous Information}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8}Legal Issues}{28}
+\contentsline {subsection}{\numberline {2.8}Legal Issues}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Requirements}{29}
+\contentsline {section}{\numberline {3}Requirements}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Scope}{29}
+\contentsline {subsection}{\numberline {3.1}Scope}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Overall Requirements}{29}
+\contentsline {subsection}{\numberline {3.2}Overall Requirements}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}User Interfaces}{29}
+\contentsline {subsubsection}{\numberline {3.2.1}User Interfaces}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Hardware Interfaces}{29}
+\contentsline {subsubsection}{\numberline {3.2.2}Hardware Interfaces}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.3}Software Interfaces}{30}
+\contentsline {subsubsection}{\numberline {3.2.3}Software Interfaces}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.4}Communications Interface}{30}
+\contentsline {subsubsection}{\numberline {3.2.4}Communications Interface}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.5}Operations}{30}
+\contentsline {subsubsection}{\numberline {3.2.5}Operations}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.6}Site Adaptation Requirements}{30}
+\contentsline {subsubsection}{\numberline {3.2.6}Site Adaptation Requirements}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.7}Functional Requirements}{31}
+\contentsline {subsubsection}{\numberline {3.2.7}Functional Requirements}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.8}Constraints}{31}
+\contentsline {subsubsection}{\numberline {3.2.8}Constraints}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.9}Assumptions}{32}
+\contentsline {subsubsection}{\numberline {3.2.9}Assumptions}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Specific Requirements}{32}
+\contentsline {subsection}{\numberline {3.3}Specific Requirements}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Honey Pot Application}{32}
+\contentsline {subsubsection}{\numberline {3.3.1}Honey Pot Application}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Android Application}{33}
+\contentsline {subsubsection}{\numberline {3.3.2}Android Application}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}TCP Server}{33}
+\contentsline {subsubsection}{\numberline {3.3.3}TCP Server}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Design}{34}
+\contentsline {section}{\numberline {4}Design}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Design Overview}{34}
+\contentsline {subsection}{\numberline {4.1}Design Overview}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Overall System Architecture}{34}
+\contentsline {subsection}{\numberline {4.2}Overall System Architecture}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Honeypot}{35}
+\contentsline {subsection}{\numberline {4.3}Honeypot}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}High Level Program Flow}{35}
+\contentsline {subsubsection}{\numberline {4.3.1}High Level Program Flow}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}Parsing Probe Request Frames}{36}
+\contentsline {subsubsection}{\numberline {4.3.2}Parsing Probe Request Frames}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3}Discovering Vulnerable Devices}{36}
+\contentsline {subsubsection}{\numberline {4.3.3}Discovering Vulnerable Devices}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.4}Creating a Fake Access Point}{37}
+\contentsline {subsubsection}{\numberline {4.3.4}Creating a Fake Access Point}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.5}TCP Client}{37}
+\contentsline {subsubsection}{\numberline {4.3.5}TCP Client}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Android Game}{39}
+\contentsline {subsection}{\numberline {4.4}Android Game}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Flappy Bird}{39}
+\contentsline {subsubsection}{\numberline {4.4.1}Flappy Bird}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.2}Leaky Bird Sprite Sheet}{39}
+\contentsline {subsubsection}{\numberline {4.4.2}Leaky Bird Sprite Sheet}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.3}Leaky Bird Class Diagram}{40}
+\contentsline {subsubsection}{\numberline {4.4.3}Leaky Bird Class Diagram}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.4}Android Location Provider}{41}
+\contentsline {subsubsection}{\numberline {4.4.4}Android Location Provider}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.5}TCP Client Provider}{41}
+\contentsline {subsubsection}{\numberline {4.4.5}TCP Client Provider}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.6}TCP Message Structure}{42}
+\contentsline {subsubsection}{\numberline {4.4.6}TCP Message Structure}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}TCP Server}{42}
+\contentsline {subsection}{\numberline {4.5}TCP Server}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}Requirements Matrix}{44}
+\contentsline {subsection}{\numberline {4.6}Requirements Matrix}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1}Honeypot Application}{44}
+\contentsline {subsubsection}{\numberline {4.6.1}Honeypot Application}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2}Android Application}{44}
+\contentsline {subsubsection}{\numberline {4.6.2}Android Application}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.3}Server Application}{44}
+\contentsline {subsubsection}{\numberline {4.6.3}Server Application}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Implementation}{45}
+\contentsline {section}{\numberline {5}Implementation}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Operating System}{45}
+\contentsline {subsection}{\numberline {5.1}Operating System}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Ethernet Connection}{45}
+\contentsline {subsection}{\numberline {5.2}Ethernet Connection}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Setting up the Workstation}{45}
+\contentsline {subsection}{\numberline {5.3}Setting up the Workstation}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Honeypot Application}{46}
+\contentsline {subsection}{\numberline {5.4}Honeypot Application}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.1}Capturing Packets}{46}
+\contentsline {subsubsection}{\numberline {5.4.1}Capturing Packets}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.2}Parsing Probe Requests}{46}
+\contentsline {subsubsection}{\numberline {5.4.2}Parsing Probe Requests}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.3}Creating Probe Responses}{47}
+\contentsline {subsubsection}{\numberline {5.4.3}Creating Probe Responses}{49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.4}Creating a Fake Access Point}{47}
+\contentsline {subsubsection}{\numberline {5.4.4}Creating a Fake Access Point}{49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.5}Monitoring Data Packets}{48}
+\contentsline {subsubsection}{\numberline {5.4.5}Monitoring Data Packets}{50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}Leaky Game}{50}
+\contentsline {subsection}{\numberline {5.5}Leaky Game}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.1}Project Structure}{50}
+\contentsline {subsubsection}{\numberline {5.5.1}Project Structure}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.2}Creating Interfaces}{52}
+\contentsline {subsubsection}{\numberline {5.5.2}Creating Interfaces}{54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.3}Getting the GPS Co-ordinates}{52}
+\contentsline {subsubsection}{\numberline {5.5.3}Getting the GPS Co-ordinates}{54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.4}Android TCP Client}{53}
+\contentsline {subsubsection}{\numberline {5.5.4}Android TCP Client}{55}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{55}
+\contentsline {section}{\numberline {6}Conclusion}{57}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Defending Against Attacks}{55}
+\contentsline {subsection}{\numberline {6.1}Defending Against Attacks}{57}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Monitoring Probe Requests for Good}{56}
+\contentsline {subsection}{\numberline {6.2}Monitoring Probe Requests for Good}{58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Securing the Insecure}{56}
+\contentsline {subsection}{\numberline {6.3}Securing the Insecure}{58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Project Extensions}{56}
+\contentsline {subsection}{\numberline {6.4}Project Extensions}{58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5}The End's Not Near; It's Here}{57}
+\contentsline {subsection}{\numberline {6.5}The End's Not Near; It's Here}{59}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Appendix}{58}
+\contentsline {section}{\numberline {7}Appendix}{61}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Leaky Bird Spritesheet}{58}
+\contentsline {subsection}{\numberline {7.1}Leaky Bird Spritesheet}{61}
