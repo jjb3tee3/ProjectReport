@@ -22,7 +22,7 @@ This script enables SSH as the majority of development and testing was undertake
 \subsection{Honeypot Application}
 Figure \ref{hp-1} shows the Honeypot application running and outputting the probe requests of nearby devices. It's searching for a request from a device that is looking for the TESTAP network.
 
-In this instance the Bucket server is not running, so probe requests are not being sent.
+In this instance the Bucket server is not running, so probe requests are not being transmitted to the server.
 
 \begin{figure}[h!]
 \centering\includegraphics[width=\linewidth]{implementation/figures/hp-running-1.png}
@@ -31,7 +31,7 @@ In this instance the Bucket server is not running, so probe requests are not bei
 \end{figure}
 
 \subsubsection{Capturing Packets}
-Using the Lorcon library we can capture packets and decode them to determine what type they by passing lorcon loop a callback function. The callback which is passed to the lorcon loop takes a packet pointer a parameter, which when called contains the captured frame. 
+Using the Lorcon library we can parse captured packets, and decode them, by passing the lorcon loop function a callback. The callback passed to the lorcon loop takes a packet pointer parameter, which when called contains the captured frame. 
 
 \begin{verbatim}
 void packet_handler(lorcon_t *, lorcon_packet_t *, u_char *);
@@ -73,7 +73,7 @@ return 1;
 }
 \end{verbatim}
 
-At this point, if a valid probe request has been found, the application pre-checks the authentication type of the AP that the device is probing for by sending a probe response and then parses the authentication response checking whether the Authentication Algorithm is set to Open (i.e. 0). This check is performed so that a virtual access point is not created for devices that are probing for encrypted networks, as the application only handles unencrypted networks currently.
+At this point, if a valid probe request has been found, the application pre-checks the authentication type of the AP that the device is probing for by sending a probe response and then parses the authentication response, checking whether the Authentication Algorithm is set to Open (i.e. 0). This check is performed so that a virtual access point is not created for devices that are probing for encrypted networks, as the application only handles unencrypted networks.
 
 \subsubsection{Creating Probe Responses}
 
@@ -85,7 +85,7 @@ lcpf_proberesp(metapack, ap_info.dst_mac, ap_info.src_mac, ap_info.bssid,
 					ap_info.timestamp, ap_info.beacon_int, ap_info.flags);
 \end{verbatim}
 
-The snippet above creates a probe request frame which then needs the required information tags added, as determined through the research in section \ref{research:assoc-seq}:
+The snippet above creates a probe request frame which then needs the required information element tags added, as determined through the research in section \ref{research:assoc-seq}:
 
 \begin{verbatim}
 lcpf_add_ie(metapack, IE_SSID_LEN, ap_info.ssid_len, ap_info.ssid);
@@ -120,7 +120,7 @@ Figure \ref{client-connected} shows the application output when an access point 
 \label{client-connected}
 \end{figure}
 
-Once the application gets to this point it will no longer create virtual access points, as it is purposely limited to one as mentioned in the requirements.
+Once the application gets to this point it will no longer create virtual access points, as it is purposely limited to one, as defined in the requirements.
 
 \subsubsection{Monitoring Data Packets}
 As mentioned previously we need to bridge traffic from the tap interface created by airbase-ng to the wired interface that the Virtualbox host is on. To do this we perform the following steps:
@@ -218,16 +218,17 @@ initialize(new LeakyBirdGame(androidAddition), cfg);
 Remembering to update the constructor of the Game class, then it is ready for use within the application while the game is running. In reality you wouldn’t need something as simple as an addition resolver, this is just to illustrate the steps to take.
 
 \subsubsection{Getting the GPS Co-ordinates}
-The application has been developed to report the players location whilst they are playing the game. This required an interface to be written between Android Java and libgdx so that we could take advantage of Android’s GPS support, as noted in the section prior to this about creating interfaces.
+\label{getting-gps-coords}
+The application has been developed to report the players location whilst they are playing the game. This required an interface to be written between Android Java and libgdx so that we could take advantage of Android's GPS support, as noted in the section prior to this about creating interfaces.
 
-The two functions we need the libgdx side of the application to be able to access are the LocationManager class’s getLatitude and getLongitude. The interface to pass to the LeakyBirdGame initialiser is simply:
+The two functions we need the libgdx side of the application to be able to access are the LocationManager class's getLatitude and getLongitude. The interface to pass to the LeakyBirdGame initialiser is:
 \begin{verbatim}
 public interface GpsResolver {
     public double getGPSLatitude();
     public double getGPSLongitude();
 }
 \end{verbatim}
-It is named resolver due to libgdx being able to create desktop, HTML5 and iOS games from the same source code but with different entry points. Some of these entry points may not have GPS enable so we have to be sure to wrap any calls to this class in a null check. On the Android side we can create a class, AndroidLocationProvider,  that implements this interface and allow the functions to wrap around the two LocationManager calls we need to make in order to get the coordinates. In the constructor of the class we need to get the name of the provider that our game will be using to get the location data, this can either be via GPS or network, the former being finer grained than the latter.
+It is named resolver due to libgdx being able to create desktop, HTML5 and iOS games from the same source code but with different entry points. Some of these entry points may not have GPS enabled so we have to be sure to wrap any calls to this class in a null check. On the Android side we can create a class, AndroidLocationProvider,  that implements this interface and allow the functions to wrap around the two LocationManager calls we need to make in order to get the coordinates. In the constructor of the class we need to get the name of the provider that our game will be using to get the location data, this can either be via GPS or network, the former being finer grained than the latter.
 \begin{verbatim}
 Criteria criteria = new Criteria();
 provider = locationManager.getBestProvider(criteria, false);
@@ -254,7 +255,7 @@ geo fix  01.10 10.01
 \end{verbatim}
 
 \subsubsection{Android TCP Client}
-This uses a similar process described above to access Android’s GPS functionality. Any network activity performed in an Android application must be done inside an AsyncTask rather than the UI thread, otherwise delayed activity may result in the application freezing. With this in mind another interface needed to be created to allow the wrapping of a class that extends AsyncTask, as this is in the Android library and inaccessible from libgdx.
+This uses a similar process described in section \ref{getting-gps-coords} to access Android’s GPS functionality. Any network activity performed in an Android application must be done inside an AsyncTask rather than the UI thread, otherwise delayed activity may result in the application freezing. With this in mind another interface needed to be created to allow the wrapping of a class that extends AsyncTask, as this is in the Android library and inaccessible from libgdx.
 
 The interface this time defines one function that must be implemented:
 \begin{verbatim}

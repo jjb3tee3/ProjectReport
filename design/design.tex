@@ -1,12 +1,12 @@
 \section{Design}
 \subsection{Design Overview}
-The design is split into a number of sections. Firstly I detail the choices for the various hardware components based on the outcome of the results of the research section above, then I move on to the two software components that make up the overall system. We start with the Honeypot application that finds and attacks vulnerable devices, and then move on to looking at the structure of the leaky Android application and how to overcome the problem of using platform specific code within the game. 
+The design is split into a number of sections.Firstly I detail the software components that make up the overall system. Then I go in to detail more detail on each component. We start with the Honeypot application that finds and attacks vulnerable devices, and then move on to looking at the structure of the leaky Android application and how to overcome the problem of using platform specific code within the game, then look at the server application. 
 \subsection{Overall System Architecture}
 The scenario that this project hypothetically aims to work in is in an area with high traffic, such as a Student Union bar, or a busy public transport station. In reality the applications are designed to meet the ethical guidelines set forth at the beginning of the project whereby a user's consent must be gained prior to taking place in any experimentation. Due to this restriction care must be taken within the design to ensure, where appropriate, devices are filtered and ignored on a set of criteria. This criteria may be MAC address of devices broadcasting probe requests or the SSID present in probe requests. As set out in the requirements the filter will be based on the latter of the two proposed, filtering devices based on the SSID they are probing for. In doing so removes the limitation of testing one device at a time- theoretically having to update the MAC address filter for each new device- and allows us to connect multiple devices running different operating systems at the same time to determine the effectiveness of the overall implementation of the honeypot attack. It should be noted that the leaky application, designed to demonstrate the ease in which applications can broadcast personal data unencrypted, will only be available on Android due to the relative simplicity in creating an application for the environment, and availability of devices. 
 
 \begin{figure}[h!]
 \centering\includegraphics[width=\linewidth]{design/figures/overall.png}
-\caption{Overall system architecture- may need to change.}
+\caption{Overall system architecture.}
 \end{figure}
 
 A soft access point is created on the detection of a valid probe request, which is defined as being a request from a device that is looking to reconnect to a network with no authentication method, and the network traffic is then bridged to an actual network to ensure that the user is still able to access the internet, and the attacker can monitor passing traffic.
@@ -18,7 +18,7 @@ Figure \ref{fig:honeypot_flow} details the high level application flow for the h
 
 \begin{figure}[h!]
 \centering\includegraphics{design/figures/honeypot-flow.png}
-\caption{Overall system architecture- may need to change.}
+\caption{Overall system flow.}
 \label{fig:honeypot_flow}
 \end{figure}
 
@@ -34,7 +34,7 @@ One of the requirements is to ensure that the SSID that the application looks fo
 \label{fig:ssid-machine}
 \end{figure}
 
-The application firstly needs to find out whether the SSID is hidden, by checking if then length field in the header is 0, or invalid, by checking if the same field is greater than 255. If it is a valid SSID, it copies the SSID from the packet header and compares it against the defined SSID from the user, and returns a value to the monitor loop. Also included is the TCP client sending data to the server each time it receives a valid SSID. 
+The application firstly needs to find out whether the SSID is hidden, by checking if the length field in the header is 0, or invalid, by checking if the same field is greater than 255. If it is a valid SSID, it copies the SSID value from the packet header and compares it against the defined SSID from the user, then returns a value to the monitor loop. Also included is the TCP client sending data to the server each time it receives a valid SSID. 
 
 \subsubsection{Discovering Vulnerable Devices}
 \label{open-auth}
@@ -60,13 +60,13 @@ As the honeypot application is required to collect data about probe requests bei
 \item SSID the device is looking for
 \end{enumerate}
 
-Due to the simple nature of this the application will concatinate the two string values using a delimiter to enable the server to easily tokenise and parse the message. In this case I have opted to use a comma as the delimiter, giving the message this structure:
+Due to the simple nature of this the application will concatenate the two string values using a delimiter to enable the server to easily tokenise and parse the message. In this case I have opted to use a comma as the delimiter, giving the message this structure:
 
 \begin{verbatim}
 00:de:ad:00:be:ef,Wireless Lab
 \end{verbatim}
 
-As we cannot guarentee the server will be active at all times, the client must connect and disconnect each time it attempts to send data, as pictured in figure \ref{fig:hp_tcp_server}. 
+As we cannot guarentee the server will be active at all times, the client must connect and disconnect each time it attempts to send data, as detailed in figure \ref{fig:hp_tcp_server}. 
 
 \begin{figure}[h!]
 \centering\includegraphics[width=\linewidth]{design/figures/hp-tcp-client.png}
@@ -104,11 +104,12 @@ The Leaky Bird game design, similar to it's parent game,  is relatively simple. 
 \clearpage
 \subsubsection{Android Location Provider}
 \label{design:ag-lp-cd}
-To successfully use platform specific functionality within the libgdx game environment an interface needs to be created to allow use of the functions. More detail on this can be found in the implementation section; however, below details the classes required to provide the game with the ability to get location information from the Android device.
+To successfully use platform specific functionality within the libgdx game environment an interface needs to be created to allow use of the functions. More detail on this can be found in the implementation section; however, figure \ref{alp-class} details the classes required to provide the game with the ability to get location information from the Android device.
 
 \begin{figure}[h!]
 \centering\includegraphics{design/figures/ag-lp-cd.png}
 \caption{Android Location Provider class.}
+\label{alp-class}
 \end{figure}
 
 \subsubsection{TCP Client Provider}
@@ -131,7 +132,7 @@ The interface exposes the send function to the application to allow it to send d
 \newpage
 \subsubsection{TCP Message Structure}
 \label{design:tcp-structure}
-Due to this application leaking data by design, the message protocol does not require any encryption and can be relatively simple. There is only one type of message the application needs to send- data. The packet needs to include a uniquely identifiable value for the device that is running the game in order to track users. As it has relatively simple requirements the packet structure will be the packet type, device unique identifier followed by the payload. The fields will be delimited by a comma to allow the server to tokenize the packet for processing.
+Due to this application leaking data by design, the message protocol does not require any encryption and can be relatively simple. There is only one type of message the application needs to send- data. The packet needs to include a uniquely identifiable value for the device that is running the game in order to track users. As it has relatively simple requirements the packet structure will be the packet type- in case of expansion-, device unique identifier followed by the payload. The fields will be delimited by a comma to allow the server to tokenize the packet for processing.
 
 \subsection{TCP Server}
 The TCP server will be incredibly simple as all that is required is the ability for clients to connect and post information to it. Due to this the server will be implemented in node.js as the LoC it takes to write a a TCP server to this standard is minimal.

@@ -33,7 +33,7 @@ One of the key issues with the 802.11 standard is that management frames are not
 
 \clearpage
 \subsubsection{General Frame Structure}
-Figure \ref{fig:framestructure} below details the contents and size of each field in the general frame structure for an 802.11 packet. A description of the contents are detailed table \ref{table:framefields}, with the frame control segment's fields being detailed in table \ref{table:framecontrol}.
+Figure \ref{fig:framestructure} below details the contents and size of each field in the general frame structure for an 802.11 packet. A description of the contents are detailed in table \ref{table:framefields}, with the frame control segment's fields being detailed in table \ref{table:framecontrol}.
 
 \begin{figure}[h!]
 \centering\includegraphics[width=\linewidth]{research/80211/figures/framestructure.png}
@@ -43,7 +43,7 @@ Figure \ref{fig:framestructure} below details the contents and size of each fiel
 
 	\begin{table}[!h]
 \begin{center}
-	\begin{tabular}{| c |  p{5cm} |}
+	\begin{tabular}{| c |  p{10cm} |}
 		\hline
 		\textbf{Field} & \textbf{Description} \\ \hline
 		Frame Control & Detailed in table \ref{table:framecontrol} on page \pageref{table:framecontrol}.\\ \hline
@@ -60,7 +60,7 @@ Figure \ref{fig:framestructure} below details the contents and size of each fiel
 
 \begin{table}[!h]
 \begin{center}
-	\begin{tabular}{ | c |  p{5cm} | }
+	\begin{tabular}{ | c |  p{10cm} | }
  		\hline
 		\textbf{Protocol} & Identifies the version of the 802.11 MAC protocol. \\ \hline
 		\textbf{Type} & Identifies the group of the frame. \\ \hline
@@ -81,11 +81,11 @@ Figure \ref{fig:framestructure} below details the contents and size of each fiel
 \clearpage
 \subsubsection{Determining 802.11 Open Association Sequence}
 \label{research:assoc-seq}
-In order to create a fake access point for devices that are broadcasting probe requests for previously connected open networks, the application needs to follow the same sequence that a real access point would when responding to probe requests. I need to be able to discern which flags are to be set, and the values to give, in each frame in order for the smartphone to be able to connect, and also find out where the authentication type is revealed. 
+In order to create a fake access point for devices that are broadcasting probe requests for previously connected open networks, the application needs to follow the same sequence that a real access point would when responding to frames. I need to be able to discern which flags are to be set, and the values to give, in each frame in order for the device to connect, and also find out where the authentication type is revealed. 
 
 To watch the association sequence happen in real-time, and determine when in the sequence the authentication type is given, I needed to set up a simple wireless network, and have a wireless adaptor running in monitor mode filtering packets as a smartphone associates with the access point. This method would allow me to utilize wireshark to inspect other elements of the sequence that aren’t necessarily detailed in online sources, such as the various flags set in each frame.
 
-The first step in the process is setting up Backtrack with the Alfa wireless adaptor plugged in, and creating a monitor interface on wlan0 using airmon-ng:
+The first step in the process is setting up BackTrack with the Alfa wireless adaptor plugged in, and creating a monitor interface on wlan0 using airmon-ng:
 
 \begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt1.png}
@@ -93,7 +93,7 @@ The first step in the process is setting up Backtrack with the Alfa wireless ada
 \label{research:80211:bt1}
 \end{figure}
 
-This would allow me to capture traffic as it passes by in wireshark by sniffing on mon0, and filter it down to the frames that I am interested in. To get a first hand look at the sequence I setup the wireless router, gave it a unique SSID, left encryption set to open, noted down it’s mac address, and setup a filter on wireshark that would only report packets with a source address of my iPhone and broadcast as the destination. With this filter in place I could look at the probe request frames sent from my phone as it searched for the access point. This is the start of the association sequence we’re after. It’s from these requests we’ll forge frames to convince the device we are the real AP.
+This would allow me to capture traffic as it passes by in wireshark by sniffing on mon0, and filter it down to the frames that I am interested in. To get a first hand look at the sequence I setup the wireless router, gave it a unique SSID, left encryption set to open, noted down it’s MAC address, and setup a filter on wireshark that would only report packets with a source address of my iPhone and broadcast as the destination. With this filter in place I could look at the probe request frames sent from my phone as it searched for the access point. This is the start of the association sequence we're after. It's from these requests we'll forge frames to convince the device we are the real AP.
 
 \begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt2.png}
@@ -115,7 +115,7 @@ This would allow me to capture traffic as it passes by in wireshark by sniffing 
 \newpage
 This revealed the probe request subtype that the application would need to search incoming packet headers for to determine whether it would need to kick off the sequence to create a fake access point.
 
-The next step was to filter for probe response frames so I could understand how an access point reacts to receiving a probe request, primarily determining which information element fields to set in the management frame.
+The next step was to filter for probe response frames so I could understand how an access point reacts to receiving a probe request, primarily determining which IE fields to set in the management frame.
 
 \begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/80211/figures/bt5.png}
@@ -153,4 +153,4 @@ The next step in the sequence that we are interested in is the association. This
 \label{research:80211:bt8}
 \end{figure}
 
-This is the point I need to get to programmatically before starting the fake access point, as I can ensure that the device is indeed looking for a network with open authentication, thus eliminating any unnecessary connection attempts.
+This is the point I need to get to programmatically before starting the fake access point, as I can ensure that the device is indeed looking for a network with open authentication by checking the related flag, thus eliminating any unnecessary connection attempts.

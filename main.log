@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.28)  8 APR 2014 11:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.28)  8 APR 2014 13:59
 entering extended mode
 **C:/Users/Jake/Documents/GitHub/ProjectReport/main.tex
 (C:/Users/Jake/Documents/GitHub/ProjectReport/main.tex
@@ -869,9 +869,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (C:\Users\Jake\Documents\GitHub\ProjectReport\acknowledgements.tex [1
 
 ])
-(C:\Users\Jake\Documents\GitHub\ProjectReport\main.nls) [2
-
-]
+No file main.nls.
 (C:\Users\Jake\Documents\GitHub\ProjectReport\main.lof
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 3.
@@ -888,82 +886,49 @@ Missing character: There is no ù in font cmr12!
 )
 \tf@lof=\write6
 
-(C:\Users\Jake\Documents\GitHub\ProjectReport\main.lot [3])
+(C:\Users\Jake\Documents\GitHub\ProjectReport\main.lot [2
+
+])
 \tf@lot=\write7
- [4]
-(C:\Users\Jake\Documents\GitHub\ProjectReport\main.toc [5])
+ [3]
+(C:\Users\Jake\Documents\GitHub\ProjectReport\main.toc [4] [5])
 \tf@toc=\write8
- [6] [7]
+ [6]
 (C:\Users\Jake\Documents\GitHub\ProjectReport\intro/intro.tex
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 
-<intro/diagrams/tcpip.png, id=59, 86.57344pt x 107.65219pt>
+<intro/diagrams/tcpip.png, id=56, 86.57344pt x 107.65219pt>
 File: intro/diagrams/tcpip.png Graphic file (type png)
 
 <use intro/diagrams/tcpip.png>
-Package pdftex.def Info: intro/diagrams/tcpip.png used on input line 14.
+Package pdftex.def Info: intro/diagrams/tcpip.png used on input line 15.
 (pdftex.def)             Requested size: 86.57321pt x 107.65192pt.
+ [1
 
-Underfull \hbox (badness 1199) in paragraph at lines 25--25
-[]\OT1/cmr/m/n/12 This amend-ment op-er-ates
- []
-
-
-Underfull \hbox (badness 2547) in paragraph at lines 25--25
-\OT1/cmr/m/n/12 in the 5GHz band with
- []
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 25--25
-\OT1/cmr/m/n/12 a max-i-mum data rate of
- []
-
-
-Underfull \hbox (badness 5175) in paragraph at lines 25--25
-\OT1/cmr/m/n/12 noise of de-vices in the
- []
-
-
-Underfull \hbox (badness 2735) in paragraph at lines 26--26
-\OT1/cmr/m/n/12 ucts that sup-ported this
- []
-
-
-Underfull \hbox (badness 1484) in paragraph at lines 27--27
-[]\OT1/cmr/m/n/12 TGg al-lows for 54Mbit/s
- []
-
-
-Underfull \hbox (badness 2205) in paragraph at lines 28--29
-\OT1/cmr/m/n/12 to 600Mbit/s when usng
- []
-
-[1
-
- <C:/Users/Jake/Documents/GitHub/ProjectReport/intro/diagrams/tcpip.png>]
-[2] <intro/diagrams/bss.png, id=66, 164.11313pt x 218.31563pt>
+ <C:/Users/Jake/Documents/GitHub/ProjectReport/intro/diagrams/tcpip.png>] [2]
+<intro/diagrams/bss.png, id=63, 164.11313pt x 218.31563pt>
 File: intro/diagrams/bss.png Graphic file (type png)
 
 <use intro/diagrams/bss.png>
-Package pdftex.def Info: intro/diagrams/bss.png used on input line 49.
+Package pdftex.def Info: intro/diagrams/bss.png used on input line 50.
 (pdftex.def)             Requested size: 164.11272pt x 218.31508pt.
 
-<intro/diagrams/ssid.png, id=67, 272.51813pt x 297.36093pt>
+<intro/diagrams/ssid.png, id=64, 272.51813pt x 297.36093pt>
 File: intro/diagrams/ssid.png Graphic file (type png)
 
 <use intro/diagrams/ssid.png>
-Package pdftex.def Info: intro/diagrams/ssid.png used on input line 61.
+Package pdftex.def Info: intro/diagrams/ssid.png used on input line 62.
 (pdftex.def)             Requested size: 272.51746pt x 297.3602pt.
  [3
 
  <C:/Users/Jake/Documents/GitHub/ProjectReport/intro/diagrams/bss.png>]
-<intro/diagrams/ess.png, id=71, 346.29375pt x 258.9675pt>
+<intro/diagrams/ess.png, id=68, 346.29375pt x 258.9675pt>
 File: intro/diagrams/ess.png Graphic file (type png)
 
 <use intro/diagrams/ess.png>
-Package pdftex.def Info: intro/diagrams/ess.png used on input line 69.
+Package pdftex.def Info: intro/diagrams/ess.png used on input line 70.
 (pdftex.def)             Requested size: 346.2929pt x 258.96684pt.
  [4 <C:/Users/Jake/Documents/GitHub/ProjectReport/intro/diagrams/ssid.png>] [5 
 <C:/Users/Jake/Documents/GitHub/ProjectReport/intro/diagrams/ess.png>] [6] [7])
@@ -972,55 +937,16 @@ Package pdftex.def Info: intro/diagrams/ess.png used on input line 69.
 (C:\Users\Jake\Documents\GitHub\ProjectReport\research/80211/80211.tex [8
 
 ]
-<research/80211/figures/framestructure.png, id=88, 451.6875pt x 90.3375pt>
+<research/80211/figures/framestructure.png, id=85, 451.6875pt x 90.3375pt>
 File: research/80211/figures/framestructure.png Graphic file (type png)
 
 <use research/80211/figures/framestructure.png>
 Package pdftex.def Info: research/80211/figures/framestructure.png used on inpu
 t line 39.
 (pdftex.def)             Requested size: 483.69687pt x 96.7456pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--51
-[]\OT1/cmr/m/n/12 Four ad-dresses can be
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--51
-\OT1/cmr/m/n/12 the BSSID, trans-mit-ter,
- []
-
-
-Underfull \hbox (badness 1466) in paragraph at lines 53--53
-[]\OT1/cmr/m/n/12 This is the body of the
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 67--67
-\OT1/cmr/m/n/12 in the group; de-ter-mines
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-[]\OT1/cmr/m/n/12 Indicates whether this
- []
-
-
-Underfull \hbox (badness 7221) in paragraph at lines 71--71
-[]\OT1/cmr/m/n/12 Determines whether this
- []
-
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[]\OT1/cmr/m/n/12 Determines whether the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
-[]\OT1/cmr/m/n/12 Identifies whether the
- []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1033,7 +959,7 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 
-<research/80211/figures/bt1.png, id=95, 439.6425pt x 270.25969pt>
+<research/80211/figures/bt1.png, id=92, 439.6425pt x 270.25969pt>
 File: research/80211/figures/bt1.png Graphic file (type png)
 
 <use research/80211/figures/bt1.png>
@@ -1042,17 +968,8 @@ Package pdftex.def Info: research/80211/figures/bt1.png used on input line 91.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
 
-<research/80211/figures/bt2.png, id=96, 331.2375pt x 18.82031pt>
+<research/80211/figures/bt2.png, id=93, 331.2375pt x 18.82031pt>
 File: research/80211/figures/bt2.png Graphic file (type png)
 
 <use research/80211/figures/bt2.png>
@@ -1062,7 +979,7 @@ Package pdftex.def Info: research/80211/figures/bt2.png used on input line 99.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<research/80211/figures/bt3.png, id=97, 453.19313pt x 10.53937pt>
+<research/80211/figures/bt3.png, id=94, 453.19313pt x 10.53937pt>
 File: research/80211/figures/bt3.png Graphic file (type png)
 
 <use research/80211/figures/bt3.png>
@@ -1073,7 +990,7 @@ Package pdftex.def Info: research/80211/figures/bt3.png used on input line 105.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<research/80211/figures/bt4.png, id=98, 453.19313pt x 283.0575pt>
+<research/80211/figures/bt4.png, id=95, 453.19313pt x 283.0575pt>
 File: research/80211/figures/bt4.png Graphic file (type png)
 
 <use research/80211/figures/bt4.png>
@@ -1087,7 +1004,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [11
 
  <C:/Users/Jake/Documents/GitHub/ProjectReport/research/80211/figures/bt1.png>]
- <research/80211/figures/bt5.png, id=103, 334.24875pt x 22.58438pt>
+ <research/80211/figures/bt5.png, id=99, 334.24875pt x 22.58438pt>
 File: research/80211/figures/bt5.png Graphic file (type png)
 
 <use research/80211/figures/bt5.png>
@@ -1095,7 +1012,7 @@ Package pdftex.def Info: research/80211/figures/bt5.png used on input line 121.
 
 (pdftex.def)             Requested size: 483.69687pt x 32.68478pt.
 
-<research/80211/figures/bt6.png, id=104, 453.19313pt x 8.28094pt>
+<research/80211/figures/bt6.png, id=100, 453.19313pt x 8.28094pt>
 File: research/80211/figures/bt6.png Graphic file (type png)
 
 <use research/80211/figures/bt6.png>
@@ -1108,7 +1025,7 @@ g> <C:/Users/Jake/Documents/GitHub/ProjectReport/research/80211/figures/bt4.png
 > <C:/Users/Jake/Documents/GitHub/ProjectReport/research/80211/figures/bt5.png>
  <C:/Users/Jake/Documents/GitHub/ProjectReport/research/80211/figures/bt6.png>]
 
-<research/80211/figures/bt65.png, id=108, 453.19313pt x 315.42844pt>
+<research/80211/figures/bt65.png, id=105, 453.19313pt x 315.42844pt>
 File: research/80211/figures/bt65.png Graphic file (type png)
 
 <use research/80211/figures/bt65.png>
@@ -1116,7 +1033,7 @@ Package pdftex.def Info: research/80211/figures/bt65.png used on input line 137
 .
 (pdftex.def)             Requested size: 483.69687pt x 336.65799pt.
 
-<research/80211/figures/bt7.png, id=109, 453.19313pt x 8.28094pt>
+<research/80211/figures/bt7.png, id=106, 453.19313pt x 8.28094pt>
 File: research/80211/figures/bt7.png Graphic file (type png)
 
 <use research/80211/figures/bt7.png>
@@ -1126,7 +1043,7 @@ Package pdftex.def Info: research/80211/figures/bt7.png used on input line 145.
  [13 <C:/Users/Jake/Documents/GitHub/ProjectReport/research/80211/figures/bt65.
 png> <C:/Users/Jake/Documents/GitHub/ProjectReport/research/80211/figures/bt7.p
 ng>]
-<research/80211/figures/bt8.png, id=113, 453.19313pt x 243.15843pt>
+<research/80211/figures/bt8.png, id=110, 453.19313pt x 243.15843pt>
 File: research/80211/figures/bt8.png Graphic file (type png)
 
 <use research/80211/figures/bt8.png>
@@ -1140,17 +1057,14 @@ Package pdftex.def Info: research/80211/figures/bt8.png used on input line 151.
 (C:\Users\Jake\Documents\GitHub\ProjectReport\research/attackvectors/attackvect
 ors.tex
 (C:\Users\Jake\Documents\GitHub\ProjectReport\research/attackvectors/spoofap.te
-x <research/figures/spoofap.png, id=117, 423.83344pt x 233.37187pt>
+x <research/figures/spoofap.png, id=114, 423.83344pt x 233.37187pt>
 File: research/figures/spoofap.png Graphic file (type png)
 
 <use research/figures/spoofap.png>
 Package pdftex.def Info: research/figures/spoofap.png used on input line 6.
 (pdftex.def)             Requested size: 483.69687pt x 266.34581pt.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
 
-<research/attackvectors/figures/spoofap1.png, id=118, 453.19313pt x 65.49469pt>
+<research/attackvectors/figures/spoofap1.png, id=115, 453.19313pt x 65.49469pt>
 File: research/attackvectors/figures/spoofap1.png Graphic file (type png)
 <use research/attackvectors/figures/spoofap1.png>
 Package pdftex.def Info: research/attackvectors/figures/spoofap1.png used on in
@@ -1170,7 +1084,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [15
 
  <C:/Users/Jake/Documents/GitHub/ProjectReport/research/figures/spoofap.png>] <
-research/figures/mitm.png, id=122, 380.92313pt x 228.10219pt>
+research/figures/mitm.png, id=119, 380.92313pt x 228.10219pt>
 File: research/figures/mitm.png Graphic file (type png)
 
 <use research/figures/mitm.png>
@@ -1186,7 +1100,7 @@ Missing character: There is no ô in font cmr10!
 [16 <C:/Users/Jake/Documents/GitHub/ProjectReport/research/attackvectors/figure
 s/spoofap1.png> <C:/Users/Jake/Documents/GitHub/ProjectReport/research/figures/
 mitm.png>]
-<research/attackvectors/figures/ddos.png, id=128, 283.0575pt x 277.035pt>
+<research/attackvectors/figures/ddos.png, id=125, 283.0575pt x 277.035pt>
 File: research/attackvectors/figures/ddos.png Graphic file (type png)
 
 <use research/attackvectors/figures/ddos.png>
@@ -1195,11 +1109,7 @@ line 9.
 (pdftex.def)             Requested size: 283.0568pt x 277.03432pt.
  [17 <C:/Users/Jake/Documents/GitHub/ProjectReport/research/attackvectors/figur
 es/ddos.png>]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-
-<research/attackvectors/figures/ddos-1.png, id=133, 453.19313pt x 163.3603pt>
+<research/attackvectors/figures/ddos-1.png, id=129, 453.19313pt x 163.3603pt>
 File: research/attackvectors/figures/ddos-1.png Graphic file (type png)
 
 <use research/attackvectors/figures/ddos-1.png>
@@ -1207,7 +1117,7 @@ Package pdftex.def Info: research/attackvectors/figures/ddos-1.png used on inpu
 t line 22.
 (pdftex.def)             Requested size: 483.69687pt x 174.35507pt.
 
-<research/attackvectors/figures/ddos-2.png, id=134, 453.19313pt x 48.93282pt>
+<research/attackvectors/figures/ddos-2.png, id=130, 453.19313pt x 48.93282pt>
 File: research/attackvectors/figures/ddos-2.png Graphic file (type png)
 
 <use research/attackvectors/figures/ddos-2.png>
@@ -1215,7 +1125,7 @@ Package pdftex.def Info: research/attackvectors/figures/ddos-2.png used on inpu
 t line 30.
 (pdftex.def)             Requested size: 483.69687pt x 52.22617pt.
 
-<research/attackvectors/figures/ddos-3.png, id=135, 453.19313pt x 75.28125pt>
+<research/attackvectors/figures/ddos-3.png, id=131, 453.19313pt x 75.28125pt>
 File: research/attackvectors/figures/ddos-3.png Graphic file (type png)
 
 <use research/attackvectors/figures/ddos-3.png>
@@ -1226,7 +1136,7 @@ t line 35.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<research/attackvectors/figures/ddos-4.png, id=136, 453.19313pt x 9.03375pt>
+<research/attackvectors/figures/ddos-4.png, id=132, 453.19313pt x 9.03375pt>
 File: research/attackvectors/figures/ddos-4.png Graphic file (type png)
 
 <use research/attackvectors/figures/ddos-4.png>
@@ -1240,7 +1150,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-<research/attackvectors/figures/ddos-5.png, id=137, 453.19313pt x 65.49469pt>
+<research/attackvectors/figures/ddos-5.png, id=133, 453.19313pt x 65.49469pt>
 File: research/attackvectors/figures/ddos-5.png Graphic file (type png)
 
 <use research/attackvectors/figures/ddos-5.png>
@@ -1259,7 +1169,7 @@ ectors/figures/ddos-2.png>] [19 <C:/Users/Jake/Documents/GitHub/ProjectReport/r
 esearch/attackvectors/figures/ddos-3.png> <C:/Users/Jake/Documents/GitHub/Proje
 ctReport/research/attackvectors/figures/ddos-4.png> <C:/Users/Jake/Documents/Gi
 tHub/ProjectReport/research/attackvectors/figures/ddos-5.png>]
-<research/attackvectors/figures/honeypot.png, id=144, 243.91125pt x 199.49532pt
+<research/attackvectors/figures/honeypot.png, id=141, 243.91125pt x 199.49532pt
 >
 File: research/attackvectors/figures/honeypot.png Graphic file (type png)
  <use research/attackvectors/figures/honeypot.png>
@@ -1272,14 +1182,14 @@ put line 9.
 oneypot.png>])) [21]
 (C:\Users\Jake\Documents\GitHub\ProjectReport\research/lowlevellibs.tex)
 [22] (C:\Users\Jake\Documents\GitHub\ProjectReport\research/hardware.tex
-<research/figures/edimax.png, id=155, 173.14688pt x 125.71968pt>
+<research/figures/edimax.png, id=152, 173.14688pt x 125.71968pt>
 File: research/figures/edimax.png Graphic file (type png)
 
 <use research/figures/edimax.png>
 Package pdftex.def Info: research/figures/edimax.png used on input line 13.
 (pdftex.def)             Requested size: 173.14645pt x 125.71936pt.
 
-<research/figures/alfa.png, id=156, 286.06876pt x 274.77657pt>
+<research/figures/alfa.png, id=153, 286.06876pt x 274.77657pt>
 File: research/figures/alfa.png Graphic file (type png)
 
 <use research/figures/alfa.png>
@@ -1305,26 +1215,7 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 )
-[27] (C:\Users\Jake\Documents\GitHub\ProjectReport\research/legal.tex
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-) [28])
+[27] (C:\Users\Jake\Documents\GitHub\ProjectReport\research/legal.tex) [28])
 (C:\Users\Jake\Documents\GitHub\ProjectReport\requirements/requirements.tex
 [29
 
@@ -1337,14 +1228,14 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
 
 [31] [32] [33]) (C:\Users\Jake\Documents\GitHub\ProjectReport\design/design.tex
-<design/figures/overall.png, id=193, 409.53pt x 134.00063pt>
+<design/figures/overall.png, id=190, 409.53pt x 134.00063pt>
 File: design/figures/overall.png Graphic file (type png)
 
 <use design/figures/overall.png>
 Package pdftex.def Info: design/figures/overall.png used on input line 8.
 (pdftex.def)             Requested size: 483.69687pt x 158.27882pt.
 
-<design/figures/honeypot-flow.png, id=194, 77.53969pt x 377.15906pt>
+<design/figures/honeypot-flow.png, id=191, 77.53969pt x 377.15906pt>
 File: design/figures/honeypot-flow.png Graphic file (type png)
 
 <use design/figures/honeypot-flow.png>
@@ -1356,7 +1247,7 @@ Package pdftex.def Info: design/figures/honeypot-flow.png used on input line 20
  <C:/Users/Jake/Documents/GitHub/ProjectReport/design/figures/overall.png>] [35
  <C:/Users/Jake/Documents/GitHub/ProjectReport/design/figures/honeypot-flow.png
 >]
-<design/figures/valid-ssid.png, id=202, 350.05782pt x 233.37187pt>
+<design/figures/valid-ssid.png, id=198, 350.05782pt x 233.37187pt>
 File: design/figures/valid-ssid.png Graphic file (type png)
 
 <use design/figures/valid-ssid.png>
@@ -1364,7 +1255,7 @@ Package pdftex.def Info: design/figures/valid-ssid.png used on input line 32.
 (pdftex.def)             Requested size: 350.05695pt x 233.37129pt.
  [36 <C:/Users/Jake/Documents/GitHub/ProjectReport/design/figures/valid-ssid.pn
 g>]
-<design/figures/discover-device-seq.png, id=206, 450.18187pt x 289.08pt>
+<design/figures/discover-device-seq.png, id=203, 450.18187pt x 289.08pt>
 File: design/figures/discover-device-seq.png Graphic file (type png)
 
 <use design/figures/discover-device-seq.png>
@@ -1372,7 +1263,7 @@ Package pdftex.def Info: design/figures/discover-device-seq.png used on input l
 ine 44.
 (pdftex.def)             Requested size: 483.69687pt x 310.6182pt.
 
-<design/figures/hp-tcp-client.png, id=207, 415.5525pt x 290.58563pt>
+<design/figures/hp-tcp-client.png, id=204, 415.5525pt x 290.58563pt>
 File: design/figures/hp-tcp-client.png Graphic file (type png)
 
 <use design/figures/hp-tcp-client.png>
@@ -1388,7 +1279,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
  <C:/Users/Jake/Documents/GitHub/ProjectReport/design/figures/discover-device-s
 eq.png>] [38 <C:/Users/Jake/Documents/GitHub/ProjectReport/design/figures/hp-tc
 p-client.png>]
-<design/figures/flappy-b-1.png, id=214, 232.61906pt x 300.3722pt>
+<design/figures/flappy-b-1.png, id=211, 232.61906pt x 300.3722pt>
 File: design/figures/flappy-b-1.png Graphic file (type png)
 
 <use design/figures/flappy-b-1.png>
@@ -1397,7 +1288,7 @@ Package pdftex.def Info: design/figures/flappy-b-1.png used on input line 84.
  [39
 
  <C:/Users/Jake/Documents/GitHub/ProjectReport/design/figures/flappy-b-1.png>]
-<design/figures/ag-cd.png, id=218, 453.19313pt x 478.78876pt>
+<design/figures/ag-cd.png, id=215, 453.19313pt x 478.78876pt>
 File: design/figures/ag-cd.png Graphic file (type png)
 
 <use design/figures/ag-cd.png>
@@ -1406,29 +1297,29 @@ Package pdftex.def Info: design/figures/ag-cd.png used on input line 101.
  [40
 
  <C:/Users/Jake/Documents/GitHub/ProjectReport/design/figures/ag-cd.png>]
-<design/figures/ag-lp-cd.png, id=222, 138.5175pt x 186.6975pt>
+<design/figures/ag-lp-cd.png, id=219, 138.5175pt x 186.6975pt>
 File: design/figures/ag-lp-cd.png Graphic file (type png)
 
 <use design/figures/ag-lp-cd.png>
 Package pdftex.def Info: design/figures/ag-lp-cd.png used on input line 110.
 (pdftex.def)             Requested size: 138.51715pt x 186.69704pt.
 
-<design/figures/tcp-cd.png, id=223, 136.25906pt x 301.125pt>
+<design/figures/tcp-cd.png, id=220, 136.25906pt x 301.125pt>
 File: design/figures/tcp-cd.png Graphic file (type png)
 
 <use design/figures/tcp-cd.png>
-Package pdftex.def Info: design/figures/tcp-cd.png used on input line 119.
+Package pdftex.def Info: design/figures/tcp-cd.png used on input line 120.
 (pdftex.def)             Requested size: 136.25871pt x 301.12425pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<design/figures/tcp-client-sd.png, id=224, 335.75438pt x 289.83281pt>
+<design/figures/tcp-client-sd.png, id=221, 335.75438pt x 289.83281pt>
 File: design/figures/tcp-client-sd.png Graphic file (type png)
 
 <use design/figures/tcp-client-sd.png>
 Package pdftex.def Info: design/figures/tcp-client-sd.png used on input line 12
-6.
+7.
 (pdftex.def)             Requested size: 483.69687pt x 417.54466pt.
 
 
@@ -1449,7 +1340,7 @@ Missing character: There is no ô in font cmr12!
  [45
 
 ]
-<implementation/figures/hp-running-1.png, id=241, 389.95688pt x 143.78719pt>
+<implementation/figures/hp-running-1.png, id=238, 389.95688pt x 143.78719pt>
 File: implementation/figures/hp-running-1.png Graphic file (type png)
 
 <use implementation/figures/hp-running-1.png>
@@ -1459,7 +1350,7 @@ line 28.
  [46
 
  <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/figures/hp-runnin
-g-1.png>]
+g-1.png>] [47]
 <implementation/figures/client-assoc-1.png, id=245, 441.90094pt x 281.55188pt>
 File: implementation/figures/client-assoc-1.png Graphic file (type png)
 
@@ -1467,14 +1358,14 @@ File: implementation/figures/client-assoc-1.png Graphic file (type png)
 Package pdftex.def Info: implementation/figures/client-assoc-1.png used on inpu
 t line 118.
 (pdftex.def)             Requested size: 483.69687pt x 308.19577pt.
- [47] [48 <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/figures/
-client-assoc-1.png>]
+ [48 <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/figures/clien
+t-assoc-1.png>]
 
 LaTeX Warning: File `implementation/figures/wireshark captured.png' not found o
 n input line 150.
 
 
-<implementation/figures/wireshark captured.png, id=253, 597.73312pt x 58.71938p
+<implementation/figures/wireshark captured.png, id=250, 597.73312pt x 58.71938p
 t>
 File: implementation/figures/wireshark captured.png Graphic file (type png)
  <use implementation/figures/wireshark captured.png>
@@ -1482,7 +1373,7 @@ Package pdftex.def Info: implementation/figures/wireshark captured.png used on
 input line 150.
 (pdftex.def)             Requested size: 483.69687pt x 47.51761pt.
 
-<implementation/figures/wireshark-data.png, id=254, 453.94594pt x 103.88812pt>
+<implementation/figures/wireshark-data.png, id=251, 453.94594pt x 103.88812pt>
 File: implementation/figures/wireshark-data.png Graphic file (type png)
 
 <use implementation/figures/wireshark-data.png>
@@ -1494,7 +1385,7 @@ t line 157.
  <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/figures/wireshark
  captured.png> <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/fig
 ures/wireshark-data.png>]
-<implementation/figures/gdx-setup-1.png, id=258, 453.19313pt x 317.68687pt>
+<implementation/figures/gdx-setup-1.png, id=255, 453.19313pt x 317.68687pt>
 File: implementation/figures/gdx-setup-1.png Graphic file (type png)
 
 <use implementation/figures/gdx-setup-1.png>
@@ -1503,7 +1394,7 @@ ine 171.
 (pdftex.def)             Requested size: 483.69687pt x 339.06842pt.
  [50 <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/figures/gdx-s
 etup-1.png>]
-<implementation/figures/gdx-setup-2.png, id=262, 453.19313pt x 317.68687pt>
+<implementation/figures/gdx-setup-2.png, id=259, 453.19313pt x 317.68687pt>
 File: implementation/figures/gdx-setup-2.png Graphic file (type png)
 
 <use implementation/figures/gdx-setup-2.png>
@@ -1511,7 +1402,7 @@ Package pdftex.def Info: implementation/figures/gdx-setup-2.png used on input l
 ine 178.
 (pdftex.def)             Requested size: 483.69687pt x 339.06842pt.
 
-<implementation/figures/gdx-setup-3.png, id=263, 134.00063pt x 97.86563pt>
+<implementation/figures/gdx-setup-3.png, id=260, 134.00063pt x 97.86563pt>
 File: implementation/figures/gdx-setup-3.png Graphic file (type png)
 
 <use implementation/figures/gdx-setup-3.png>
@@ -1523,12 +1414,6 @@ ine 185.
  <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/figures/gdx-setup
 -2.png> <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/figures/gd
 x-setup-3.png>]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
@@ -1567,7 +1452,7 @@ Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
  [57])
 (C:\Users\Jake\Documents\GitHub\ProjectReport\appendix/appendix.tex
-<design/figures/leaky-spritesheet.png, id=286, 1027.84pt x 1027.84pt>
+<design/figures/leaky-spritesheet.png, id=283, 1027.84pt x 1027.84pt>
 File: design/figures/leaky-spritesheet.png Graphic file (type png)
 
 <use design/figures/leaky-spritesheet.png>
@@ -1597,10 +1482,10 @@ AED: lastpage setting LastPage
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 20144 strings out of 493921
- 400024 string characters out of 3144879
+ 20145 strings out of 493921
+ 399957 string characters out of 3144879
  634102 words of memory out of 3000000
- 22967 multiletter control sequences out of 15000+200000
+ 22970 multiletter control sequences out of 15000+200000
  9932 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,12n,80p,1457b,932s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1614,9 +1499,9 @@ es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (
 x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (68 pages, 2020082 bytes).
+Output written on main.pdf (67 pages, 2020819 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
+ 331 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  329 words of extra memory for PDF output out of 10000 (max. 10000000)
 

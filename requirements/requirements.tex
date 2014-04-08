@@ -1,37 +1,37 @@
 \section{Requirements}
-This requirement specification uses keywords to indicate requirement levels as defined in RFC 2119 (appendix X[1]). Consideration has been taken to follow principles outlined in the IEEE Recommended Practice for Software Requirements Specification [2] whilst being mindful that they are included as part of a larger document.
+This requirement specification uses keywords to indicate requirement levels as defined in RFC 2119[1]. Consideration has been taken to follow principles outlined in the IEEE Recommended Practice for Software Requirements Specification [2] whilst being mindful that they are included as part of a larger document.
 
 \subsection{Scope}
-The requirements put forth are for the Honeypot application that will be used to create spoofed access points based on probe request frames broadcast from passing mobile wireless devices, and the Android application that leaks personal data. The requirements are split into separate sections that define the hardware and software requirements for the honeypot application, then moves on to define the specific requirements for the honeypot application itself, and the leaky Android application.
+The requirements set forth are for the Honeypot application that will be used to create spoofed access points based on probe request frames broadcast from passing mobile wireless devices, the Android application that leaks personal data, and server. The requirements are split into separate sections that define the hardware and software requirements for the honeypot application, then moves on to define the specific requirements for the honeypot application itself, the leaky Android application and simple server application.
 
 \subsection{Overall Requirements}
 \subsubsection{User Interfaces}
-The application will have no graphical user interface (GUI) and will provide relevant, contextual, information to the user through a simple console interface. Relevant information is defined below as part of the functional requirements. Usage of the application will require some prior knowledge of the 802.11 standard and its naming conventions.
+The honeypot application will have no graphical user interface (GUI) and will provide relevant, contextual, information to the user through a simple console interface. Relevant information is defined below as part of the functional requirements. Usage of the application will require some prior knowledge of the 802.11 standard and its naming conventions.
 
-Messages displayed to the user must be configurable in terms of debug, information, warning and error. Notification of the desired level should be configurable while starting the application, but not during application execution.
+Messages displayed to the user may be configurable in terms of debug, information, warning and error. Notification of the desired level should be configurable while starting the application, but not during application execution.
 
-Viewing of HTTP data may be performed by an external application, such as Wireshark. Using such an application will require previous experience of creating filters to find the desired traffic.
+Viewing of TCP data may be performed by an external application, such as Wireshark. Using such an application will require previous experience of creating filters to find the desired traffic.
 
 \subsubsection{Hardware Interfaces}
 Due to the application needing to be run in a high traffic area, to make it as effective as possible, it will need to be executed on a laptop. The Operating System may either installed as the primary, or, run in a Virtual Machine.
 
 The honeypot application requires a wireless adaptor that conforms to the standards determined in section \ref{research:hardware}. To summise, they are as follows: possesses the ability to be put into monitor mode to capture traffic on the network, support for packet injection into the network, and support from the chipset manufacturer toward the open source community, as this will give us greater confidence in the drivers for Linux supporting the capabilities required, and working out-of-the-box.
 
-Considering these points, and having used it during the research portion of this project, the Alfa AWUS036H (pictured in figure \ref{research:fig-alfa} on page \pageref{research:fig-alfa}) has been selected as the wireless adaptor. As such, this must be used when implementing the honeypot application.
+Considering these points, and having used it during the research portion of this project, the Alfa AWUS036H (pictured in figure \ref{research:fig-alfa} on page \pageref{research:fig-alfa}) has been selected as the wireless adaptor.
 
 A laptop will be required to run the application, and it will need at least one spare USB port for the wireless adaptor to be plugged in to and a spare ethernet port to connect to a wireless router.
 
 The wireless network must have the SSID hidden, must have no encryption and must be connected to the laptop via ethernet cable. This is required so that the spoofed AP may bridge its traffic and the users of the spoofed AP will be able to access the internet
 
 \subsubsection{Software Interfaces}
-The application must run on Backtrack 5 Revision 3 (B5R3) which is available from the Backtrack website[1]. The application may run on Kali Linux which is a derivative of Backtrack developed by the same team, but with a Debian foundation instead of Red Hat.
+The application must run on Backtrack 5 Revision 3 (B5R3) which is available from the Backtrack website[1]. The application may run on Kali Linux which is a derivative of Backtrack developed by the same team.
 
 The Operating System must be either installed as the primary, or installed on a Virtual Machine. If the Operating System is installed on a Virtual Machine then the virtualisation software used must be VirtualBox V4.3.0 [2]. The network adapter in VirtualBox must be set to bridged and utilize the ethernet adapter of the host laptop.
 
 Air-ng may be utilized to create the spoof access point once the requirements of the AP have been determined. This software suite comes pre-installed on the required Operating System. 
 
 \subsubsection{Communications Interface}
-As this application is designed to exploit vulnerabilities in the 802.11 standard, 802.11 will be required as a protocol. At the higher level HTTP traffic data will be analysed for information.
+As this application is designed to exploit vulnerabilities in the 802.11 standard, 802.11 will be required as a protocol. At the higher level TCP traffic data will be analysed for information.
 
 \subsubsection{Operations}
 Once the application has been started by the user it must be entirely autonomous, acting upon user defined parameters at execution. The only user interaction should be exiting the application, which on signal it shall gracefully exit.
@@ -55,7 +55,7 @@ The application must:-
 		\end{itemize}
 	\item Filter relevant packets based on SSID
 	\item Capture probe request frames from nearby WiFi devices
-	\item Allow device to connect to spoof access poin
+	\item Allow device to connect to spoof access point
 	\item Send probe requests captured to the server
 	\item Determine authentication type of previous network
 	\item Bridge traffic from soft AP to real AP
@@ -91,11 +91,11 @@ This section justifies the requirements and lists them with a numerical value in
 \begin{enumerate}
 \item Take user defined parameters
 
-The application shall accept an SSID to filter the the received probe request frames to ensure that data capturing is limited to devices owned by the user testing the application, but still allow testing of multiple devices at a time. It must also accept the wireless interface that the application is to act upon.
+The application shall accept an SSID to filter the received probe request frames to ensure that data capturing is limited to devices owned by the user testing the application, but still allow testing of multiple devices at a time. It must also accept the wireless interface that the application is to act upon.
 
 \item Filter packets based on SSID
 
-As explained prior to this, the filtering enables the application to run in an ethically sound way.
+As explained prior to this, filtering enables the application to run in an ethically sound way.
 
 \item Capture and parse probe request frames
 
