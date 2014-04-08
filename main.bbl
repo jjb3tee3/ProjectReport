@@ -605,6 +605,20 @@
   \field{year}{2013}
 \endentry
 
+\entry{research:network_programming}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Stevens}{S.}%
+     {W.~Richard}{W.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SWR1}
+  \strng{fullhash}{SWR1}
+  \field{pages}{707}
+  \field{title}{UNIX Network Programming}
+\endentry
+
 \lossort
 \endlossort
 

@@ -16,7 +16,7 @@
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage[parfill]{parskip}
-
+\usepackage{nomencl}
 
 \usepackage{geometry}
  \geometry{
@@ -28,7 +28,8 @@
  bottom=20mm,
  }
 
-
+\makenomenclature
+\renewcommand{\nomname}{List of Abbreviations}
 
 %\addbibresource{ref.bib}
 %\bibliographystyle{ieee}
@@ -56,8 +57,14 @@
 \thispagestyle{empty}
 \input{abstract.tex}
 \input{acknowledgements.tex}
-\input{abbrev.tex}
+%\input{abbrev.tex}
 
+\markboth{\nomname}{\nomname}
+\printnomenclature
+\newpage
+\listoffigures
+\listoftables
+\newpage
 \pagestyle{fancy}
 \cfoot{\thepage}
 \tableofcontents
@@ -72,7 +79,7 @@
 \input{design/design.tex}
 \input{implementation/impl.tex}
 \input{conclusion/conclusion.tex}
-%\input{appendix/appendix.tex}
+\input{appendix/appendix.tex}
 % Bibtex dump
 \printbibliography
 % \cfoot{\thepage\ of \pageref{LastPage}}

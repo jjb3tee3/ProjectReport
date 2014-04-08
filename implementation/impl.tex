@@ -1,59 +1,169 @@
 \section{Implementation}
 This section details the process taken to develop the various discrete components. The final implementation has been developed and tested in a controlled environment using a dedicated wireless network in order to meet the the required ethical standards.
-\subsection{Setting up the Workstation}
-The attackers laptop needs to be correctly wired to the network and setup in order to run the applications and perform the attack. 
 
-\subsubsection{Operating System}
-The laptop is running BackTrack 5 Revision 3 in a virtual machine on VirtualBox, on Windows 7.
+\subsection{Operating System}
+The laptop used to develop and run the application is running BackTrack 5 Revision 3 in a virtual machine on VirtualBox, on Windows 7.
 
-\subsubsection{Ethernet Connection}
+\subsection{Ethernet Connection}
 In order to bridge traffic and allow the compromised device to connect to the internet, the laptop must be attached via ethernet. In this case the laptop is connected to the wireless access point via an ethernet cable, and has it’s network adaptor set to bridged in the VirtualBox network settings.
 
-\subsubsection{IP Forwarding}
-The most important step in this is to ensure that IP forwarding is turned on by doing:
+\subsection{Setting up the Workstation}
+The attackers laptop needs to be correctly wired to the network and setup in order to run the applications and perform the attack. A bash setup script was developed to quickly get the station ready to run the application:
+
 \begin{verbatim}
+#! \bin\bash
+service ssh start
 echo 1 > /proc/sys/net/ipv4/ip_forward
-\end{verbatim}
-Otherwise traffic will get lost:
-
-\subsubsection{Interface}
-In order to monitor traffic a monitor interface needs to be created using:
 airmon-ng start wlan0
+\end{verbatim}
 
+This script enables SSH as the majority of development and testing was undertaken from my desktop PC, enables IP forwarding so we can bridge traffic from the fake access point to the wired network, and then starts a monitor interface from the wlan0 interface. Once this is complete the station is ready to run the honeypot application.
+\clearpage
 \subsection{Honeypot Application}
-\subsubsection{Station Association Sequence}
-Using the Lorcon library it is fairly trivial to capture packets and decode them to determine what type they are once inside the Lorcon loop. The packet capture loop takes a callback which is passed a packet structure. To single out the frame type it is a case of indexing in the right location:
+Figure \ref{hp-1} shows the Honeypot application running and outputting the probe requests of nearby devices. It's searching for a request from a device that is looking for the TESTAP network.
+
+In this instance the Bucket server is not running, so probe requests are not being sent.
+
+\begin{figure}[h!]
+\centering\includegraphics[width=\linewidth]{implementation/figures/hp-running-1.png}
+\caption{Honeypot capturing probe requests.}
+\label{hp-1}
+\end{figure}
+
+\subsubsection{Capturing Packets}
+Using the Lorcon library we can capture packets and decode them to determine what type they by passing lorcon loop a callback function. The callback which is passed to the lorcon loop takes a packet pointer a parameter, which when called contains the captured frame. 
+
+\begin{verbatim}
+void packet_handler(lorcon_t *, lorcon_packet_t *, u_char *);
+\end{verbatim}
+
+To single out the frame type it is a case of indexing in the right location:
 
 \begin{verbatim}
 uint8_t packetType = packet->packet_header[HP_80211_TYPE];
 \end{verbatim}
+
 The lorcon library also offers a struct with extra info on 802.11 packets, which means the subtype could also be accessed as so:
+
 \begin{verbatim}
 struct lorcon_dot11_extra *extra;
 extra = (struct lorcon_dot11_extra *)packet->extra_info;
 \end{verbatim}
+
 And then accessing the subtype field.
 
 Once we have this information we can use a state style switch statement to determine where in the process of the association sequence we are, and react accordingly to incoming packets.
 
-Firstly the application needs to listen for probe request packets in order to get the SSIDs that nearby devices are searching for. This application is limited in that it only reacts to SSIDs in probe requests that match the SSID passed in as a command line argument. The filter is implemented in the\begin{verbatim} parse_probe_request() \end{verbatim}function and simply compares the SSID in the probe request to the SSID given, where \begin{verbatim}ap_info\end{verbatim} is a struct holding information about the virtual access point:
+\subsubsection{Parsing Probe Requests}
+
+Firstly the application needs to listen for probe request packets in order to get the SSIDs that nearby devices are searching for. To capture the SSID from the packet the application copies it from the header, using the SSID length field as an indexer:
+
+\begin{verbatim}
+for(i=0; i<packet->packet_header[HP_80211_P_SSID_LEN]; i++) {
+	ssid[i] = packet->packet_header[HP_80211_P_SSID + i];
+}
+\end{verbatim}
+
+This application is limited in that it only reacts to SSIDs in probe requests that match the SSID passed in as a command line argument. The filter is implemented in the parse probe request function and simply compares the SSID in the probe request to the SSID given, where ap info is a struct holding information about the virtual access point:
+
 \begin{verbatim}
 if(strcmp(ap_info.ssid, ssid) == 0) {
        ap_info.valid_probe = 1;
 return 1;
 }
 \end{verbatim}
+
 At this point, if a valid probe request has been found, the application pre-checks the authentication type of the AP that the device is probing for by sending a probe response and then parses the authentication response checking whether the Authentication Algorithm is set to Open (i.e. 0). This check is performed so that a virtual access point is not created for devices that are probing for encrypted networks, as the application only handles unencrypted networks currently.
 
-When an open network has been discovered, the application forks and creates a virtual access point using airbase-ng and sends another probe response on behalf of the VAP to speed up the process of associating. It is at this point that the application switches to monitoring traffic, as to meet the ethical guidelines set out by the department, only one device is unwittingly caught in the honeypot as I can ensure it is my device.
+\subsubsection{Creating Probe Responses}
+
+To create a probe response packet in lorcon we follow this process:
+
+\begin{verbatim}
+lcpf_proberesp(metapack, ap_info.dst_mac, ap_info.src_mac, ap_info.bssid, 
+					0x00, 0x00, 0x00, ap_info.seq, 
+					ap_info.timestamp, ap_info.beacon_int, ap_info.flags);
+\end{verbatim}
+
+The snippet above creates a probe request frame which then needs the required information tags added, as determined through the research in section \ref{research:assoc-seq}:
+
+\begin{verbatim}
+lcpf_add_ie(metapack, IE_SSID_LEN, ap_info.ssid_len, ap_info.ssid);
+lcpf_add_ie(metapack, IE_RATES, sizeof(rates)-1, rates);
+lcpf_add_ie(metapack, IE_CHANNEL, 1, &channel);
+lcpf_add_ie(metapack, IE_MISC, 1, "\x05");
+lcpf_add_ie(metapack, IE_MISC, 1, "\x05");
+txpacket = (lorcon_packet_t*)lorcon_packet_from_lcpa(context, metapack);
+\end{verbatim}
+
+\subsubsection{Creating a Fake Access Point}
+
+When an open network has been discovered, the application forks and creates a virtual access point using airbase-ng and sends another probe response on behalf of the VAP to speed up the process of associating. 
+
+\begin{verbatim}
+.. snip..
+childPID = fork();
+	if(childPID >= 0) {
+		if(childPID == 0) {
+			// Child process
+			snprintf(cmd, sizeof cmd, "airbase-ng --essid \%s -c \%i mon0",
+				 ap_info.ssid, ap_info.channel);
+			system(cmd);
+.. snip..
+\end{verbatim}
+
+Figure \ref{client-connected} shows the application output when an access point is created and a client connects. In this instance the device has connected to the network WirelessLab.
+
+\begin{figure}[h!]
+\centering\includegraphics[width=\linewidth]{implementation/figures/client-assoc-1.png}
+\caption{Virtual Access Point created and the client connecting.}
+\label{client-connected}
+\end{figure}
+
+Once the application gets to this point it will no longer create virtual access points, as it is purposely limited to one as mentioned in the requirements.
 
 \subsubsection{Monitoring Data Packets}
+As mentioned previously we need to bridge traffic from the tap interface created by airbase-ng to the wired interface that the Virtualbox host is on. To do this we perform the following steps:
 
+\begin{verbatim}
+brctl addbr wirelesslab-br
+brctl addif wirelesslab-br eth0
+brctl addif wirelesslab-br at0
+
+ifconfig eth0 192.168.1.5 up
+ifconfig at0 192.168.1.23 up
+
+ifconfig wirelesslab-br 192.168.1.6 up
+\end{verbatim}
+
+This adds the two interfaces to the bridge created in the first command, then assigns an IP address to both of them. Once this step is complete traffic sent to the virtual access point will be forwarded across the eth0 interface and vice-versa.
+\clearpage
+ The filter required to get data packets in Wireshark travelling to the access point from the device is:
+
+\begin{verbatim}
+tcp && wlan.da == device_mac
+\end{verbatim}
+
+This then shows the tcp packets that have been forwarded across the bridge on to the wired network, and communicating with the server (192.168.1.5) on that network.
+
+\begin{figure}[h!]
+\centering\includegraphics[width=\linewidth]{implementation/figures/wireshark captured.png}
+\caption{Captured TCP packets from the device to the server.}
+\end{figure}
+
+The data found in the TCP packet is the location data that the app is relaying to the Bucket server:
+
+\begin{figure}[h!]
+\centering\includegraphics[width=\linewidth]{implementation/figures/wireshark-data.png}
+\caption{Packet contents.}
+\end{figure}
+
+\newpage
 \subsection{Leaky Game}
 This application has been developed for Android and mimics the recently popular Flappy Bird style because of its simple nature, and possibility for exploiting the viral hype still surrounding it. It has been developed using Android Java and libgdx to handle the game functions and named Leaky Bird to reflect its actual purpose.
 
 It was developed using the Eclipse IDE due to the support project creation support offered by libgdx tools, the process of which is detailed in a further section. The game was tested in a desktop environment to start with, before being deployed on a Nexus 7 for testing Android specific functionality.
-\clearpage
+
 \subsubsection{Project Structure}
 Using the libgdx project setup tool removes the need for manually creating the projects and writing the boilerplate code required for the creation of cross-platform games. 
 
@@ -153,7 +263,7 @@ public boolean send(String msg);
 
 As the application is, by design, insecure and leaks data the function simply takes a string and sends it, using TCP, to the Bucket server. The message format for data packets is, as described in section \ref{design:tcp-structure}:
 \begin{verbatim}
-MESSAGE_ID:UNIQUE_ID:PAYLOAD
+MESSAGE_ID,UNIQUE_ID,PAYLOAD
 \end{verbatim}
 
 The android implementation of this, AndroidTcpClient, consists of connection information class level variables and a private inner AsyncTask class that takes a string as a parameter for it’s DoInBackground function, and gives a boolean result, that takes care of the connecting and disconnecting to the server:

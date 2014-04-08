@@ -2,40 +2,56 @@
 \subsection{Defending Against Attacks}
 Probe request frames are broadcast depending on what is in the preferred network list. This is what opens up smartphones to attack from such methods as undertaken in this project. Different mobile operating systems handle this list in different ways. For example, Android allows the user access to this list, and the ability to remove networks from it. Once removed from the list, the phone no longer broadcasts probe request frames for that SSID. iOS; however, does not allow access to this list and will broadcast frames for any previously connected SSID, unless the user disconnected from the network using the Forget This Network button available in the WiFi settings screen.
 
-Proper management of this list would help the user to prevent this attack, or at the very least allow the user to make an informed decision about what network their phone is attempting to connect to. There a number of ways that you could implement this, at both application and root level, and below I have detailed a few.
+Proper management of this list would help the user to prevent this attack, or, at the very least, allow the user to make an informed decision about what network their phone is attempting to connect to. There a number of ways that you could implement this at application level Being able to offer protection, or at the least information, at application level allows users with little knowledge to better protect themselves against malicious users. Ultimately, there is only so much you can do at this level, and all of the solutions require user interpretation.
 
-\subsubsection{Application Level}
-Being able to offer protection, or at the least information, at application level allows users with little knowledge to better protect themselves against malicious users. Ultimately, there is only so much you can do at this level, and all of the solutions require user interpretation.
-
-\subsubsection*{Verification On Connection}
 One method would be to develop an application that ran as a service, storing information about each access point as the device connects to a network. The stored information would include the mac address of the access point that it has connected to, verified by the user, which would then allow the application to flag up any instances whereby the  device attempts to connect to a network with the same SSID where the mac address had changed.
 
 This would work well on uniquely named IBSSs in a home setting, although it would become an issue if the device were to connect to a large ESS and were to roam between each AP. On each connection the user would have to verify the different mac address. The biggest issue this  is the simplicity in which a mac address can be spoofed. If the attacker were to be near the actual AP it would be trivial to find the real mac address and subsequently ensure any frames sent were from that address.
 
-\subsubsection*{Geotagging of Access Points}
 An extension on the previously detailed application would be to add geotagging to the stored access point information as it would allow the user to be notified when they are trying to connect to a network, for example, in Bristol that they usually do in Aberystwyth.
 
-\subsubsection*{The Best Method}
 Overall the best course of action to take would be educating users on the importance of protecting their data, even that which they do not consider to be particularly sensitive can allow a foreign entity to profile and uniquely identify them. As we move towards advertisements as a means of sustaining internet businesses, and the consumer as the product business model (a la Facebook), it is imperative that we provide the necessary information to allow users to retain their privacy. 
-
+\newpage
 \subsection{Monitoring Probe Requests for Good}
+\label{conclusion:for-good}
 There are applications of this technique that can be used for non-malicious purposes, particularly in data analysis.
 
-\subsection{Securing the Internet}
-\begin{verbatim}
-"We have built an insecure internet for everyone. We have enabled the Panopticon.”
-- Bruce Schneier
-\end{verbatim}
-It is widely acknowledged that cryptography can allow us to undo the damage that has been brought to light through the leaked documents because of the headache it causes surveillance agencies. Through-out this report I have mentioned new protocols and standards that are being developed in response to the expanding usage of WiFi.
+\subsection{Securing the Insecure}
 
-That is, of course, until the race between quantum computing memory size and encryption.
+It is widely acknowledged that cryptography can allow us to undo the damage that has been brought to light through the leaked documents because of the headache it causes surveillance agencies. Through-out this report I have alluded to new protocols and standards amendments that are being developed in response to the expanding usage of WiFi. 
+
+The 802.11w amendment has recently been ratified and sets out to secure the management frames through: adding cryptographic protection to deauthentication and disassociation frames to protect against spoofing and a mechanism called Security Association Teardown Protection which protects association and authentication requests, through implementing a shared key authentication IE field called  Message Integrity Check. The MIC IE, whose structure is detailed in table \ref{tbl:mic}, includes fields for the key ID, IPN and most importantly, the Message Integrity Code which is the hash taken from the payload and MAC header of the management frame. 
+
+\begin{table}[h!]
+\begin{center}
+	\begin{tabular}{|  p{2cm} |  p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+		\hline
+		ID & Length & Key ID & IPN & MIC\\ 
+		\hline
+	\end{tabular}
+\end{center}
+\caption{MIC IE field structure.}
+\label{tbl:mic}
+\end{table}
+
+The key is generated using an EAPOL 4-way handshake between the station and the access point, meaning 802.11w can only be utilized if the network is using WPA/WPA2.
 
 \subsection{Project Extensions}
-\subsubsection{Quadcopters}
+
 Toward the end of writing this report a security research company unveiled their honeypot quadcopter device. This has the ability of being flown over a location, capturing devices, and bridging traffic back to a central server so that all traffic may be monitored by one application. This project is very well suited to fulfilling both the examples given that use this for good, but equally for bad. It should be noted; however, that the presence of a quadcopter is somewhat less inconspicuos than small devices planted around an area. 
 
-\subsubsection{Explorations in to Embedded Systems}
-During this project I briefly touched upon porting this application to the Raspberry Pi due to not only its low price point, but Kali's support for ARM meant that doing so would be trivial. Further investigation in to solving the netlink library issue, either by fixing the outdated Lorcon configurator that checks for dependancies, or replacing with a native libpcap implementation.
+During this project I also briefly touched upon porting this application to the Raspberry Pi due to not only its low price point, but Kali's support for ARM meant that doing so would be trivial. Further investigation in to solving the netlink library issue, either by fixing the outdated Lorcon configurator that checks for dependancies, or replacing with a native libpcap implementation would be required. Successfully doing this would open up a number of possibilities, from the quadcopter example detailed above, to coupling the Raspberry Pi with a GPS board to undertake some wardriving, or implementing any of projects for good mentioned in section \ref{conclusion:for-good}.
+\newpage
+\subsection{The End's Not Near; It's Here}
+I came in to this project having no background knowledge of network security, penetration testing, or the 802.11 standard and it’s various task groups. As shown through this documentation, I can now comfortably discuss various aspects relating to the security of Wifi networks and the inherent insecurities in the 802.11 standard. I’ve gained a good understanding of network vulnerabilities in how to open gateways to performing attacks, and then execute attacks them. The benefit of this knowledge is not limited to being able to perform offensively, it has given me a good grounding in how to defend against attacks as well. It is in this respect that I have gained the most experience as there is no better way to educate yourself that to undertake the attacks that will performed against you.
+
+I feel the project has gone well and I have achieved what I originally set out to do- get a better understanding of how you can implement the types of monitoring public bodies such as the NSA and GCHQ are alleged to have done, and to see just how Android applications can leak data. In particular I am thrilled that I managed to get the Honeypot application running, capturing frames, and performing the association sequence programmatically. The expression of elation to see a device think that my application was an access point could be heard down the street; however, I was slightly disappointed that I ran into problems on the final step of the authentication sequence. No matter what I tried I could not get the correct flags set in the authentication response frame and have the device authenticate. I overcame this in the end by making use of existing software to handle the generation of a spoof access point, as this made it much easier to bridge traffic to the wired network, and most importantly allowed me to continue with my project.
+
+Another issue I ran into was during the implementation of Leaky Bird. As it was my first attempt at writing a networked application for Android, although having general experience programming for Android, I was unaware of the need for all communications to be done in a class that extends AsyncTask. Couple this with the need to create interfaces for libgdx to access platform specific code and I was left with a number of development hours spent cursing at the Android Developer Tools IDE. After some research it became apparent that to beat the NetworkOnMainThreadException I needed to create a SenderTask class, inside the TcpClient class, that extends AsyncTask and insure all connect, disconnect and send code is contained within it, as detailed in the implementation.
+
+All in all I think this project has been incredibly beneficial in the ways mentioned above, but also in developing my writing skills by documenting to a high standard, and through learning LaTeX as a way of generating documents. Learning LaTeX was purely an academic decision, as the same style could be achieved through using Microsoft Word; however, I wanted to take the opportunity to add a new skill to my repertoire. 
+
+As time goes on I would like to revisit this project and extend it in the ways I have documented, perhaps following suit and attaching a Raspberry Pi with a GPS/GSM breakout board to a Quadcopter and flying the application around the University, or leaving it in my car and wardriving.
 
 
 \clearpage

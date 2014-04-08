@@ -1,6 +1,6 @@
 \subsection{802.11 Overview}
 \subsubsection{Frame Types}
-There are three frame categories defined in the 802.11 standard \cite{research:80211_standard}: management, control and data. These types are further split into subtypes which determines which frame is being sent/received. For the purpose of performing an association sequence, we are interested in frames from the management category. The table below details these frames, along with their type, subtype and originating source, in order for us to successfully filter packets in wireshark to capture the sequence.
+There are three frame categories defined in the 802.11 standard \cite{research:80211_standard}: management, control and data. These types are further split into subtypes which determines which frame is being sent/received. For the purpose of performing an association sequence, we are interested in frames from the management category. The table below details these frames, along with their type, subtype and originating source, to aid us in successfully filtering packets in wireshark.
 
 \begin{table}[h!]
 \begin{center}
@@ -29,7 +29,7 @@ There are three frame categories defined in the 802.11 standard \cite{research:8
 \end{center}
 \end{table}
 
-One of the key issues with the 802.11 standard is that management frames are not encrypted. This is what a large majority of attacks take advantage of by way of a gateway to further attacks, as detailed in a later section.
+One of the key issues with the 802.11 standard is that management frames are not encrypted. This is what a large majority of attacks take advantage of by way of a gateway to further attacks, as detailed in section \ref{sec:attacks}.
 
 \clearpage
 \subsubsection{General Frame Structure}
@@ -80,6 +80,7 @@ Figure \ref{fig:framestructure} below details the contents and size of each fiel
 \end{table}
 \clearpage
 \subsubsection{Determining 802.11 Open Association Sequence}
+\label{research:assoc-seq}
 In order to create a fake access point for devices that are broadcasting probe requests for previously connected open networks, the application needs to follow the same sequence that a real access point would when responding to probe requests. I need to be able to discern which flags are to be set, and the values to give, in each frame in order for the smartphone to be able to connect, and also find out where the authentication type is revealed. 
 
 To watch the association sequence happen in real-time, and determine when in the sequence the authentication type is given, I needed to set up a simple wireless network, and have a wireless adaptor running in monitor mode filtering packets as a smartphone associates with the access point. This method would allow me to utilize wireshark to inspect other elements of the sequence that aren’t necessarily detailed in online sources, such as the various flags set in each frame.
