@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.28)  9 APR 2014 10:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.28)  9 APR 2014 12:18
 entering extended mode
 **C:/Users/Jake/Documents/GitHub/ProjectReport/main.tex
 (C:/Users/Jake/Documents/GitHub/ProjectReport/main.tex
@@ -1387,17 +1387,12 @@ t line 118.
 (pdftex.def)             Requested size: 483.69687pt x 308.19577pt.
  [48 <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/figures/clien
 t-assoc-1.png>]
-
-LaTeX Warning: File `implementation/figures/wireshark captured.png' not found o
-n input line 151.
-
-
-<implementation/figures/wireshark captured.png, id=257, 597.73312pt x 58.71938p
-t>
-File: implementation/figures/wireshark captured.png Graphic file (type png)
- <use implementation/figures/wireshark captured.png>
-Package pdftex.def Info: implementation/figures/wireshark captured.png used on 
-input line 151.
+<implementation/figures/wiresharkcaptured.png, id=257, 597.73312pt x 58.71938pt
+>
+File: implementation/figures/wiresharkcaptured.png Graphic file (type png)
+ <use implementation/figures/wiresharkcaptured.png>
+Package pdftex.def Info: implementation/figures/wiresharkcaptured.png used on i
+nput line 151.
 (pdftex.def)             Requested size: 483.69687pt x 47.51761pt.
 
 <implementation/figures/wireshark-data.png, id=258, 453.94594pt x 103.88812pt>
@@ -1410,8 +1405,8 @@ t line 158.
  [49
 
  <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/figures/wireshark
- captured.png> <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/fig
-ures/wireshark-data.png>]
+captured.png> <C:/Users/Jake/Documents/GitHub/ProjectReport/implementation/figu
+res/wireshark-data.png>]
 <implementation/figures/gdx-setup-2.png, id=262, 453.19313pt x 317.68687pt>
 File: implementation/figures/gdx-setup-2.png Graphic file (type png)
 
@@ -1550,7 +1545,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  20191 strings out of 493921
- 401650 string characters out of 3144879
+ 401654 string characters out of 3144879
  634102 words of memory out of 3000000
  23014 multiletter control sequences out of 15000+200000
  10233 words of font info for 36 fonts, out of 3000000 for 9000
@@ -1566,7 +1561,7 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (72 pages, 1979697 bytes).
+Output written on main.pdf (72 pages, 1979711 bytes).
 PDF statistics:
  348 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
