@@ -35,4 +35,7 @@
 \nomenclatureentry{aRSS@[{RSS}]\begingroup Received Signal Strength\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{aGUI@[{GUI}]\begingroup Graphical User Interface\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{aRFC@[{RFC}]\begingroup Request For Comments\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aUSB@[{USB}]\begingroup Universal Serial Bus\nomeqref {0}|nompageref}{25}
+\nomenclatureentry{aWEP@[{WEP}]\begingroup Wireless Equivalent Policy\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aWLAN@[{WLAN}]\begingroup Wireless Local Area Network\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aWPA@[{WPA}]\begingroup Wifi Protected Access\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aUSB@[{USB}]\begingroup Universal Serial Bus\nomeqref {0}|nompageref}{24}

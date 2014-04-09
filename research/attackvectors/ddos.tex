@@ -11,7 +11,9 @@ The unencrypted nature of these frames leaves them open to MAC address spoofing 
 \caption{Deauthentication DOS sequence.}
 \end{figure}
 
-The beauty of the deauthentication DOS is that it can be launched from relatively inexpensive hardware, as demonstrated with the Alfa, when paired with a good technical knowledge- especially when using a pre-support applications \cite{research:aircrack}. It should also be noted that this attack may not be started with malicious intent, as, for example, you have a network with a hidden SSID that users have discovered and hijacked, you can use this to deauthenticate all the stations to recover the network. On the more malicious side, this attack can be used to force users to connect to a spoofed access point after performing this attack, then chaining on a MITM attack. 
+The beauty of the deauthentication DOS is that it can be launched from relatively inexpensive hardware, as demonstrated with the Alfa, when paired with a good technical knowledge- especially when using a applications to automate sections \cite{research:aircrack}. 
+
+It should also be noted that this attack may not be started with malicious intent, as, for example, you have a network with a hidden SSID that users have discovered and hijacked, you can use this to deauthenticate all the stations to recover the network. On the more malicious side, this attack can be used to force users to connect to a spoofed access point after performing this attack, then chaining on a MITM attack. 
 
 Chaining this attack with a spoofed access point, and then performing a MITM is an example of an advanced attack that could be performed on unknowing users in a public location. Utilizing beacon frames to start the chain of attack leaves security software that tracks spoofed MAC addresses completely useless. You can determine the MAC address of the real access point by monitoring beacon frames and taking the value set as the source address, then using it source in the deauthentication DOS, and then subsequently the spoofed access point setup.
 
@@ -47,7 +49,7 @@ As the access point is transmitting on channel 11, I needed to either switch it 
 \end{figure}
 
 \subsubsection*{Introducing the Evil Twin}
-To take this attack one step further toward the advanced chain of attacks, I created a fake access point that was making use of the Alfa wireless adaptor's ability to broadcast at a stronger signal than the access point. Figure \ref{ddos-5} shows the device connecting to the Evil Twin and leaving it open to any malicious intent I had.
+To take this attack one step further in the advanced chain of attacks, I created a fake access point that was making use of the Alfa wireless adaptor's ability to broadcast at a stronger signal than the access point. Figure \ref{ddos-5} shows the device connecting to the Evil Twin and leaving it open to any malicious intent I had.
 
 \begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/attackvectors/figures/ddos-5.png}

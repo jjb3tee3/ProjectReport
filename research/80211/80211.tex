@@ -11,6 +11,7 @@ There are three frame categories defined in the 802.11 standard \cite{research:8
 		0x01 & Control \\ \hline
 		0x02 & Data \\ \hline
 	\end{tabular}
+	\caption{Types of 802.11 frames.}
 	
 \end{center}
 \end{table}
@@ -26,6 +27,7 @@ There are three frame categories defined in the 802.11 standard \cite{research:8
 		0x00 & 0x00 & Association Request & Station \\ \hline
 		0x00 & 0x10 & Association Request & Access Point \\ \hline
 	\end{tabular}
+	\caption{802.11 frame subtypes and their origin.}
 \end{center}
 \end{table}
 
@@ -47,7 +49,7 @@ Figure \ref{fig:framestructure} below details the contents and size of each fiel
 		\hline
 		\textbf{Field} & \textbf{Description} \\ \hline
 		Frame Control & Detailed in table \ref{table:framecontrol} on page \pageref{table:framecontrol}.\\ \hline
-		Duration ID & Control \\ \hline
+		Duration ID & Determines the amount of time the medium will remain busy. \\ \hline
 		Addresses & Four addresses can be present.  They show the source and destination addresses, and may also give the BSSID, transmitter, and receiver address.  \\ \hline
 		Sequence Number & This allows stations to prevent duplicated frames by keeping track of the current sequence number. \\ \hline
 		Data & This is the body of the frame. It can contain 2048 bytes with a 256 byte upper layer header when sent by an application. \\ \hline

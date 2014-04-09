@@ -13,21 +13,13 @@ I was expecting a `,' or a `}'---line 276 of file references.bib
  :   month = "June"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting an "="---line 439 of file references.bib
- :   titleabout 
- :              33 bits
-I'm skipping whatever remains of this entry
 "{" immediately follows a field name---line 462 of file references.bib
  : @online
  :        {research:dpl,
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 490 of file references.bib
- :   year="
- :         2000",
 I'm skipping whatever remains of this entry
 A bad cross reference---entry "research:defending_auth"
 refers to entry "conf/icccn/2008", which doesn't exist
 Warning--I didn't find a database entry for "research:dpl"
 Warning--I didn't find a database entry for "conf/icccn/2008"
 Biblatex version: 2.8
-(There were 5 error messages)
+(There were 3 error messages)

@@ -41,42 +41,6 @@ This application must only be run only in controlled wireless lab conditions due
 
 The application will require the host machine to be connected to an internet source via ethernet in order for it to successfully bridge traffic.
 
-\newpage
-\subsubsection{Functional Requirements}
-This section outlines the requirements for each individual application. Section \ref{requirements:specific} delves in to the details of each requirement and displays them in a numbered format to make it easier to test individual requirements at the end.
-
-\subsubsection*{Honeypot Application}
-The application must:-
-\begin{itemize}
-	\item Take user defined parameters:
-		\begin{itemize}
-			\item SSID Name
-			\item Wireless interface
-		\end{itemize}
-	\item Filter relevant packets based on SSID
-	\item Capture probe request frames from nearby WiFi devices
-	\item Allow device to connect to spoof access point
-	\item Send probe requests captured to the server
-	\item Determine authentication type of previous network
-	\item Bridge traffic from soft AP to real AP
-\end{itemize}
-
-\subsubsection*{Android Application}
-The application must:-
-\begin{itemize}
-	\item Must emulate popular Android application
-	\item Capture the users location data
-	\item Capture a unique identifier for the device
-	\item Send the captured data to the server with no encryption
-\end{itemize}
-
-\subsubsection*{TCP Server}
-The application must:-
-\begin{itemize}
-	\item Accept a number of clients connecting and disconnecting
-	\item Display the packets received
-\end{itemize}
-
 \subsubsection{Constraints}
 The application will not be able to perform the honeypot attack on mobile devices that broadcast probe requests for encrypted networks. It will also be limited to the Operating System in which it has been developed to run on, in this instance that is Backtrack 5 Revision 3 or Kali. The application will only support one fake access point at a time due to the limitations imposed in order to meet ethical guidelines.
 

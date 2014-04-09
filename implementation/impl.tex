@@ -123,6 +123,7 @@ Figure \ref{client-connected} shows the application output when an access point 
 Once the application gets to this point it will no longer create virtual access points, as it is purposely limited to one, as defined in the requirements.
 
 \subsubsection{Monitoring Data Packets}
+\label{detail-stuff}
 As mentioned previously we need to bridge traffic from the tap interface created by airbase-ng to the wired interface that the Virtualbox host is on. To do this we perform the following steps:
 
 \begin{verbatim}
@@ -315,7 +316,7 @@ Then using this to retreive all of the email addresses stored for that contact, 
 This pattern of retreiving a cursor and indexing columns is repeated for address and instant messenger handles as well.  
 
 \subsubsection{Result}
-The result of the application is a game that looks, and plays, similarly to Flappy Birds, as intended. In order to be able to test the leaking data during development the game was set up in a way that each time the player tapped the screen to make the bird rise, it sent the personal data to the server and added a point to the total score.
+The result of the application is a game that looks, and plays, similarly to Flappy Birds, as intended. In order to be able to test the leaking data during development the game was set up in a way that each time the player tapped the screen to make the bird rise, it sent the personal data to the server as shown in section \ref{detail-stuff} and added a point to the total score.
 
 \begin{figure}[h!]
 \centering\includegraphics{implementation/figures/flappy-b-2.png}

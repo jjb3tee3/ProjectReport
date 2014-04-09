@@ -71,5 +71,11 @@
 		\nompageref{1}
   \item [{USB}]\begingroup Universal Serial Bus\nomeqref {0}
 		\nompageref{25}
+  \item [{WEP}]\begingroup Wireless Equivalent Policy\nomeqref {0}
+		\nompageref{1}
+  \item [{WLAN}]\begingroup Wireless Local Area Network\nomeqref {0}
+		\nompageref{1}
+  \item [{WPA}]\begingroup Wifi Protected Access\nomeqref {0}
+		\nompageref{1}
 
 \end{thenomenclature}

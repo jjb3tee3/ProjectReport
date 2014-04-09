@@ -1071,6 +1071,14 @@
   }
   \strng{namehash}{b1}
   \strng{fullhash}{b1}
+  \field{title}{About 33 bits}
+  \verb{url}
+  \verb http://33bits.org/about/
+  \endverb
+  \field{year}{2008}
+  \field{urlday}{16}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{research:lsweent}{online}{}
@@ -1160,8 +1168,12 @@
   \strng{fullhash}{GU1}
   \field{title}{Regulation of Investigatory Powers Act 2000}
   \verb{url}
-  \verb http://www.legislation.gov.uk/ukpga/2000/23/contents, year=
+  \verb http://www.legislation.gov.uk/ukpga/2000/23/contents
   \endverb
+  \field{year}{2000}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{research:uk_law2}{online}{}

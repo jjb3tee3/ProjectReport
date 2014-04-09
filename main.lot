@@ -1,7 +1,13 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces General frame structure fields.}}{11}
+\contentsline {table}{\numberline {1}{\ignorespaces Overview of the various task groups.}}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2}{\ignorespaces Frame Control fields.}}{12}
+\contentsline {table}{\numberline {2}{\ignorespaces Types of 802.11 frames.}}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces MIC IE field structure.}}{58}
+\contentsline {table}{\numberline {3}{\ignorespaces 802.11 frame subtypes and their origin.}}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4}{\ignorespaces General frame structure fields.}}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5}{\ignorespaces Frame Control fields.}}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6}{\ignorespaces MIC IE field structure.}}{56}
