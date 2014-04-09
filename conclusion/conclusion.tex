@@ -14,7 +14,7 @@ Overall the best course of action to take would be educating users on the import
 \newpage
 \subsection{Monitoring Probe Requests for Good}
 \label{conclusion:for-good}
-There are applications of this technique that can be used for non-malicious purposes, particularly in data analysis.
+There are applications of this technique that can be used for non-malicious purposes, particularly in data analysis. Such applications could include advertising, by profiling people entering and exiting shops based on the names of networks they had previously connected to, or by flashing up targeted advertising based on passing devices. The targeted advertising could be based on probe requests, or tech companies could take advantage of identifying types of devices passing by parsing the first octets of the MAC address, and either displaying a rivals new product or the companies new product.
 
 \subsection{Securing the Insecure}
 \label{80211w}
@@ -38,7 +38,7 @@ The key is generated using an EAPOL 4-way handshake between the station and the 
 
 \subsection{Project Extensions}
 
-Toward the end of writing this report a security research company unveiled their honeypot quadcopter device. This has the ability of being flown over a location, capturing devices, and bridging traffic back to a central server so that all traffic may be monitored by one application. This project is very well suited to fulfilling both the examples given that use this for good, but equally for bad. It should be noted; however, that the presence of a quadcopter is somewhat less inconspicuos than small devices planted around an area. 
+Toward the end of writing this report a security research company unveiled their honeypot quadcopter device \cite{conc:snoopy}. This has the ability of being flown over a location, capturing devices, and bridging traffic back to a central server so that all traffic may be monitored by one application. This project is very well suited to fulfilling both the examples given that use this for good, but equally for bad. It should be noted; however, that the presence of a quadcopter is somewhat less inconspicuos than small devices planted around an area. 
 
 During this project I also briefly touched upon porting this application to the Raspberry Pi due to not only its low price point, but Kali's support for ARM meant that doing so would be trivial. Further investigation in to solving the netlink library issue, either by fixing the outdated Lorcon configurator that checks for dependancies, or replacing with a native libpcap implementation would be required. Successfully doing this would open up a number of possibilities, from the quadcopter example detailed above, to coupling the Raspberry Pi with a GPS board to undertake some wardriving, or implementing any of projects for good mentioned in section \ref{conclusion:for-good}.
 \newpage

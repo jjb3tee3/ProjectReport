@@ -2,7 +2,74 @@
 
  \nomgroup{A}
 
+  \item [{AP}]\begingroup Access Point\nomeqref {0}\nompageref{1}
+  \item [{BITB}]\begingroup Boy In The Browser\nomeqref {0}
+		\nompageref{1}
+  \item [{BSS}]\begingroup Base Service Set\nomeqref {0}\nompageref{1}
+  \item [{BSSID}]\begingroup Base Service Set Identifier\nomeqref {0}
+		\nompageref{1}
+  \item [{CRC}]\begingroup Cyclical Redundancy Check\nomeqref {0}
+		\nompageref{1}
+  \item [{DDMS}]\begingroup Dalvik Debug Monitor Server\nomeqref {0}
+		\nompageref{1}
+  \item [{DNS}]\begingroup Domain Name System\nomeqref {0}
+		\nompageref{1}
+  \item [{DOS}]\begingroup Denial Of Service\nomeqref {0}\nompageref{1}
+  \item [{DS}]\begingroup Distribution System\nomeqref {0}
+		\nompageref{1}
+  \item [{ERP}]\begingroup Extended Rate PHY\nomeqref {0}\nompageref{1}
+  \item [{ESS}]\begingroup Extended Service Set\nomeqref {0}
+		\nompageref{1}
+  \item [{FCS}]\begingroup Frame Check Sequence\nomeqref {0}
+		\nompageref{1}
+  \item [{GCHQ}]\begingroup Government Communication Headquarters\nomeqref {0}
+		\nompageref{1}
+  \item [{GPS}]\begingroup Global Positioning System\nomeqref {0}
+		\nompageref{1}
+  \item [{GUI}]\begingroup Graphical User Interface\nomeqref {0}
+		\nompageref{1}
+  \item [{HTML5}]\begingroup Hyper-Text Markup Language 5\nomeqref {0}
+		\nompageref{1}
+  \item [{HTTP}]\begingroup Hyper Text Transfer Protocol\nomeqref {0}
+		\nompageref{1}
+  \item [{HTTPS}]\begingroup HTTP Secure\nomeqref {0}\nompageref{1}
+  \item [{IBSS}]\begingroup Independent Base Service Set\nomeqref {0}
+		\nompageref{1}
+  \item [{IE}]\begingroup Information Element\nomeqref {0}
+		\nompageref{1}
+  \item [{IEEE}]\begingroup Institute of Electrical and Electronics Engineers\nomeqref {0}
+		\nompageref{1}
+  \item [{IoT}]\begingroup Internet of Things\nomeqref {0}
+		\nompageref{1}
+  \item [{IP}]\begingroup Internet Protocol\nomeqref {0}\nompageref{1}
+  \item [{LMSC}]\begingroup LAN MAN Standards Committee\nomeqref {0}
+		\nompageref{1}
+  \item [{MAC}]\begingroup Media Access Control\nomeqref {0}
+		\nompageref{1}
+  \item [{MIC}]\begingroup Message Integrity Check\nomeqref {0}
+		\nompageref{1}
+  \item [{MITB}]\begingroup Man In The Browser\nomeqref {0}
+		\nompageref{1}
+  \item [{MITM}]\begingroup Man In The Middle\nomeqref {0}
+		\nompageref{1}
+  \item [{NSA}]\begingroup National Security Agency\nomeqref {0}
+		\nompageref{1}
+  \item [{PNL}]\begingroup Preferred Network Library\nomeqref {0}
+		\nompageref{1}
+  \item [{RFC}]\begingroup Request For Comments\nomeqref {0}
+		\nompageref{1}
+  \item [{RSS}]\begingroup Received Signal Strength\nomeqref {0}
+		\nompageref{1}
+  \item [{SSID}]\begingroup Service Set Identifier\nomeqref {0}
+		\nompageref{1}
+  \item [{SSL}]\begingroup Secure Sockets Layer\nomeqref {0}
+		\nompageref{1}
+  \item [{TCP}]\begingroup Transport Control Protocol\nomeqref {0}
+		\nompageref{1}
+  \item [{TG}]\begingroup Task Group\nomeqref {0}\nompageref{1}
+  \item [{TSL}]\begingroup Transport Layer Security\nomeqref {0}
+		\nompageref{1}
   \item [{USB}]\begingroup Universal Serial Bus\nomeqref {0}
-		\nompageref{23}
+		\nompageref{25}
 
 \end{thenomenclature}

@@ -1,7 +1,7 @@
 \section {Introduction}
 \subsection{Background}
 \subsection{Recent Media}
-Cyber security has become prevalent in the media over the recent years with whistleblowers \cite{intro:guardian_snowden} providing the general public an insight into just how government agencies across the world, such as GCHQ \cite{intro:gchq_home} \nomenclature{GCHQ}{Government Communication Headquarters} and the NSA \cite{intro:nsa_home} \nomenclature{NSA}{National Security Agency}, have developed software \cite{intro:schneier_nsa_1}\cite{intro:schneier_nsa_3} that allows them to covertly monitor digital communications \cite{intro:schneier_nsa_4}. The software developed, and purchased, takes advantage of zero-day vulnerabilities \cite{intro:nsa_invoice}, and network infrastructure.
+Cyber security has become prevalent in the media over the recent years with whistleblowers \cite{intro:guardian_snowden} providing the general public an insight into just how government agencies across the world, such as GCHQ \cite{intro:gchq_home} \nomenclature{GCHQ}{Government Communication Headquarters} and the NSA \nomenclature{NSA}{National Security Agency} \cite{intro:nsa_home}, have developed software \cite{intro:schneier_nsa_1}\cite{intro:schneier_nsa_3} that allows them to covertly monitor digital communications \cite{intro:schneier_nsa_4}. The software developed, and purchased, takes advantage of zero-day vulnerabilities \cite{intro:nsa_invoice}, and network infrastructure.
 
 These types public entities are both monitoring communications themselves \cite{intro:schneier_nsa_2}, and also acquiring data from large companies such as Microsoft \cite{intro:guardian_ms_nsa}, by allegedly allowing them to circumvent those introduced in to applications such as Skype an Outlook; IBM- which was denied by the company in an open letter from their Senior Vice President \cite{intro:ibm_open_letter}, although Bruce Schneier’s rebuttal \cite{intro:open_open_letter} of the open letter leaves more questions for the company; and RSA by weakening the encryption protocol \cite{intro:bristol_open_letter}.
 
@@ -9,14 +9,49 @@ These types public entities are both monitoring communications themselves \cite{
 Mobile wireless devices, by design, monitor and transmit specific frames in order to discover WiFi networks to transfer data over in an attempt to lower that sent over the cellular network. Devices will probe for previously used wireless access points by periodically emitting probe request frames to determine whether the access point is in range. Access points will attempt to make this process simpler by periodically emitting beacon frames to announce their presence and capabilities.
 
 \subsubsection{802.11 Standard and Task Groups}
-802 was devised by the IEEE \nomenclature{IEEE}{Institute of Electrical and Electronic Engineers} LMSC in February, 1980 \cite{intro:ieee_decrypted}, as a project containing working groups that define standard practices and specifications. The 802.11 specification is for implementing WLAN \nomenclature{WLAN}{Wireless Local Area Network} communication at the MAC \nomenclature{MAC}{Media Access Control} level. 
+802 was devised by the IEEE \nomenclature{IEEE}{Institute of Electrical and Electronics Engineers} LMSC \nomenclature{LMSC}{LAN MAN Standards Committee} in February, 1980, as a project containing working groups that define standard practices and specifications. The 802.11 specification is for implementing WLAN communication at the MAC level. 
 
 \begin{figure}[htb!]
 	\centering\includegraphics{intro/diagrams/tcpip.png}
-	\caption{802.11 in the TCP/IP \nomenclature{TCP}{Transmission Control Protocol} \nomenclature{IP}{Internet Protocol} stack.}
+	\caption{802.11 in the TCP/IP stack.}
+\label{tcpip}
 \end{figure}
 
-802.11 is split in to various TGs \nomenclature{TG}{Task Group} which define extra amendments to the standard. The most prolific task groups are TGb, TGa, TGg and most recently TGn.
+\nomenclature{TCP}{Transport Control Protocol}
+\nomenclature{IP}{Internet Protocol}
+\nomenclature{MAC}{Media Access Control}
+\nomenclature{TG}{Task Group}
+\nomenclature{BSS}{Base Service Set}
+\nomenclature{BSSID}{Base Service Set Identifier}
+\nomenclature{IBSS}{Independent Base Service Set}
+\nomenclature{SSID}{Service Set Identifier}
+\nomenclature{ESS}{Extended Service Set}
+\nomenclature{DS}{Distribution System}
+\nomenclature{CRC}{Cyclical Redundancy Check}
+\nomenclature{FCS}{Frame Check Sequence}
+\nomenclature{IE}{Information Element}
+\nomenclature{ERP}{Extended Rate PHY} 
+\nomenclature{MITM}{Man In The Middle}
+\nomenclature{HTML5}{Hyper-Text Markup Language 5}
+\nomenclature{DDMS}{Dalvik Debug Monitor Server}
+\nomenclature{GPS}{Global Positioning System}
+\nomenclature{MIC}{Message Integrity Check}
+\nomenclature{HTTP}{Hyper Text Transfer Protocol}
+\nomenclature{HTTPS}{HTTP Secure}
+\nomenclature{SSL}{Secure Sockets Layer}
+\nomenclature{TSL}{Transport Layer Security}
+\nomenclature{MITB}{Man In The Browser}
+\nomenclature{BITB}{Boy In The Browser}
+\nomenclature{DOS}{Denial Of Service}
+\nomenclature{AP}{Access Point}
+\nomenclature{DNS}{Domain Name System}
+\nomenclature{PNL}{Preferred Network Library}
+\nomenclature{IoT}{Internet of Things}
+\nomenclature{RSS}{Received Signal Strength}
+\nomenclature{GUI}{Graphical User Interface}
+\nomenclature{RFC}{Request For Comments}
+
+802.11 is split in to various TGs which define extra amendments to the standard. The most prolific task groups are TGb, TGa, TGg and most recently TGn.
 
 \begin{table}[htb!]
 \begin{center}
@@ -53,7 +88,7 @@ A BSS is a group of stations that are connected to an access point, which is con
 \end{figure}
 
 \subsubsection*{Base Service Set Identification}
-The unique identifier given to a BSS. In an infrastructure BSS this is the MAC address of the access point. In an ad hoc network (IBSS), with no governing access point, it is random and administered by the starting station \cite{intro:ieee_tutorial}.
+The unique identifier given to a BSS. In an infrastructure BSS this is the MAC address of the access point. In an ad hoc network (IBSS), with no governing access point, it is random and administered by the starting station.
 
 \subsubsection*{Service Set Identification}
 The human readable  string given to a BSS, chosen by the access point, that is broadcasted in beacon and probe frames.
@@ -111,7 +146,7 @@ There has been a recent shift by administrators toward configuring web servers t
 
 One of the major issues with HTTPS is using it only during the login stage of a browsing session. This will encrypt traffic that sends passwords, but, once that procedure is complete, the website switches back to the unencrypted HTTP. This still leaves the browser wide open to an attacks such as HTTP cache poisoning. HTTP Cache Poisoning is an attack where for example, a malicious user waits for a HTTP request for a JavaScript file, and then responds with the content and extra malicious code at the end, modifying the HTTP headers to account for the extra information and to ensure that the browser caches the new file. Most modern browsers will warn the user when a website is using mixed content (HTTP and HTTPS).
 
-Angry Birds hit the headlines when it was named in one of the NSA/GCHQ releases as an application they can exploit to gain user data. Being an incredibly popular game, it demonstrates the ease in which users can be coerced into allowing applications access to their data.
+Angry Birds hit the headlines when it was named in one of the NSA/GCHQ releases \cite{intro:angry_leak} as an application they can exploit to gain user data. Being an incredibly popular game, it demonstrates the ease in which users can be coerced into allowing applications access to their data.
 \newpage
 \subsubsection{Culmination}
 

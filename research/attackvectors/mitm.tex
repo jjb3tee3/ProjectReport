@@ -1,5 +1,6 @@
 \subsubsection{Man in the Middle (MITM)}
-The man in the middle attack puts the attacker between the station and the access point, allowing them to eavesdrop on communications taking place. In wireless communications, monitoring passing traffic is trivial considering traffic is broadcast and picked up by all network cards in the vicinity; but usually discarded if not intended recipient. This attack allows the attacker easy access to user data sent over unencrypted protocols such as HTTP, but also allows them to use tools such as sslstrip \cite{research:ssl_strip} to attempt to thwart HTTPS.
+\label{mitm-sec}
+The man in the middle attack puts the attacker between the station and the access point, allowing them to eavesdrop on communications taking place. In wireless communications, monitoring passing traffic is made possible, with the correct setup, as traffic is broadcast and picked up by all network cards in the vicinity; but usually discarded if not intended recipient. Whilst this is a complex process, libraries and software have been created to allow those with a good background knowledge to create MITM exploits. This attack potentially gives the attacker access to user data sent over unencrypted protocols such as HTTP, but also allows them to use tools such as sslstrip \cite{research:ssl_strip} to attempt to thwart HTTPS.
 
 \begin{figure}[h!]
 \includegraphics[width=\linewidth]{research/figures/mitm.png}

@@ -1,6 +1,6 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces 802.11 in the TCP/IP \@nomenclature {TCP}{Transmission Control Protocol} \@nomenclature {IP}{Internet Protocol} stack.}}{1}
+\contentsline {figure}{\numberline {1}{\ignorespaces 802.11 in the TCP/IP stack.}}{1}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2}{\ignorespaces An example BSS.}}{3}
 \defcounter {refsection}{0}\relax 
@@ -42,7 +42,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {21}{\ignorespaces List of AP SSIDs in range of the wireless antenna.}}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {22}{\ignorespaces Changing the interface's channel.}}{20}
+\contentsline {figure}{\numberline {22}{\ignorespaces Changing the interface's channel.}}{21}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {23}{\ignorespaces Sending the deauthentication frame.}}{21}
 \defcounter {refsection}{0}\relax 
@@ -84,10 +84,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {42}{\ignorespaces Packet contents.}}{51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {43}{\ignorespaces libgdx setup tool.}}{52}
+\contentsline {figure}{\numberline {43}{\ignorespaces Configuration screen.}}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {44}{\ignorespaces Configuration screen.}}{53}
+\contentsline {figure}{\numberline {44}{\ignorespaces Eclipse project structure.}}{53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {45}{\ignorespaces Eclipse project structure.}}{53}
+\contentsline {figure}{\numberline {45}{\ignorespaces Finished Leaky Bird Game.}}{56}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {46}{\ignorespaces Leaky Bird spritesheet.}}{61}

@@ -66,6 +66,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.6.1}libgdx}{28}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.6.2}Game Design and Development}{28}
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.7}Innocuous Information}{29}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8}Legal Issues}{30}
@@ -134,7 +136,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.4.6}TCP Message Structure}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}TCP Server}{44}
+\contentsline {subsubsection}{\numberline {4.4.7}Unique Identifier}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}TCP Server}{45}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.6}Requirements Matrix}{46}
 \defcounter {refsection}{0}\relax 
@@ -168,11 +172,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.5.1}Project Structure}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.2}Creating Interfaces}{54}
+\contentsline {subsubsection}{\numberline {5.5.2}Creating Interfaces}{53}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.3}Getting the GPS Co-ordinates}{54}
+\contentsline {subsubsection}{\numberline {5.5.3}Getting the GPS Co-ordinates}{53}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.4}Android TCP Client}{55}
+\contentsline {subsubsection}{\numberline {5.5.4}Android TCP Client}{54}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.5.5}Android Contacts List}{55}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.5.6}Result}{56}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Conclusion}{57}
 \defcounter {refsection}{0}\relax 

@@ -165,15 +165,8 @@ This application has been developed for Android and mimics the recently popular 
 It was developed using the Eclipse IDE due to the support project creation support offered by libgdx tools, the process of which is detailed in a further section. The game was tested in a desktop environment to start with, before being deployed on a Nexus 7 for testing Android specific functionality.
 
 \subsubsection{Project Structure}
-Using the libgdx project setup tool removes the need for manually creating the projects and writing the boilerplate code required for the creation of cross-platform games. 
+Using the libgdx project setup tool removes the need for manually creating the projects and writing the boilerplate code required for the creation of cross-platform games. It creates multiple Eclipse projects that link to one main project that holds the game code, thus effectively decoupling any platform specific code from the implementation. The projects created allow you to deploy on Android, desktop, web and iOS using robovm.
 
-\begin{figure}[h!]
-\centering\includegraphics[width=\linewidth]{implementation/figures/gdx-setup-1.png}
-\caption{libgdx setup tool.}
-\end{figure}
-
-It creates multiple Eclipse projects that link to one main project that holds the game code, thus effectively decoupling any platform specific code from the implementation. The projects created allow you to deploy on Android, desktop, web and iOS using robovm.
-\clearpage
 \begin{figure}[h!]
 \centering\includegraphics[width=\linewidth]{implementation/figures/gdx-setup-2.png}
 \caption{Configuration screen.}
@@ -185,7 +178,7 @@ Which when imported to Eclipse sets the workspace up automatically.
 \centering\includegraphics{implementation/figures/gdx-setup-3.png}
 \caption{Eclipse project structure.}
 \end{figure}
-\clearpage
+
 Whilst developing the game it was tested under the desktop deployment, and then when Android specific functions were required it was moved to testing on an actual device.
 
 \subsubsection{Creating Interfaces}
@@ -285,4 +278,49 @@ out.close();
 after the write, which tells the BufferedWriter to send the data now rather than wait for it to be full.
 
 Again the LeakyBirdGame constructor needs to be updated with the new parameter before it can be used in the game to send data.
+
+\subsubsection{Android Contacts List}
+As with the other interface methods, this implements a resolver and Android handler. This class accesses all of the contacts on the device and sends them, in an unencrypted data packet, to the server. To get access to the contacts list we need to ask for permission by including a line in the Android manifest:
+
+\begin{verbatim}
+<uses-permission android:name="android.permission.READ_CONTACTS"/>
+\end{verbatim}
+
+This is achieved by using a cursor object to traverse the contacts table.
+
+\begin{verbatim}
+ContentResolver contentResolver = getContentResolver();
+Cursor cursor = contentResolver.query(ContactsContract.Contacts.CONTENT_URI,
+							null, null, null, null);
+\end{verbatim}
+
+The cursor class provides methods to move around and interact with the table of contacts. Once we have this object we can loop around it until the moveToNext function returns null, indicating the end of the table has been reached. From this point we can get information such as ID and name by querying the row:
+
+\begin{verbatim}
+cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+\end{verbatim}
+
+To delve deeper in to the information we need to query the contacts associated data. For instance, the application can retrieve the contacts email address by firstly getting a cursor to traverse the email information:
+
+\begin{verbatim}
+emailCursor = cursor.query(ContactsContract.CommonDataKinds.Email.CONTENT_URI,
+			null,
+			ContactsContract.CommonDataKinds.EMAIL.CONTACT_ID + `` = ? ``,
+			new String[]{ID},
+			null); 
+\end{verbatim} 
+
+Then using this to retreive all of the email addresses stored for that contact, looping until moveToNext is null for the emailCursor, indexing the ContactsContract.CommonDataKinds.Email.DATA column.
+
+This pattern of retreiving a cursor and indexing columns is repeated for address and instant messenger handles as well.  
+
+\subsubsection{Result}
+The result of the application is a game that looks, and plays, similarly to Flappy Birds, as intended. In order to be able to test the leaking data during development the game was set up in a way that each time the player tapped the screen to make the bird rise, it sent the personal data to the server and added a point to the total score.
+
+\begin{figure}[h!]
+\centering\includegraphics{implementation/figures/flappy-b-2.png}
+\caption{Finished Leaky Bird Game.}
+\end{figure}
+
+
 \clearpage

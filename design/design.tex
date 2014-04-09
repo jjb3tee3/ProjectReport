@@ -122,20 +122,31 @@ Android applications require any network communications to be performed on a sep
 \end{figure}
 
 Similar to the GpsResolver class, the Android MainActivity will pass through an AndroidTcpClient that implements the TcpClientResolver interface for the game to make of use of when it needs to transmit data to to the server.
-
+\newpage
 \begin{figure}[h!]
 \centering\includegraphics[width=\linewidth]{design/figures/tcp-client-sd.png}
 \caption{Android TCP client sequence diagram.}
 \end{figure}
 
 The interface exposes the send function to the application to allow it to send data by internally using a class that extends AsyncTask.
-\newpage
+
 \subsubsection{TCP Message Structure}
 \label{design:tcp-structure}
 Due to this application leaking data by design, the message protocol does not require any encryption and can be relatively simple. There is only one type of message the application needs to send- data. The packet needs to include a uniquely identifiable value for the device that is running the game in order to track users. As it has relatively simple requirements the packet structure will be the packet type- in case of expansion-, device unique identifier followed by the payload. The fields will be delimited by a comma to allow the server to tokenize the packet for processing.
 
+\subsubsection{Unique Identifier}
+\label{unique-android-id}
+To get a truely unique identifier for a device it would need to be generated on installation of the application. Android helpfully provides an API call to get a somewhat unique number for a device, provided the manufacturer has implemented it. The setting is: 
+
+\begin{verbatim}
+Settings.Secure.ANDROID_ID
+\end{verbatim}
+
+Although it can be changed if the phone is rooted, or upon factory reset, it is sufficient for this demonstration. The value will need to be added to it's place in the TCP packet when transmiting data.
+
 \subsection{TCP Server}
-The TCP server will be incredibly simple as all that is required is the ability for clients to connect and post information to it. Due to this the server will be implemented in node.js as the LoC it takes to write a a TCP server to this standard is minimal.
+\label{nodejs}
+The TCP server will be incredibly simple as all that is required is the ability for clients to connect and post information to it. Due to this the server will be implemented in node.js as the lines of code it takes to write a a TCP server to this standard is minimal.
 
 \clearpage
 \subsection{Requirements Matrix}
@@ -152,7 +163,7 @@ This section matches a given requirement from section \ref{requirements:specific
 			4 & Creating a fake access point is detailed in section \ref{design:create-ap}.\\ \hline
 			5 & The TCP client is detailed in section \ref{hp-tcp}.\\ \hline
 			6 & Section \ref{open-auth} looks at discovering vulnerable devices that are probing for open authentication networks. \\ \hline
-			7 & Section unfinished.\\ 
+			7 & This is achieved using a bridge tool, which is documented in the implementation.\\ 
 			\hline
 		\end{tabular}
 	\end{center}
@@ -166,7 +177,7 @@ This section matches a given requirement from section \ref{requirements:specific
 			\textbf{Requirement} & \textbf{Verification} \\ \hline
 			1 & Section \ref{design:flappy-bird} describes how the application will be a clone of a popular game.\\ \hline
 			2 & The classes required for getting the GPS location are in section \ref{design:ag-lp-cd}.\\ \hline
-			3 & Section unfinished\\ \hline
+			3 & This is discussed in section \ref{unique-android-id}.\\ \hline
 			4 & Sections \ref{design:ag-tcp-1} and \ref{design:tcp-structure} detail TCP client support. \\ 
 			\hline
 		\end{tabular}
@@ -179,8 +190,8 @@ This section matches a given requirement from section \ref{requirements:specific
 		\begin{tabular}{ | c |  p{12cm} | }
 			\hline
 			\textbf{Requirement} & \textbf{Verification} \\ \hline
-			1 & Section unfinished.\\ \hline
-			2 & Section unfinished.\\ 
+			1 & The server is discussed in section \ref{nodejs}.\\ \hline
+			2 & This requirement is covered in section \ref{nodejs}.\\ 
 			\hline
 		\end{tabular}
 	\end{center}

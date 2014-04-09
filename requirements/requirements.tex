@@ -1,5 +1,5 @@
 \section{Requirements}
-This requirement specification uses keywords to indicate requirement levels as defined in RFC 2119[1]. Consideration has been taken to follow principles outlined in the IEEE Recommended Practice for Software Requirements Specification [2] whilst being mindful that they are included as part of a larger document.
+This requirement specification uses keywords to indicate requirement levels as defined in RFC 2119 \cite{req:rfc_must}. Consideration has been taken to follow principles outlined in the IEEE Recommended Practice for Software Requirements Specification \cite{req:ieee_spec}, whilst being mindful that they are included as part of a larger document.
 
 \subsection{Scope}
 The requirements set forth are for the Honeypot application that will be used to create spoofed access points based on probe request frames broadcast from passing mobile wireless devices, the Android application that leaks personal data, and server. The requirements are split into separate sections that define the hardware and software requirements for the honeypot application, then moves on to define the specific requirements for the honeypot application itself, the leaky Android application and simple server application.
@@ -24,9 +24,9 @@ A laptop will be required to run the application, and it will need at least one 
 The wireless network must have the SSID hidden, must have no encryption and must be connected to the laptop via ethernet cable. This is required so that the spoofed AP may bridge its traffic and the users of the spoofed AP will be able to access the internet
 
 \subsubsection{Software Interfaces}
-The application must run on Backtrack 5 Revision 3 (B5R3) which is available from the Backtrack website[1]. The application may run on Kali Linux which is a derivative of Backtrack developed by the same team.
+The application must run on Backtrack 5 Revision 3 (B5R3). The application may run on Kali Linux which is a derivative of Backtrack developed by the same team.
 
-The Operating System must be either installed as the primary, or installed on a Virtual Machine. If the Operating System is installed on a Virtual Machine then the virtualisation software used must be VirtualBox V4.3.0 [2]. The network adapter in VirtualBox must be set to bridged and utilize the ethernet adapter of the host laptop.
+The Operating System must be either installed as the primary, or installed on a Virtual Machine. If the Operating System is installed on a Virtual Machine then the virtualisation software used must be VirtualBox V4.3.0. The network adapter in VirtualBox must be set to bridged and utilize the ethernet adapter of the host laptop.
 
 Air-ng may be utilized to create the spoof access point once the requirements of the AP have been determined. This software suite comes pre-installed on the required Operating System. 
 

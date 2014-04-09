@@ -1,11 +1,38 @@
-\nomenclatureentry{aTCP@[{TCP}]\begingroup Transmission Control Protocol\nomeqref {0}|nompageref}{ii}
-\nomenclatureentry{aIP@[{IP}]\begingroup Internet Protocol\nomeqref {0}|nompageref}{ii}
 \nomenclatureentry{aGCHQ@[{GCHQ}]\begingroup Government Communication Headquarters\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{aNSA@[{NSA}]\begingroup National Security Agency\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aIEEE@[{IEEE}]\begingroup Institute of Electrical and Electronic Engineers\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aWLAN@[{WLAN}]\begingroup Wireless Local Area Network\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aMAC@[{MAC}]\begingroup Media Access Control\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aTCP@[{TCP}]\begingroup Transmission Control Protocol\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aIEEE@[{IEEE}]\begingroup Institute of Electrical and Electronics Engineers\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aLMSC@[{LMSC}]\begingroup LAN MAN Standards Committee\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aTCP@[{TCP}]\begingroup Transport Control Protocol\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{aIP@[{IP}]\begingroup Internet Protocol\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aMAC@[{MAC}]\begingroup Media Access Control\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{aTG@[{TG}]\begingroup Task Group\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aBSS@[{BSS}]\begingroup Base Service Set\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aBSSID@[{BSSID}]\begingroup Base Service Set Identifier\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aIBSS@[{IBSS}]\begingroup Independent Base Service Set\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aSSID@[{SSID}]\begingroup Service Set Identifier\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aESS@[{ESS}]\begingroup Extended Service Set\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aDS@[{DS}]\begingroup Distribution System\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aCRC@[{CRC}]\begingroup Cyclical Redundancy Check\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aFCS@[{FCS}]\begingroup Frame Check Sequence\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aIE@[{IE}]\begingroup Information Element\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aERP@[{ERP}]\begingroup Extended Rate PHY\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aMITM@[{MITM}]\begingroup Man In The Middle\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aHTML5@[{HTML5}]\begingroup Hyper-Text Markup Language 5\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aDDMS@[{DDMS}]\begingroup Dalvik Debug Monitor Server\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aGPS@[{GPS}]\begingroup Global Positioning System\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aMIC@[{MIC}]\begingroup Message Integrity Check\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aHTTP@[{HTTP}]\begingroup Hyper Text Transfer Protocol\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aHTTPS@[{HTTPS}]\begingroup HTTP Secure\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aSSL@[{SSL}]\begingroup Secure Sockets Layer\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aTSL@[{TSL}]\begingroup Transport Layer Security\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aMITB@[{MITB}]\begingroup Man In The Browser\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aBITB@[{BITB}]\begingroup Boy In The Browser\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aDOS@[{DOS}]\begingroup Denial Of Service\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aAP@[{AP}]\begingroup Access Point\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aDNS@[{DNS}]\begingroup Domain Name System\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aPNL@[{PNL}]\begingroup Preferred Network Library\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aIoT@[{IoT}]\begingroup Internet of Things\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aRSS@[{RSS}]\begingroup Received Signal Strength\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aGUI@[{GUI}]\begingroup Graphical User Interface\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aRFC@[{RFC}]\begingroup Request For Comments\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{aUSB@[{USB}]\begingroup Universal Serial Bus\nomeqref {0}|nompageref}{25}

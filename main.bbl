@@ -16,7 +16,7 @@
   {}
 \endgroup
 
-\entry{intro:guardian_snowden}{article}{}
+\entry{intro:guardian_snowden}{online}{}
   \name{author}{1}{}{%
     {{}%
      {Guardian}{G.}%
@@ -30,6 +30,10 @@
   \verb{url}
   \verb http://www.theguardian.com/world/edward-snowden
   \endverb
+  \field{year}{2013}
+  \field{urlday}{10}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:gchq_home}{misc}{}
@@ -45,6 +49,9 @@
   \verb{url}
   \verb http://www.gchq.gov.uk/
   \endverb
+  \field{urlday}{10}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:nsa_home}{misc}{}
@@ -60,6 +67,9 @@
   \verb{url}
   \verb http://www.nsa.gov/
   \endverb
+  \field{urlday}{10}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:schneier_nsa_1}{article}{}
@@ -77,6 +87,9 @@
   \verb https://www.schneier.com/blog/archives/2014/02/picasso_nsa_exp.html
   \endverb
   \field{year}{2014}
+  \field{urlday}{12}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:schneier_nsa_3}{article}{}
@@ -94,6 +107,9 @@
   \verb https://www.schneier.com/blog/archives/2014/02/dropoutjeep_nsa.html
   \endverb
   \field{year}{2014}
+  \field{urlday}{12}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:schneier_nsa_4}{article}{}
@@ -111,6 +127,9 @@
   \verb https://www.schneier.com/blog/archives/2014/02/somberknave_nsa.html
   \endverb
   \field{year}{2014}
+  \field{urlday}{12}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:nsa_invoice}{misc}{}
@@ -120,6 +139,9 @@
   \verb s-with-nsa-6593/#787525-responsive-documents
   \endverb
   \field{year}{2013}
+  \field{urlday}{11}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:schneier_nsa_2}{article}{}
@@ -137,6 +159,9 @@
   \verb https://www.schneier.com/blog/archives/2014/02/wistfultoll_nsa.html
   \endverb
   \field{year}{2014}
+  \field{urlday}{12}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:guardian_ms_nsa}{article}{}
@@ -155,6 +180,9 @@
   \verb n-user-data
   \endverb
   \field{year}{2013}
+  \field{urlday}{12}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:ibm_open_letter}{article}{}
@@ -172,6 +200,9 @@
   \verb http://asmarterplanet.com/blog/2014/03/open-letter-data.html
   \endverb
   \field{year}{2014}
+  \field{urlday}{26}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:open_open_letter}{article}{}
@@ -189,30 +220,33 @@
   \verb https://www.schneier.com/blog/archives/2014/03/an_open_letter_.html
   \endverb
   \field{year}{2014}
+  \field{urlday}{29}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
 \endentry
 
 \entry{intro:bristol_open_letter}{article}{}
   \name{author}{1}{}{%
     {{}%
+     {al}{a.}%
      {Prof. Kenneth~Paterson}{P.~K.~P.}%
-     {et~al}{e.~a.}%
-     {}{}%
+     {et}{e.}%
      {}{}}%
   }
-  \strng{namehash}{PKPea1}
-  \strng{fullhash}{PKPea1}
+  \strng{namehash}{aPKPe1}
+  \strng{fullhash}{aPKPe1}
   \field{title}{Open Letter From UK Security Researchers}
   \verb{url}
   \verb http://bristolcrypto.blogspot.co.uk/2013/09/open-letter-from-uk-securit
   \verb y-researchers.html
   \endverb
   \field{year}{2013}
+  \field{urlday}{11}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
 \endentry
 
-\entry{intro:ieee_decrypted}{article}{}
-\endentry
-
-\entry{intro:apple_ibook}{article}{}
+\entry{intro:apple_ibook}{online}{}
   \name{author}{1}{}{%
     {{}%
      {Wikipedia}{W.}%
@@ -227,9 +261,12 @@
   \verb http://en.wikipedia.org/wiki/IBook
   \endverb
   \field{year}{2014}
+  \field{urlday}{05}
+  \field{urlmonth}{02}
+  \field{urlyear}{2014}
 \endentry
 
-\entry{intro:80211_lecture}{article}{}
+\entry{intro:80211_lecture}{online}{}
   \name{author}{1}{}{%
     {{}%
      {Chandra}{C.}%
@@ -245,20 +282,6 @@
   \verb .pdf
   \endverb
   \field{year}{2011}
-\endentry
-
-\entry{intro:ieee_tutorial}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Ergen}{E.}%
-     {Mustafa}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{EM1}
-  \strng{fullhash}{EM1}
-  \field{title}{IEEE 802.11 Tutorial}
-  \field{year}{2002}
 \endentry
 
 \entry{intro:netgear_wep}{article}{}
@@ -356,13 +379,13 @@
 \entry{intro:twitter_home_location}{article}{}
   \name{author}{1}{}{%
     {{}%
+     {al}{a.}%
      {JALAL~MAHMUD}{J.~M.}%
-     {et~al}{e.~a.}%
-     {}{}%
+     {et}{e.}%
      {}{}}%
   }
-  \strng{namehash}{JMea1}
-  \strng{fullhash}{JMea1}
+  \strng{namehash}{aJMe1}
+  \strng{fullhash}{aJMe1}
   \field{title}{Home Location Identification of Twitter Users}
   \verb{url}
   \verb http://arxiv.org/ftp/arxiv/papers/1403/1403.2345.pdf
@@ -405,13 +428,13 @@
 \entry{intro:not_personal}{article}{}
   \name{author}{1}{}{%
     {{}%
+     {al}{a.}%
      {Michal~Kosinski}{M.~K.}%
-     {et~al}{e.~a.}%
-     {}{}%
+     {et}{e.}%
      {}{}}%
   }
-  \strng{namehash}{MKea1}
-  \strng{fullhash}{MKea1}
+  \strng{namehash}{aMKe1}
+  \strng{fullhash}{aMKe1}
   \field{title}{Private traits and attributes are predictable from digital
   records of human behavior}
   \verb{url}
@@ -605,6 +628,366 @@
   \field{year}{2013}
 \endentry
 
+\entry{research:disassoc_atk}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {al}{a.}%
+     {Rupinder~Cheema}{R.~C.}%
+     {et}{e.}%
+     {}{}}%
+  }
+  \strng{namehash}{aRCe1}
+  \strng{fullhash}{aRCe1}
+  \field{title}{Deauthentication/Disassociation Attack: Implementationa nd
+  Security in Wireless Mesh Networks}
+  \verb{url}
+  \verb http://www.ijcaonline.org/volume23/number7/pxc3873801.pdf
+  \endverb
+  \field{volume}{23}
+  \field{journaltitle}{International Journal of Computer Applications}
+  \field{year}{2011}
+\endentry
+
+\entry{research:layer_flood}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {OWASP}{O.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{O1}
+  \strng{fullhash}{O1}
+  \field{title}{Traffic Flood}
+  \verb{url}
+  \verb https://www.owasp.org/index.php/Traffic_flood
+  \endverb
+  \field{year}{2009}
+  \field{urlday}{14}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:80211_disassoc_frame}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Info}{I.}%
+     {}{}%
+     {dot11}{d.}%
+     {}{}}%
+  }
+  \strng{namehash}{Id1}
+  \strng{fullhash}{Id1}
+  \field{title}{Chapter 4 - 802.11 Management Frames}
+  \verb{url}
+  \verb http://dot11.info/index.php?title=Chapter_4_-_802.11_Management_frames#
+  \verb Disassociation_frame
+  \endverb
+  \field{year}{2011}
+  \field{urlday}{14}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:80211_deauth_frame}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Info}{I.}%
+     {}{}%
+     {dot11}{d.}%
+     {}{}}%
+  }
+  \strng{namehash}{Id1}
+  \strng{fullhash}{Id1}
+  \field{title}{Chapter 4 - 802.11 Management Frames}
+  \verb{url}
+  \verb http://dot11.info/index.php?title=Chapter_4_-_802.11_Management_frames#
+  \verb Deauthentication_frame
+  \endverb
+  \field{year}{2011}
+  \field{urlday}{14}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:defending_auth}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Nguyen}{N.}%
+     {Thuc~D.}{T.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nguyen}{N.}%
+     {Duc H.~M.}{D.~H.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tran}{T.}%
+     {Bao~N.}{B.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vu}{V.}%
+     {Hai~Trong}{H.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mittal}{M.}%
+     {Neeraj}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \keyw{dblp}
+  \strng{namehash}{NTDNDHMTBN+1}
+  \strng{fullhash}{NTDNDHMTBNVHTMN1}
+  \field{booktitle}{ICCCN}
+  \field{isbn}{978-1-4244-2390-3}
+  \field{pages}{185\bibrangedash 190}
+  \field{title}{A Lightweight Solution for Defending Against
+  Deauthentication/Disassociation Attacks on 802.11 Networks.}
+  \verb{url}
+  \verb http://dblp.uni-trier.de/db/conf/icccn/icccn2008.html#NguyenNTVM08
+  \endverb
+  \field{year}{2008}
+\endentry
+
+\entry{research:aircrack}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {sleek}{s.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{s1}
+  \strng{fullhash}{s1}
+  \field{title}{Deauthentication}
+  \verb{url}
+  \verb http://www.aircrack-ng.org/doku.php?id=deauthentication
+  \endverb
+  \field{year}{2010}
+  \field{urlday}{24}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:youtube}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Marlinspike}{M.}%
+     {Moxie}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MM1}
+  \strng{fullhash}{MM1}
+  \field{title}{Defeating Ssl Using Sslstrip}
+  \verb{url}
+  \verb https://www.youtube.com/watch?v=MFol6IMbZ7Y
+  \endverb
+  \field{year}{2012}
+  \field{urlday}{24}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:benson}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Saunders}{S.}%
+     {Kyle Benson Trevor Kiernan~Glen}{K.~B. T. K.~G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SKBTKG1}
+  \strng{fullhash}{SKBTKG1}
+  \field{title}{Man-in-the-Middle Attack With SSL Strip}
+  \verb{url}
+  \verb http://www.eecis.udel.edu/~bmiller/cis364/2010s/slides/mitm.pdf
+  \endverb
+  \field{year}{2010}
+  \field{urlday}{14}
+  \field{urlmonth}{01}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:hsts}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {OWASP}{O.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{O1}
+  \strng{fullhash}{O1}
+  \field{title}{HTTP Strict Transport Security}
+  \verb{url}
+  \verb https://www.owasp.org/index.php/HTTP_Strict_Transport_Security
+  \endverb
+  \field{year}{2014}
+  \field{urlday}{26}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:old_paper}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Schoeneck}{S.}%
+     {Rick}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SR1}
+  \strng{fullhash}{SR1}
+  \field{title}{Wireless Honeypot}
+  \verb{url}
+  \verb http://digiville.net/~iirg/Richard_Schoeneck_GSEC.pdf
+  \endverb
+  \field{year}{2003}
+  \field{urlday}{26}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:old_toos}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {theta44.org}{t.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{t1}
+  \strng{fullhash}{t1}
+  \field{title}{KARMA Wireless Client Security Assessment Tools}
+  \verb{url}
+  \verb http://web.archive.org/web/20051215051116/http://theta44.org/karma/inde
+  \verb x.html
+  \endverb
+  \field{year}{2005}
+  \field{urlday}{26}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:device_survey}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {weareapps}{w.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{w1}
+  \strng{fullhash}{w1}
+  \field{title}{UK mobile devices usage and demographic roundup}
+  \verb{url}
+  \verb http://www.weareapps.com/digitalreport.pdf
+  \endverb
+  \field{year}{2013}
+  \field{urlday}{26}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:use_wifi}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {arstechnica}{a.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{a1}
+  \strng{fullhash}{a1}
+  \field{title}{The case for Wi-Fi in the Internet of Things}
+  \verb{url}
+  \verb http://arstechnica.com/information-technology/2014/01/the-case-for-wi-f
+  \verb i-in-the-internet-of-things/
+  \endverb
+  \field{year}{2014}
+  \field{urlday}{01}
+  \field{urlmonth}{02}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:use_wifi2}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Alliance}{A.}%
+     {WiFi}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AW1}
+  \strng{fullhash}{AW1}
+  \field{title}{Connect Your Life}
+  \verb{url}
+  \verb http://www.wi-fi.org/discover-wi-fi/connect-your-life
+  \endverb
+  \field{year}{2014}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{4509834}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Sheng}{S.}%
+     {Yong}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tan}{T.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chen}{C.}%
+     {Guanling}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kotz}{K.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Campbell}{C.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Gaussian distribution;access protocols;wireless LAN;802.11 MAC layer
+  spoofing;802.11 transmitters;802.11 wireless LAN;Gaussian mixture
+  models;antenna diversity;false services;multiple Gaussian
+  distributions;network services;received signal strength;wireless
+  connectivity;wireless stations;Antenna measurements;Communications
+  Society;Cryptography;Diversity reception;Microprogramming;Radio
+  frequency;Radio transmitters;Robust stability;Semiconductor device
+  measurement;Tin}
+  \strng{namehash}{SYTKCG+1}
+  \strng{fullhash}{SYTKCGKDCA1}
+  \field{booktitle}{INFOCOM 2008. The 27th Conference on Computer
+  Communications. IEEE}
+  \verb{doi}
+  \verb 10.1109/INFOCOM.2008.239
+  \endverb
+  \field{issn}{0743-166X}
+  \field{pages}{\bibrangedash }
+  \field{title}{Detecting 802.11 MAC Layer Spoofing Using Received Signal
+  Strength}
+  \field{year}{2008}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
 \entry{research:network_programming}{book}{}
   \name{author}{1}{}{%
     {{}%
@@ -617,6 +1000,314 @@
   \strng{fullhash}{SWR1}
   \field{pages}{707}
   \field{title}{UNIX Network Programming}
+\endentry
+
+\entry{research:badlogix}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Games}{G.}%
+     {Bad~Logic}{B.~L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GBL1}
+  \strng{fullhash}{GBL1}
+  \verb{url}
+  \verb http://libgdx.badlogicgames.com/features.html
+  \endverb
+  \field{year}{2014}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:flappy_guardian}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Guardian}{G.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{G2}
+  \strng{fullhash}{G2}
+  \verb{url}
+  \verb http://www.theguardian.com/technology/2014/mar/28/flappy-bird-minecraft
+  \verb -instagram-facebook-kids-apps
+  \endverb
+  \field{year}{2014}
+  \field{urlday}{02}
+  \field{urlmonth}{04}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:kilo_tut}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kilobolt}{K.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{K1}
+  \strng{fullhash}{K1}
+  \field{title}{LibGDX Zombie Bird}
+  \verb{url}
+  \verb http://www.kilobolt.com/zombie-bird-tutorial-flappy-bird-remake.html
+  \endverb
+  \field{year}{2014}
+  \field{urlday}{02}
+  \field{urlmonth}{04}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:33bits}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {33bits}{b.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{b1}
+  \strng{fullhash}{b1}
+\endentry
+
+\entry{research:lsweent}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sweeney}{S.}%
+     {Latanya}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SL1}
+  \strng{fullhash}{SL1}
+  \field{title}{Simple Demographics Often Identify People Uniquely}
+  \verb{url}
+  \verb http://dataprivacylab.org/projects/identifiability/paper1.pdf
+  \endverb
+  \field{year}{2000}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{Golle:2006:RUS:1179601.1179615}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Golle}{G.}%
+     {Philippe}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{anonymity, census data, privacy}
+  \strng{namehash}{GP1}
+  \strng{fullhash}{GP1}
+  \field{booktitle}{Proceedings of the 5th ACM Workshop on Privacy in
+  Electronic Society}
+  \verb{doi}
+  \verb 10.1145/1179601.1179615
+  \endverb
+  \field{isbn}{1-59593-556-8}
+  \field{pages}{77\bibrangedash 80}
+  \field{series}{WPES '06}
+  \field{title}{Revisiting the Uniqueness of Simple Demographics in the US
+  Population}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1179601.1179615
+  \endverb
+  \list{location}{1}{%
+    {Alexandria, Virginia, USA}%
+  }
+  \field{year}{2006}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{research:mozzy}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Mozilla}{M.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{M1}
+  \strng{fullhash}{M1}
+  \field{title}{Bug 147777 - :visited support allows queries into global
+  history}
+  \verb{url}
+  \verb https://bugzilla.mozilla.org/show_bug.cgi?id=147777
+  \endverb
+  \field{year}{2002}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:uk_law1}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Government}{G.}%
+     {UK}{U.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GU1}
+  \strng{fullhash}{GU1}
+  \field{title}{Regulation of Investigatory Powers Act 2000}
+  \verb{url}
+  \verb http://www.legislation.gov.uk/ukpga/2000/23/contents, year=
+  \endverb
+\endentry
+
+\entry{research:uk_law2}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Government}{G.}%
+     {UK}{U.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GU1}
+  \strng{fullhash}{GU1}
+  \field{title}{Data Protection Act 1998}
+  \verb{url}
+  \verb http://www.legislation.gov.uk/ukpga/1998/29/contents
+  \endverb
+  \field{year}{1998}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:uk_law3}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{title}{Regulation of Investigatory Powers Act 2000}
+  \verb{url}
+  \verb http://en.wikipedia.org/wiki/Regulation_of_Investigatory_Powers_Act_200
+  \verb 0
+  \endverb
+  \field{year}{2013}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:uk_law4}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Court}{C.}%
+     {United States~District}{U.~S.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CUSD1}
+  \strng{fullhash}{CUSD1}
+  \field{title}{IN RE INNOVATIO IP VENTURES, LLC PATENT LITIGATION, Dist.
+  Court, ND Illinois 2012}
+  \verb{url}
+  \verb http://scholar.google.com/scholar_case?&hl=en&as_sdt=2,9&case=475377491
+  \verb 6138142559&scilh=0
+  \endverb
+  \field{year}{2012}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{research:uk_law5}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Commission}{C.}%
+     {Federal~Communications}{F.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CFC1}
+  \strng{fullhash}{CFC1}
+  \field{title}{Google FCC Unredacted}
+  \verb{url}
+  \verb http://www.wired.com/images_blogs/threatlevel/2012/05/unredactedfccgoog
+  \verb .pdf
+  \endverb
+  \field{year}{2014}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{req:rfc_must}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Force}{F.}%
+     {Internet Engineering~Task}{I.~E.~T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{FIET1}
+  \strng{fullhash}{FIET1}
+  \field{title}{Key words for use in RFCs to Indicate Requirement Levels}
+  \verb{url}
+  \verb https://www.ietf.org/rfc/rfc2119.txt
+  \endverb
+  \field{year}{1997}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{req:ieee_spec}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {IEEE}{I.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{I1}
+  \strng{fullhash}{I1}
+  \field{title}{IEEE Recommended Practice for Software Requirements
+  Specification}
+  \verb{url}
+  \verb http://www.math.uaa.alaska.edu/~afkjm/cs401/IEEE830.pdf
+  \endverb
+  \field{year}{1998}
+  \field{urlday}{14}
+  \field{urlmonth}{03}
+  \field{urlyear}{2014}
+\endentry
+
+\entry{conc:snoopy}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sensepost}{S.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{S1}
+  \strng{fullhash}{S1}
+  \field{title}{Snoopy: Distributed Tracking and Profiling Framework}
+  \verb{url}
+  \verb http://research.sensepost.com/conferences/2012/distributed_tracking_and
+  \verb _profiling_framework
+  \endverb
+  \field{year}{2014}
+  \field{urlday}{01}
+  \field{urlmonth}{04}
+  \field{urlyear}{2014}
 \endentry
 
 \lossort
